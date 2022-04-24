@@ -1,0 +1,3 @@
+[0.025s] Invoking command in '/home/ryuzot/ros2_ws/build/socketcan_interface_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/ryuzot/ros2_ws/src/socketcan_interface_msg -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja --package-up-to socketcan_interface_msg -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_ws/install/socketcan_interface_msg
+[0.028s] CMake Error: The source directory "/home/ryuzot/ros2_ws/build/socketcan_interface_msg/socketcan_interface_msg" does not exist.
+[0.028s] Specify --help for usage, or press the help button on the CMake GUI.

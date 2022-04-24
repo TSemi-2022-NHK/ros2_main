@@ -1,0 +1,42 @@
+[0.263s] Invoking command in '/home/ryuzot/ros2_ws/build/socketcan_interface': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_ws/build/socketcan_interface -- -j24 -l24
+[0.272s] 
+[8.970s] [0/2] Building CXX object CMakeFiles/socketcan_interface_node.dir/src/socketcan_interface_node.cpp.o[K
+[8.971s] [1/2] Building CXX object CMakeFiles/socketcan_interface_node.dir/src/socketcan_interface_node.cpp.o[K
+[8.971s] /home/ryuzot/ros2_ws/src/socketcan_interface/src/socketcan_interface_node.cpp: In constructor ‘socketcan_interface::SocketcanInterface::SocketcanInterface(const string&, const rclcpp::NodeOptions&)’:
+[8.971s] /home/ryuzot/ros2_ws/src/socketcan_interface/src/socketcan_interface_node.cpp:18:63: warning: unused parameter ‘name_space’ [-Wunused-parameter]
+[8.971s]    18 |     SocketcanInterface::SocketcanInterface(const std::string &name_space, const rclcpp::NodeOptions &options)
+[8.971s]       |                                            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+[8.971s] 
+[9.033s] [1/2] Linking CXX static library libsocketcan_interface_node.a[K
+[9.033s] [2/2] Linking CXX static library libsocketcan_interface_node.a[K
+[9.035s] Invoked command in '/home/ryuzot/ros2_ws/build/socketcan_interface' returned '0': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_ws/build/socketcan_interface -- -j24 -l24
+[9.052s] Invoking command in '/home/ryuzot/ros2_ws/build/socketcan_interface': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_ws/build/socketcan_interface
+[9.059s] -- Install configuration: ""
+[9.059s] -- Execute custom install script
+[9.060s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/library_path.sh
+[9.060s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/library_path.dsv
+[9.060s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/library_path.sh
+[9.060s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/library_path.dsv
+[9.061s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/include/include/socketcan_interface/socketcan_interface_node.hpp
+[9.061s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/include/include/socketcan_interface/visibility.h
+[9.061s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/ament_index/resource_index/package_run_dependencies/socketcan_interface
+[9.061s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/ament_index/resource_index/parent_prefix_path/socketcan_interface
+[9.062s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/ament_prefix_path.sh
+[9.062s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/ament_prefix_path.dsv
+[9.062s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/path.sh
+[9.063s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/environment/path.dsv
+[9.063s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/local_setup.bash
+[9.063s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/local_setup.sh
+[9.063s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/local_setup.zsh
+[9.063s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/local_setup.dsv
+[9.064s] -- Symlinking: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/package.dsv
+[9.072s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/ament_index/resource_index/packages/socketcan_interface
+[9.072s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake/ament_cmake_export_targets-extras.cmake
+[9.072s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.073s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake/socketcan_interfaceConfig.cmake
+[9.073s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake/socketcan_interfaceConfig-version.cmake
+[9.073s] -- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/package.xml
+[9.073s] -- Installing: /home/ryuzot/ros2_ws/install/socketcan_interface/lib/libsocketcan_interface_node.a
+[9.079s] -- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake
+[9.079s] -- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake/export_socketcan_interfaceExport-noconfig.cmake
+[9.086s] Invoked command in '/home/ryuzot/ros2_ws/build/socketcan_interface' returned '0': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_ws/build/socketcan_interface

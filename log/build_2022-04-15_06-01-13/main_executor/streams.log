@@ -1,0 +1,27 @@
+[0.028s] Invoking command in '/home/ryuzot/ros2_ws/build/main_executor': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ryuzot/ros2_ws/build/main_executor -- -j24 -l24
+[0.034s] 
+[1.755s] [0/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[1.755s] [1/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[1.950s] [1/2] Linking CXX executable main_exec[K
+[1.950s] [2/2] Linking CXX executable main_exec[K
+[1.952s] Invoked command in '/home/ryuzot/ros2_ws/build/main_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ryuzot/ros2_ws/build/main_executor -- -j24 -l24
+[1.972s] Invoking command in '/home/ryuzot/ros2_ws/build/main_executor': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ryuzot/ros2_ws/build/main_executor
+[1.976s] -- Install configuration: ""
+[1.976s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/lib/main_executor/main_exec
+[1.977s] -- Set runtime path of "/home/ryuzot/ros2_ws/install/main_executor/lib/main_executor/main_exec" to ""
+[1.977s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/ament_index/resource_index/package_run_dependencies/main_executor
+[1.977s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/ament_index/resource_index/parent_prefix_path/main_executor
+[1.977s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/ament_prefix_path.sh
+[1.977s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/ament_prefix_path.dsv
+[1.978s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/path.sh
+[1.978s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/path.dsv
+[1.978s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.bash
+[1.978s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.sh
+[1.978s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.zsh
+[1.978s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.dsv
+[1.979s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/package.dsv
+[1.979s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/ament_index/resource_index/packages/main_executor
+[1.979s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/cmake/main_executorConfig.cmake
+[1.979s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/cmake/main_executorConfig-version.cmake
+[1.979s] -- Installing: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/package.xml
+[1.981s] Invoked command in '/home/ryuzot/ros2_ws/build/main_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ryuzot/ros2_ws/build/main_executor

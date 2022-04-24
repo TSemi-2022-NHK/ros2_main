@@ -1,0 +1,25 @@
+[0.015s] Invoking command in '/home/ryuzot/ros2_ws/build/socketcan_interface_msg': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ryuzot/ros2_ws/src/socketcan_interface_msg -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_ws/install/socketcan_interface_msg
+[0.191s] -- The C compiler identification is GNU 9.4.0
+[0.467s] -- The CXX compiler identification is GNU 9.4.0
+[0.617s] -- Check for working C compiler: /usr/bin/cc
+[0.744s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.745s] -- Detecting C compiler ABI info
+[0.870s] -- Detecting C compiler ABI info - done
+[0.880s] -- Detecting C compile features
+[0.881s] -- Detecting C compile features - done
+[0.883s] -- Check for working CXX compiler: /usr/bin/c++
+[1.015s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.016s] -- Detecting CXX compiler ABI info
+[1.150s] -- Detecting CXX compiler ABI info - done
+[1.159s] -- Detecting CXX compile features
+[1.160s] -- Detecting CXX compile features - done
+[1.161s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.178s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.179s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.232s] CMake Error at CMakeLists.txt:17 (rosidl_generate_interfaces):
+[1.232s]   Unknown CMake command "rosidl_generate_interfaces".
+[1.232s] 
+[1.232s] 
+[1.232s] -- Configuring incomplete, errors occurred!
+[1.232s] See also "/home/ryuzot/ros2_ws/build/socketcan_interface_msg/CMakeFiles/CMakeOutput.log".
+[1.235s] Invoked command in '/home/ryuzot/ros2_ws/build/socketcan_interface_msg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ryuzot/ros2_ws/src/socketcan_interface_msg -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_ws/install/socketcan_interface_msg

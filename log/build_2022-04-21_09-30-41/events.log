@@ -1,0 +1,299 @@
+[0.000000] (-) TimerEvent: {}
+[0.001634] (socketcan_interface_msg) JobQueued: {'identifier': 'socketcan_interface_msg', 'dependencies': OrderedDict()}
+[0.001685] (socketcan_interface) JobQueued: {'identifier': 'socketcan_interface', 'dependencies': OrderedDict([('socketcan_interface_msg', '/home/ryuzot/ros2_ws/install/socketcan_interface_msg')])}
+[0.001732] (main_executor) JobQueued: {'identifier': 'main_executor', 'dependencies': OrderedDict([('socketcan_interface_msg', '/home/ryuzot/ros2_ws/install/socketcan_interface_msg'), ('socketcan_interface', '/home/ryuzot/ros2_ws/install/socketcan_interface')])}
+[0.001778] (socketcan_interface_msg) JobStarted: {'identifier': 'socketcan_interface_msg'}
+[0.018024] (socketcan_interface_msg) JobProgress: {'identifier': 'socketcan_interface_msg', 'progress': 'cmake'}
+[0.019586] (socketcan_interface_msg) JobProgress: {'identifier': 'socketcan_interface_msg', 'progress': 'build'}
+[0.019640] (socketcan_interface_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ryuzot/ros2_ws/build/socketcan_interface_msg', '--', '-j24', '-l24'], 'cwd': '/home/ryuzot/ros2_ws/build/socketcan_interface_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ryuzot'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/ryuzot'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ryuzot/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'ryuzot'), ('NAME', 'DESKTOP-43TBSIS'), ('WSL_INTEROP', '/run/WSL/543_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/home/ryuzot/.local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ryuzot/.local/bin:/opt/ros/galactic/bin:/home/ryuzot/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files/Microsoft/jdk-16.0.2.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/PROGRA~2/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/ryuzo/.cargo/bin:/mnt/c/Users/ryuzo/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/ryuzo/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/ryuzo/scoop/shims:/mnt/c/Users/ryuzo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ryuzo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ryuzo/.dotnet/tools:/mnt/c/Users/ryuzo/.platformio/penv/Scripts:/mnt/c/Users/ryuzo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ryuzo/.nimble/bin:/mnt/c/Users/ryuzo/.git-secrets:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:/mnt/c/Users/ryuzo/CMake/bin:/mnt/c/Users/ryuzo/AppData/Local/GitHubDesktop/bin:/mnt/c/opt/ros/foxy/x64/Lib:/mnt/e/OpenOCD-20211118-0.11.0/bin:/snap/bin:/home/ryuzot/.platformio/penv/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ryuzot/ros2_ws/build/socketcan_interface_msg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/opt/ros/galactic'), ('WSLENV', '')]), 'shell': False}
+[0.030272] (socketcan_interface_msg) StdoutLine: {'line': b'ninja: no work to do.\n'}
+[0.031733] (socketcan_interface_msg) CommandEnded: {'returncode': 0}
+[0.045307] (socketcan_interface_msg) JobProgress: {'identifier': 'socketcan_interface_msg', 'progress': 'install'}
+[0.050586] (socketcan_interface_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ryuzot/ros2_ws/build/socketcan_interface_msg'], 'cwd': '/home/ryuzot/ros2_ws/build/socketcan_interface_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ryuzot'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/ryuzot'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ryuzot/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'ryuzot'), ('NAME', 'DESKTOP-43TBSIS'), ('WSL_INTEROP', '/run/WSL/543_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/home/ryuzot/.local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ryuzot/.local/bin:/opt/ros/galactic/bin:/home/ryuzot/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files/Microsoft/jdk-16.0.2.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/PROGRA~2/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/ryuzo/.cargo/bin:/mnt/c/Users/ryuzo/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/ryuzo/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/ryuzo/scoop/shims:/mnt/c/Users/ryuzo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ryuzo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ryuzo/.dotnet/tools:/mnt/c/Users/ryuzo/.platformio/penv/Scripts:/mnt/c/Users/ryuzo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ryuzo/.nimble/bin:/mnt/c/Users/ryuzo/.git-secrets:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:/mnt/c/Users/ryuzo/CMake/bin:/mnt/c/Users/ryuzo/AppData/Local/GitHubDesktop/bin:/mnt/c/opt/ros/foxy/x64/Lib:/mnt/e/OpenOCD-20211118-0.11.0/bin:/snap/bin:/home/ryuzot/.platformio/penv/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ryuzot/ros2_ws/build/socketcan_interface_msg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/opt/ros/galactic'), ('WSLENV', '')]), 'shell': False}
+[0.056928] (socketcan_interface_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.057475] (socketcan_interface_msg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.057768] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/ament_index/resource_index/rosidl_interfaces/socketcan_interface_msg\n'}
+[0.058179] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__functions.h\n'}
+[0.058343] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__struct.h\n'}
+[0.058524] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__type_support.h\n'}
+[0.058699] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.058842] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/socketcan_if.h\n'}
+[0.059022] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/library_path.sh\n'}
+[0.059218] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/library_path.dsv\n'}
+[0.059614] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__rosidl_typesupport_fastrtps_c.h\n'}
+[0.059757] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.060064] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[0.060458] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.060633] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.060900] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.061243] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__rosidl_typesupport_introspection_c.h\n'}
+[0.061414] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.061782] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__builder.hpp\n'}
+[0.061945] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__struct.hpp\n'}
+[0.062067] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__traits.hpp\n'}
+[0.062192] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/socketcan_if.hpp\n'}
+[0.062600] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include/socketcan_interface_msg/msg/detail/socketcan_if__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.062792] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/pythonpath.sh\n'}
+[0.062988] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/pythonpath.dsv\n'}
+[0.063190] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages/socketcan_interface_msg/__init__.py\n'}
+[0.063521] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages/socketcan_interface_msg/msg/__init__.py\n'}
+[0.063684] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages/socketcan_interface_msg/msg/_socketcan_if.py\n'}
+[0.064007] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages/socketcan_interface_msg/socketcan_interface_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.064312] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages/socketcan_interface_msg/socketcan_interface_msg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.064629] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages/socketcan_interface_msg/socketcan_interface_msg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.064937] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__python.so\n'}
+[0.065135] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/msg/SocketcanIF.idl\n'}
+[0.065354] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/msg/SocketcanIF.msg\n'}
+[0.065563] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/ament_index/resource_index/package_run_dependencies/socketcan_interface_msg\n'}
+[0.065782] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/ament_index/resource_index/parent_prefix_path/socketcan_interface_msg\n'}
+[0.065985] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/ament_prefix_path.sh\n'}
+[0.066182] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/ament_prefix_path.dsv\n'}
+[0.066385] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/path.sh\n'}
+[0.066592] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/environment/path.dsv\n'}
+[0.066791] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/local_setup.bash\n'}
+[0.066987] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/local_setup.sh\n'}
+[0.067185] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/local_setup.zsh\n'}
+[0.067381] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/local_setup.dsv\n'}
+[0.067571] (socketcan_interface_msg) StdoutLine: {'line': b'-- Symlinking: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/package.dsv\n'}
+[0.073041] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/ament_index/resource_index/packages/socketcan_interface_msg\n'}
+[0.073244] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[0.073453] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.073683] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.073907] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.074119] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.074326] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.074532] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.074945] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msgConfig.cmake\n'}
+[0.075115] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msgConfig-version.cmake\n'}
+[0.075309] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/package.xml\n'}
+[0.075520] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_generator_c.so\n'}
+[0.075812] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_introspection_c.so\n'}
+[0.076096] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_c.so\n'}
+[0.076378] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[0.076704] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_cpp.so\n'}
+[0.099656] (-) TimerEvent: {}
+[0.100027] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_generator_cExport.cmake\n'}
+[0.100132] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.100315] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.100452] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.100768] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_cExport.cmake\n'}
+[0.100836] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.100953] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_generator_cppExport.cmake\n'}
+[0.101244] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.101309] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.101385] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_cppExport.cmake\n'}
+[0.101437] (socketcan_interface_msg) StdoutLine: {'line': b'-- Up-to-date: /home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake/socketcan_interface_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.103967] (socketcan_interface_msg) CommandEnded: {'returncode': 0}
+[0.165997] (socketcan_interface_msg) JobEnded: {'identifier': 'socketcan_interface_msg', 'rc': 0}
+[0.169059] (socketcan_interface) JobStarted: {'identifier': 'socketcan_interface'}
+[0.199797] (-) TimerEvent: {}
+[0.300110] (-) TimerEvent: {}
+[0.378785] (socketcan_interface) JobProgress: {'identifier': 'socketcan_interface', 'progress': 'cmake'}
+[0.380298] (socketcan_interface) JobProgress: {'identifier': 'socketcan_interface', 'progress': 'build'}
+[0.380354] (socketcan_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ryuzot/ros2_ws/build/socketcan_interface', '--', '-j24', '-l24'], 'cwd': '/home/ryuzot/ros2_ws/build/socketcan_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ryuzot'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/ryuzot'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ryuzot/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'ryuzot'), ('NAME', 'DESKTOP-43TBSIS'), ('WSL_INTEROP', '/run/WSL/543_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/home/ryuzot/.local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ryuzot/.local/bin:/opt/ros/galactic/bin:/home/ryuzot/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files/Microsoft/jdk-16.0.2.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/PROGRA~2/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/ryuzo/.cargo/bin:/mnt/c/Users/ryuzo/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/ryuzo/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/ryuzo/scoop/shims:/mnt/c/Users/ryuzo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ryuzo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ryuzo/.dotnet/tools:/mnt/c/Users/ryuzo/.platformio/penv/Scripts:/mnt/c/Users/ryuzo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ryuzo/.nimble/bin:/mnt/c/Users/ryuzo/.git-secrets:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:/mnt/c/Users/ryuzo/CMake/bin:/mnt/c/Users/ryuzo/AppData/Local/GitHubDesktop/bin:/mnt/c/opt/ros/foxy/x64/Lib:/mnt/e/OpenOCD-20211118-0.11.0/bin:/snap/bin:/home/ryuzot/.platformio/penv/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ryuzot/ros2_ws/build/socketcan_interface'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ryuzot/ros2_ws/install/socketcan_interface_msg:/home/ryuzot/ros2_ws/install/main_executor:/home/ryuzot/ros2_ws/install/socketcan_interface:/opt/ros/galactic'), ('WSLENV', '')]), 'shell': False}
+[0.388156] (socketcan_interface) StdoutLine: {'line': b'\n'}
+[0.388306] (socketcan_interface) StdoutLine: {'line': b'[0/1] Re-running CMake...\x1b[K\n'}
+[0.400199] (-) TimerEvent: {}
+[0.405250] (socketcan_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.425322] (socketcan_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.471769] (socketcan_interface) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.491649] (socketcan_interface) StdoutLine: {'line': b'-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.500299] (-) TimerEvent: {}
+[0.600559] (-) TimerEvent: {}
+[0.700874] (-) TimerEvent: {}
+[0.741653] (socketcan_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.746332] (socketcan_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.800975] (-) TimerEvent: {}
+[0.901246] (-) TimerEvent: {}
+[1.001602] (-) TimerEvent: {}
+[1.101938] (-) TimerEvent: {}
+[1.202258] (-) TimerEvent: {}
+[1.302567] (-) TimerEvent: {}
+[1.402858] (-) TimerEvent: {}
+[1.503144] (-) TimerEvent: {}
+[1.603443] (-) TimerEvent: {}
+[1.703735] (-) TimerEvent: {}
+[1.804048] (-) TimerEvent: {}
+[1.904386] (-) TimerEvent: {}
+[2.004700] (-) TimerEvent: {}
+[2.105008] (-) TimerEvent: {}
+[2.205328] (-) TimerEvent: {}
+[2.305669] (-) TimerEvent: {}
+[2.405987] (-) TimerEvent: {}
+[2.506285] (-) TimerEvent: {}
+[2.606590] (-) TimerEvent: {}
+[2.706906] (-) TimerEvent: {}
+[2.807256] (-) TimerEvent: {}
+[2.907598] (-) TimerEvent: {}
+[3.007906] (-) TimerEvent: {}
+[3.108229] (-) TimerEvent: {}
+[3.208549] (-) TimerEvent: {}
+[3.308871] (-) TimerEvent: {}
+[3.409231] (-) TimerEvent: {}
+[3.509577] (-) TimerEvent: {}
+[3.609924] (-) TimerEvent: {}
+[3.710254] (-) TimerEvent: {}
+[3.810628] (-) TimerEvent: {}
+[3.910954] (-) TimerEvent: {}
+[4.011293] (-) TimerEvent: {}
+[4.111643] (-) TimerEvent: {}
+[4.211974] (-) TimerEvent: {}
+[4.312292] (-) TimerEvent: {}
+[4.412604] (-) TimerEvent: {}
+[4.512984] (-) TimerEvent: {}
+[4.613327] (-) TimerEvent: {}
+[4.713598] (-) TimerEvent: {}
+[4.813949] (-) TimerEvent: {}
+[4.914329] (-) TimerEvent: {}
+[5.014658] (-) TimerEvent: {}
+[5.115017] (-) TimerEvent: {}
+[5.215387] (-) TimerEvent: {}
+[5.315705] (-) TimerEvent: {}
+[5.416038] (-) TimerEvent: {}
+[5.516356] (-) TimerEvent: {}
+[5.616665] (-) TimerEvent: {}
+[5.716987] (-) TimerEvent: {}
+[5.817277] (-) TimerEvent: {}
+[5.917550] (-) TimerEvent: {}
+[6.017822] (-) TimerEvent: {}
+[6.118118] (-) TimerEvent: {}
+[6.218398] (-) TimerEvent: {}
+[6.318709] (-) TimerEvent: {}
+[6.419041] (-) TimerEvent: {}
+[6.519373] (-) TimerEvent: {}
+[6.619689] (-) TimerEvent: {}
+[6.720040] (-) TimerEvent: {}
+[6.725120] (socketcan_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.786401] (socketcan_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[6.789553] (socketcan_interface) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[6.809815] (socketcan_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[6.820141] (-) TimerEvent: {}
+[6.920381] (-) TimerEvent: {}
+[7.020691] (-) TimerEvent: {}
+[7.121015] (-) TimerEvent: {}
+[7.221330] (-) TimerEvent: {}
+[7.321667] (-) TimerEvent: {}
+[7.422007] (-) TimerEvent: {}
+[7.522323] (-) TimerEvent: {}
+[7.622638] (-) TimerEvent: {}
+[7.722963] (-) TimerEvent: {}
+[7.823270] (-) TimerEvent: {}
+[7.923584] (-) TimerEvent: {}
+[8.023889] (-) TimerEvent: {}
+[8.124197] (-) TimerEvent: {}
+[8.224477] (-) TimerEvent: {}
+[8.305801] (socketcan_interface) StderrLine: {'line': b'CMake Error at CMakeLists.txt:11 (find_package):\n'}
+[8.306048] (socketcan_interface) StderrLine: {'line': b'  By not providing "Find../socketcan_interface_msg.cmake" in\n'}
+[8.306117] (socketcan_interface) StderrLine: {'line': b'  CMAKE_MODULE_PATH this project has asked CMake to find a package\n'}
+[8.306170] (socketcan_interface) StderrLine: {'line': b'  configuration file provided by "../socketcan_interface_msg", but CMake did\n'}
+[8.306218] (socketcan_interface) StderrLine: {'line': b'  not find one.\n'}
+[8.306265] (socketcan_interface) StderrLine: {'line': b'\n'}
+[8.306311] (socketcan_interface) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[8.306358] (socketcan_interface) StderrLine: {'line': b'  "../socketcan_interface_msg" with any of the following names:\n'}
+[8.306403] (socketcan_interface) StderrLine: {'line': b'\n'}
+[8.306448] (socketcan_interface) StderrLine: {'line': b'    ../socketcan_interface_msgConfig.cmake\n'}
+[8.306494] (socketcan_interface) StderrLine: {'line': b'    ../socketcan_interface_msg-config.cmake\n'}
+[8.306539] (socketcan_interface) StderrLine: {'line': b'\n'}
+[8.306664] (socketcan_interface) StderrLine: {'line': b'  Add the installation prefix of "../socketcan_interface_msg" to\n'}
+[8.306717] (socketcan_interface) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "../socketcan_interface_msg_DIR" to a directory\n'}
+[8.306764] (socketcan_interface) StderrLine: {'line': b'  containing one of the above files.  If "../socketcan_interface_msg"\n'}
+[8.306809] (socketcan_interface) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[8.306856] (socketcan_interface) StderrLine: {'line': b'  installed.\n'}
+[8.306923] (socketcan_interface) StderrLine: {'line': b'\n'}
+[8.306989] (socketcan_interface) StderrLine: {'line': b'\n'}
+[8.307038] (socketcan_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.307091] (socketcan_interface) StdoutLine: {'line': b'See also "/home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/CMakeOutput.log".\n'}
+[8.307141] (socketcan_interface) StdoutLine: {'line': b'See also "/home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/CMakeError.log".\n'}
+[8.311378] (socketcan_interface) StdoutLine: {'line': b'\x1b[31mFAILED: \x1b[0mbuild.ninja \n'}
+[8.311531] (socketcan_interface) StdoutLine: {'line': b'/usr/bin/cmake -S/home/ryuzot/ros2_ws/src/socketcan_interface -B/home/ryuzot/ros2_ws/build/socketcan_interface\n'}
+[8.311584] (socketcan_interface) StderrLine: {'line': b"ninja: error: rebuilding 'build.ninja': subcommand failed\n"}
+[8.313215] (socketcan_interface) CommandEnded: {'returncode': 1}
+[8.324629] (-) TimerEvent: {}
+[8.424979] (-) TimerEvent: {}
+[8.525247] (-) TimerEvent: {}
+[8.625530] (-) TimerEvent: {}
+[8.725810] (-) TimerEvent: {}
+[8.826118] (-) TimerEvent: {}
+[8.926421] (-) TimerEvent: {}
+[9.026737] (-) TimerEvent: {}
+[9.127020] (-) TimerEvent: {}
+[9.227327] (-) TimerEvent: {}
+[9.327639] (-) TimerEvent: {}
+[9.427981] (-) TimerEvent: {}
+[9.528275] (-) TimerEvent: {}
+[9.628532] (-) TimerEvent: {}
+[9.728791] (-) TimerEvent: {}
+[9.829067] (-) TimerEvent: {}
+[9.929356] (-) TimerEvent: {}
+[10.029689] (-) TimerEvent: {}
+[10.130029] (-) TimerEvent: {}
+[10.230337] (-) TimerEvent: {}
+[10.330622] (-) TimerEvent: {}
+[10.430900] (-) TimerEvent: {}
+[10.531294] (-) TimerEvent: {}
+[10.631653] (-) TimerEvent: {}
+[10.731963] (-) TimerEvent: {}
+[10.832313] (-) TimerEvent: {}
+[10.932607] (-) TimerEvent: {}
+[11.032921] (-) TimerEvent: {}
+[11.133253] (-) TimerEvent: {}
+[11.233573] (-) TimerEvent: {}
+[11.333885] (-) TimerEvent: {}
+[11.434214] (-) TimerEvent: {}
+[11.534536] (-) TimerEvent: {}
+[11.634926] (-) TimerEvent: {}
+[11.735256] (-) TimerEvent: {}
+[11.835575] (-) TimerEvent: {}
+[11.935952] (-) TimerEvent: {}
+[12.036297] (-) TimerEvent: {}
+[12.136629] (-) TimerEvent: {}
+[12.236953] (-) TimerEvent: {}
+[12.337277] (-) TimerEvent: {}
+[12.437606] (-) TimerEvent: {}
+[12.537937] (-) TimerEvent: {}
+[12.638259] (-) TimerEvent: {}
+[12.738577] (-) TimerEvent: {}
+[12.838901] (-) TimerEvent: {}
+[12.939213] (-) TimerEvent: {}
+[13.039534] (-) TimerEvent: {}
+[13.140129] (-) TimerEvent: {}
+[13.240595] (-) TimerEvent: {}
+[13.340949] (-) TimerEvent: {}
+[13.441283] (-) TimerEvent: {}
+[13.541699] (-) TimerEvent: {}
+[13.642018] (-) TimerEvent: {}
+[13.742356] (-) TimerEvent: {}
+[13.842683] (-) TimerEvent: {}
+[13.943001] (-) TimerEvent: {}
+[14.043329] (-) TimerEvent: {}
+[14.143682] (-) TimerEvent: {}
+[14.244011] (-) TimerEvent: {}
+[14.344344] (-) TimerEvent: {}
+[14.444665] (-) TimerEvent: {}
+[14.544989] (-) TimerEvent: {}
+[14.645284] (-) TimerEvent: {}
+[14.745535] (-) TimerEvent: {}
+[14.845808] (-) TimerEvent: {}
+[14.946103] (-) TimerEvent: {}
+[15.046419] (-) TimerEvent: {}
+[15.146749] (-) TimerEvent: {}
+[15.247072] (-) TimerEvent: {}
+[15.347387] (-) TimerEvent: {}
+[15.447733] (-) TimerEvent: {}
+[15.548071] (-) TimerEvent: {}
+[15.648399] (-) TimerEvent: {}
+[15.748731] (-) TimerEvent: {}
+[15.849052] (-) TimerEvent: {}
+[15.949365] (-) TimerEvent: {}
+[16.049692] (-) TimerEvent: {}
+[16.150018] (-) TimerEvent: {}
+[16.250328] (-) TimerEvent: {}
+[16.350664] (-) TimerEvent: {}
+[16.451005] (-) TimerEvent: {}
+[16.551330] (-) TimerEvent: {}
+[16.651701] (-) TimerEvent: {}
+[16.752018] (-) TimerEvent: {}
+[16.852332] (-) TimerEvent: {}
+[16.937691] (socketcan_interface) JobEnded: {'identifier': 'socketcan_interface', 'rc': 1}
+[16.948237] (main_executor) JobSkipped: {'identifier': 'main_executor'}
+[16.948300] (-) EventReactorShutdown: {}

@@ -1,0 +1,79 @@
+[0.291s] Invoking command in '/home/ryuzot/ros2_ws/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_ws/src/main_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_ws/install/main_executor
+[0.301s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.317s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.354s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.595s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.598s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[7.432s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.473s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[7.475s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[7.490s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[7.605s] -- Found socketcan_interface: 0.0.0 (/home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake)
+[7.615s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[7.659s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.659s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.659s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ryuzot/ros2_ws/src/main_executor/include>
+[7.659s] -- Configured cppcheck exclude dirs and/or files: 
+[7.660s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.660s] -- Configured cpplint exclude dirs and/or files: 
+[7.660s] -- Added test 'lint_cmake' to check CMake code style
+[7.661s] -- Added test 'uncrustify' to check C / C++ code style
+[7.661s] -- Configured uncrustify additional arguments: 
+[7.661s] -- Added test 'xmllint' to check XML markup files
+[7.663s] -- Configuring done
+[7.667s] -- Generating done
+[7.668s] -- Build files have been written to: /home/ryuzot/ros2_ws/build/main_executor
+[7.673s] Invoked command in '/home/ryuzot/ros2_ws/build/main_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_ws/src/main_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_ws/install/main_executor
+[7.675s] Invoking command in '/home/ryuzot/ros2_ws/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_ws/build/main_executor -- -j24 -l24
+[7.682s] 
+[7.683s] [0/1] Re-running CMake...[K
+[7.694s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[7.709s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.747s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.992s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.995s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[14.907s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.948s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[14.949s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[14.963s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[15.078s] -- Found socketcan_interface: 0.0.0 (/home/ryuzot/ros2_ws/install/socketcan_interface/share/socketcan_interface/cmake)
+[15.087s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[15.134s] -- Added test 'copyright' to check source files copyright and LICENSE
+[15.135s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[15.135s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ryuzot/ros2_ws/src/main_executor/include>
+[15.135s] -- Configured cppcheck exclude dirs and/or files: 
+[15.135s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[15.136s] -- Configured cpplint exclude dirs and/or files: 
+[15.136s] -- Added test 'lint_cmake' to check CMake code style
+[15.136s] -- Added test 'uncrustify' to check C / C++ code style
+[15.137s] -- Configured uncrustify additional arguments: 
+[15.137s] -- Added test 'xmllint' to check XML markup files
+[15.138s] -- Configuring done
+[15.143s] -- Generating done
+[15.144s] -- Build files have been written to: /home/ryuzot/ros2_ws/build/main_executor
+[15.151s] 
+[16.968s] [0/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[16.968s] [1/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[17.170s] [1/2] Linking CXX executable main_exec[K
+[17.170s] [2/2] Linking CXX executable main_exec[K
+[17.173s] Invoked command in '/home/ryuzot/ros2_ws/build/main_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_ws/build/main_executor -- -j24 -l24
+[17.187s] Invoking command in '/home/ryuzot/ros2_ws/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_ws/build/main_executor
+[17.191s] -- Install configuration: ""
+[17.191s] -- Execute custom install script
+[17.192s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/lib/main_executor/main_exec
+[17.198s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/ament_index/resource_index/package_run_dependencies/main_executor
+[17.203s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/ament_index/resource_index/parent_prefix_path/main_executor
+[17.209s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/ament_prefix_path.sh
+[17.214s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/ament_prefix_path.dsv
+[17.219s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/path.sh
+[17.225s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/environment/path.dsv
+[17.232s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.bash
+[17.241s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.sh
+[17.247s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.zsh
+[17.252s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/local_setup.dsv
+[17.258s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/package.dsv
+[17.264s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/ament_index/resource_index/packages/main_executor
+[17.270s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/cmake/main_executorConfig.cmake
+[17.276s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/cmake/main_executorConfig-version.cmake
+[17.282s] -- Symlinking: /home/ryuzot/ros2_ws/install/main_executor/share/main_executor/package.xml
+[17.292s] Invoked command in '/home/ryuzot/ros2_ws/build/main_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_ws/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_ws/build/main_executor

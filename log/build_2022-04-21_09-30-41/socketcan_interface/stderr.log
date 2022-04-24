@@ -1,0 +1,20 @@
+CMake Error at CMakeLists.txt:11 (find_package):
+  By not providing "Find../socketcan_interface_msg.cmake" in
+  CMAKE_MODULE_PATH this project has asked CMake to find a package
+  configuration file provided by "../socketcan_interface_msg", but CMake did
+  not find one.
+
+  Could not find a package configuration file provided by
+  "../socketcan_interface_msg" with any of the following names:
+
+    ../socketcan_interface_msgConfig.cmake
+    ../socketcan_interface_msg-config.cmake
+
+  Add the installation prefix of "../socketcan_interface_msg" to
+  CMAKE_PREFIX_PATH or set "../socketcan_interface_msg_DIR" to a directory
+  containing one of the above files.  If "../socketcan_interface_msg"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

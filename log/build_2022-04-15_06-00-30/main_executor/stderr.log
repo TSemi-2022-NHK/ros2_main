@@ -1,0 +1,2 @@
+CMake Error: The source directory "/home/ryuzot/ros2_ws/build/main_executor/socketcan_interface_msg" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.

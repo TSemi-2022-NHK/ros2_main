@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from socketcan_interface_msg/msg/SocketcanIF.msg
+// generated code does not contain a copyright notice
+
+
+module socketcan_interface_msg {
+  module msg {
+    typedef uint8 uint8__8[8];
+    struct SocketcanIF {
+      int16 canid;
+
+      uint8 candlc;
+
+      uint8__8 candata;
+    };
+  };
+};

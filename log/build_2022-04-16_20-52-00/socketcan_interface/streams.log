@@ -1,0 +1,65 @@
+[0.230s] Invoking command in '/home/ryuzot/ros2_ws/.build/socketcan_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/ryuzot/ros2_ws/src/socketcan_interface -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_ws/install/socketcan_interface
+[0.484s] -- The C compiler identification is GNU 9.4.0
+[0.881s] -- The CXX compiler identification is GNU 9.4.0
+[1.094s] -- Check for working C compiler: /usr/bin/cc
+[1.220s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.221s] -- Detecting C compiler ABI info
+[1.389s] -- Detecting C compiler ABI info - done
+[1.398s] -- Detecting C compile features
+[1.398s] -- Detecting C compile features - done
+[1.400s] -- Check for working CXX compiler: /usr/bin/c++
+[1.578s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.579s] -- Detecting CXX compiler ABI info
+[1.756s] -- Detecting CXX compiler ABI info - done
+[1.765s] -- Detecting CXX compile features
+[1.765s] -- Detecting CXX compile features - done
+[1.767s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.785s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.785s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.841s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.097s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.102s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.993s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.447s] -- Found FastRTPS: /opt/ros/galactic/include  
+[8.815s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.865s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[8.867s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[8.882s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.888s] -- Looking for pthread.h
+[9.059s] -- Looking for pthread.h - found
+[9.059s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.233s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.233s] -- Looking for pthread_create in pthreads
+[9.398s] -- Looking for pthread_create in pthreads - not found
+[9.398s] -- Looking for pthread_create in pthread
+[9.571s] -- Looking for pthread_create in pthread - found
+[9.572s] -- Found Threads: TRUE  
+[9.692s] -- Found socketcan_interface_msg: 0.0.0 (/home/ryuzot/ros2_ws/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake)
+[9.699s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[9.751s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.751s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.751s] -- Configured cppcheck include dirs: 
+[9.752s] -- Configured cppcheck exclude dirs and/or files: 
+[9.752s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.752s] -- Configured cpplint exclude dirs and/or files: 
+[9.753s] -- Added test 'lint_cmake' to check CMake code style
+[9.753s] -- Added test 'uncrustify' to check C / C++ code style
+[9.753s] -- Configured uncrustify additional arguments: 
+[9.754s] -- Added test 'xmllint' to check XML markup files
+[9.756s] -- Configuring done
+[9.760s] -- Generating done
+[9.761s] -- Build files have been written to: /home/ryuzot/ros2_ws/.build/socketcan_interface
+[9.768s] Invoked command in '/home/ryuzot/ros2_ws/.build/socketcan_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/ryuzot/ros2_ws/src/socketcan_interface -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_ws/install/socketcan_interface
+[9.770s] Invoking command in '/home/ryuzot/ros2_ws/.build/socketcan_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/ryuzot/ros2_ws/.build/socketcan_interface -- -j24 -l24
+[9.777s] 
+[11.462s] [0/2] Building CXX object CMakeFiles/publisher.dir/src/socketcan_interface_publisher.cpp.o[K
+[11.463s] [1/2] Building CXX object CMakeFiles/publisher.dir/src/socketcan_interface_publisher.cpp.o[K
+[11.599s] [1/2] Linking CXX executable publisher[K
+[11.600s] [2/2] Linking CXX executable publisher[K
+[11.600s] [31mFAILED: [0mpublisher 
+[11.600s] : && /usr/bin/c++     CMakeFiles/publisher.dir/src/socketcan_interface_publisher.cpp.o  -o publisher  -Wl,-rpath,/opt/ros/galactic/lib:/home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib:  /opt/ros/galactic/lib/librclcpp.so  /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_introspection_c.so  /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_c.so  /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_introspection_cpp.so  /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_typesupport_cpp.so  -lpthread  /opt/ros/galactic/lib/libament_index_cpp.so  /opt/ros/galactic/lib/liblibstatistics_collector.so  /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so  /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so  /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so  /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so  /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so  /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_introspection_c.so  /opt/ros/galactic/lib/libstd_msgs__rosidl_generator_c.so  /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_c.so  /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so  /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_cpp.so  /opt/ros/galactic/lib/librcl.so  /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so  /opt/ros/galactic/lib/librcl_interfaces__rosidl_generator_c.so  /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_c.so  /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so  /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_cpp.so  /opt/ros/galactic/lib/librmw_implementation.so  /opt/ros/galactic/lib/librcl_logging_spdlog.so  /opt/ros/galactic/lib/librcl_logging_interface.so  /opt/ros/galactic/lib/librcl_yaml_param_parser.so  /opt/ros/galactic/lib/librmw.so  /opt/ros/galactic/lib/libyaml.so  /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so  /opt/ros/galactic/lib/librosgraph_msgs__rosidl_generator_c.so  /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_c.so  /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so  /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_cpp.so  /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so  /opt/ros/galactic/lib/libstatistics_msgs__rosidl_generator_c.so  /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_c.so  /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so  /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_cpp.so  /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so  /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_generator_c.so  /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_c.so  /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so  /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so  /opt/ros/galactic/lib/libtracetools.so  /home/ryuzot/ros2_ws/install/socketcan_interface_msg/lib/libsocketcan_interface_msg__rosidl_generator_c.so  /opt/ros/galactic/lib/librosidl_typesupport_introspection_cpp.so  /opt/ros/galactic/lib/librosidl_typesupport_introspection_c.so  /opt/ros/galactic/lib/librosidl_typesupport_cpp.so  /opt/ros/galactic/lib/librosidl_typesupport_c.so  /opt/ros/galactic/lib/librcpputils.so  /opt/ros/galactic/lib/librosidl_runtime_c.so  /opt/ros/galactic/lib/librcutils.so  -ldl && :
+[11.600s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[11.600s] (.text+0x24): undefined reference to `main'
+[11.600s] collect2: error: ld returned 1 exit status
+[11.600s] ninja: build stopped: subcommand failed.
+[11.601s] Invoked command in '/home/ryuzot/ros2_ws/.build/socketcan_interface' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/ryuzot/ros2_ws/.build/socketcan_interface -- -j24 -l24

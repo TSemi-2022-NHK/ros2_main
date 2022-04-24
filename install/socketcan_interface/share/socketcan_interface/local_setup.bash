@@ -1,0 +1,1 @@
+/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.bash
