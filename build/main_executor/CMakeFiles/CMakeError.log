@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/ryuzot/ros2_ws/build/main_executor/CMakeFiles/CMakeTmp
+Change Dir: /home/ryuzot/ros2_main/build/main_executor/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_25422 && [1/2] Building C object CMakeFiles/cmTC_25422.dir/src.c.o
-[2/2] Linking C executable cmTC_25422
-FAILED: cmTC_25422 
-: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_25422.dir/src.c.o  -o cmTC_25422   && :
-/usr/bin/ld: CMakeFiles/cmTC_25422.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/ninja cmTC_23942 && [1/2] Building C object CMakeFiles/cmTC_23942.dir/src.c.o
+[2/2] Linking C executable cmTC_23942
+FAILED: cmTC_23942 
+: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_23942.dir/src.c.o  -o cmTC_23942   && :
+/usr/bin/ld: CMakeFiles/cmTC_23942.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
@@ -34,12 +34,12 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/ryuzot/ros2_ws/build/main_executor/CMakeFiles/CMakeTmp
+Change Dir: /home/ryuzot/ros2_main/build/main_executor/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_4077f && [1/2] Building C object CMakeFiles/cmTC_4077f.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_4077f
-FAILED: cmTC_4077f 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_4077f.dir/CheckFunctionExists.c.o  -o cmTC_4077f  -lpthreads && :
+Run Build Command(s):/usr/bin/ninja cmTC_ebc85 && [1/2] Building C object CMakeFiles/cmTC_ebc85.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ebc85
+FAILED: cmTC_ebc85 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_ebc85.dir/CheckFunctionExists.c.o  -o cmTC_ebc85  -lpthreads && :
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.

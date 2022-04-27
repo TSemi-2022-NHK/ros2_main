@@ -1,8 +1,8 @@
-# Install script for directory: /home/ryuzot/ros2_ws/src/socketcan_interface
+# Install script for directory: /home/ryuzot/ros2_main/src/socketcan_interface
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ryuzot/ros2_ws/install/socketcan_interface")
+  set(CMAKE_INSTALL_PREFIX "/home/ryuzot/ros2_main/install/socketcan_interface")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/libsocketcan_interface_node.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/ryuzot/ros2_main/build/socketcan_interface/libsocketcan_interface_node.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake"
-         "/home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/Export/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake")
+         "/home/ryuzot/ros2_main/build/socketcan_interface/CMakeFiles/Export/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/socketcan_interface/cmake/export_socketcan_interfaceExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -58,9 +58,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socketcan_interface/cmake" TYPE FILE FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/Export/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socketcan_interface/cmake" TYPE FILE FILES "/home/ryuzot/ros2_main/build/socketcan_interface/CMakeFiles/Export/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socketcan_interface/cmake" TYPE FILE FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/Export/share/socketcan_interface/cmake/export_socketcan_interfaceExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socketcan_interface/cmake" TYPE FILE FILES "/home/ryuzot/ros2_main/build/socketcan_interface/CMakeFiles/Export/share/socketcan_interface/cmake/export_socketcan_interfaceExport-noconfig.cmake")
   endif()
 endif()
 
@@ -72,5 +72,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ryuzot/ros2_ws/build/socketcan_interface/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ryuzot/ros2_main/build/socketcan_interface/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

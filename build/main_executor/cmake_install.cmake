@@ -1,8 +1,8 @@
-# Install script for directory: /home/ryuzot/ros2_ws/src/main_executor
+# Install script for directory: /home/ryuzot/ros2_main/src/main_executor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ryuzot/ros2_ws/install/main_executor")
+  set(CMAKE_INSTALL_PREFIX "/home/ryuzot/ros2_main/install/main_executor")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/ryuzot/ros2_main/build/main_executor/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ryuzot/ros2_ws/build/main_executor/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ryuzot/ros2_main/build/main_executor/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,1 +1,1 @@
-/home/ryuzot/ros2_ws/src/socketcan_interface_msg/msg/SocketcanIF.msg
+/home/ryuzot/ros2_main/src/socketcan_interface_msg/msg/SocketcanIF.msg
