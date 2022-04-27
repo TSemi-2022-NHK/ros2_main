@@ -40,5 +40,12 @@ namespace socketcan_interface {
     };
 }
 
+namespace can_utils{
+    double convert_byte_to_double(uint8_t (&bytes)[8]);
+    float convert_byte_to_float(uint8_t (&bytes)[4]);
+    void convert_float_to_byte(float data, uint8_t (&bytes)[4]);
+    void convert_double_to_byte(double data, uint8_t (&bytes)[8]);
+}
+
 
 #endif //BUILD_SOCKETCAN_INTERFACE_NODE_HPP
