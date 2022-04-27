@@ -1,2 +1,4 @@
-install/*/
+/install/*/
+/build/
+/build
 build/
