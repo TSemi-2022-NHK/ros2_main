@@ -1,0 +1,4 @@
+source;share/bno055_io/local_setup.bash
+source;share/bno055_io/local_setup.dsv
+source;share/bno055_io/local_setup.sh
+source;share/bno055_io/local_setup.zsh

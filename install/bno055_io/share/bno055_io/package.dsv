@@ -1,0 +1,11 @@
+source;share/bno055_io/hook/cmake_prefix_path.ps1
+source;share/bno055_io/hook/cmake_prefix_path.dsv
+source;share/bno055_io/hook/cmake_prefix_path.sh
+source;share/bno055_io/hook/ld_library_path_lib.ps1
+source;share/bno055_io/hook/ld_library_path_lib.dsv
+source;share/bno055_io/hook/ld_library_path_lib.sh
+source;share/bno055_io/local_setup.bash
+source;share/bno055_io/local_setup.dsv
+source;share/bno055_io/local_setup.ps1
+source;share/bno055_io/local_setup.sh
+source;share/bno055_io/local_setup.zsh

@@ -1,0 +1,10 @@
+
+[0/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[1/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[31mFAILED: [0mCMakeFiles/main_exec.dir/src/main.cpp.o 
+/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/ryuzot/ros2_main/src/main_executor/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface/include -isystem /opt/ros/galactic/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface_msg/include -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/main_exec.dir/src/main.cpp.o -MF CMakeFiles/main_exec.dir/src/main.cpp.o.d -o CMakeFiles/main_exec.dir/src/main.cpp.o -c /home/ryuzot/ros2_main/src/main_executor/src/main.cpp
+/home/ryuzot/ros2_main/src/main_executor/src/main.cpp:7:10: fatal error: socketcan_interface/socketcan_interface_node.hpp: No such file or directory
+    7 | #include "socketcan_interface/socketcan_interface_node.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
