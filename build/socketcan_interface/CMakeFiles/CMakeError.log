@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/CMakeTmp
+Change Dir: /home/ryuzot/ros2_main/build/socketcan_interface/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_19843 && [1/2] Building C object CMakeFiles/cmTC_19843.dir/src.c.o
-[2/2] Linking C executable cmTC_19843
-FAILED: cmTC_19843 
-: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_19843.dir/src.c.o  -o cmTC_19843   && :
-/usr/bin/ld: CMakeFiles/cmTC_19843.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/ninja cmTC_e8a51 && [1/2] Building C object CMakeFiles/cmTC_e8a51.dir/src.c.o
+[2/2] Linking C executable cmTC_e8a51
+FAILED: cmTC_e8a51 
+: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_e8a51.dir/src.c.o  -o cmTC_e8a51   && :
+/usr/bin/ld: CMakeFiles/cmTC_e8a51.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
@@ -34,44 +34,15 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/CMakeTmp
+Change Dir: /home/ryuzot/ros2_main/build/socketcan_interface/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_148ab && [1/2] Building C object CMakeFiles/cmTC_148ab.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_148ab
-FAILED: cmTC_148ab 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_148ab.dir/CheckFunctionExists.c.o  -o cmTC_148ab  -lpthreads && :
+Run Build Command(s):/usr/bin/ninja cmTC_21e0c && [1/2] Building C object CMakeFiles/cmTC_21e0c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_21e0c
+FAILED: cmTC_21e0c 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_21e0c.dir/CheckFunctionExists.c.o  -o cmTC_21e0c  -lpthreads && :
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
 
 
 
-Determining if the strtod_l exist failed with the following output:
-Change Dir: /home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_016aa && [1/2] Building C object CMakeFiles/cmTC_016aa.dir/CheckSymbolExists.c.o
-FAILED: CMakeFiles/cmTC_016aa.dir/CheckSymbolExists.c.o 
-/usr/bin/cc    -o CMakeFiles/cmTC_016aa.dir/CheckSymbolExists.c.o   -c CheckSymbolExists.c
-CheckSymbolExists.c: In function ‘main’:
-CheckSymbolExists.c:8:19: error: ‘strtod_l’ undeclared (first use in this function); did you mean ‘strtoull’?
-    8 |   return ((int*)(&strtod_l))[argc];
-      |                   ^~~~~~~~
-      |                   strtoull
-CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-ninja: build stopped: subcommand failed.
-
-
-File /home/ryuzot/ros2_ws/build/socketcan_interface/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdlib.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef strtod_l
-  return ((int*)(&strtod_l))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}

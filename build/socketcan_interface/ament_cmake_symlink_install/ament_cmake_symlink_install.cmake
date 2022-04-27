@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ryuzot/ros2_ws/install/socketcan_interface/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ryuzot/ros2_main/install/socketcan_interface/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ryuzot/ros2_ws/install/socketcan_interface/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ryuzot/ros2_main/install/socketcan_interface/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ryuzot/ros2_ws/install/socketcan_interface/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ryuzot/ros2_main/install/socketcan_interface/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/ryuzot/ros2_ws/install/socketcan_interface/${destination}")
+      set(destination "/home/ryuzot/ros2_main/install/socketcan_interface/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,64 +311,64 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(FILES "/opt/ros/galactic/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/opt/ros/galactic/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/opt/ros/galactic/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/socketcan_interface/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
 
 # install(FILES "/opt/ros/galactic/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/opt/ros/galactic/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/opt/ros/galactic/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/socketcan_interface/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
 
-# install(DIRECTORY "include" "DESTINATION" "include")
-ament_cmake_symlink_install_directory("/home/ryuzot/ros2_ws/src/socketcan_interface" DIRECTORY "include" "DESTINATION" "include")
+# install(DIRECTORY "include/" "DESTINATION" "include")
+ament_cmake_symlink_install_directory("/home/ryuzot/ros2_main/src/socketcan_interface" DIRECTORY "include/" "DESTINATION" "include")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/socketcan_interface/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/socketcan_interface/environment")
 
 # install(FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/socketcan_interface/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/socketcan_interface/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/socketcan_interface/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/socketcan_interface/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/socketcan_interface")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/socketcan_interface")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/socketcan_interface")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/socketcan_interface")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/socketcan_interface")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/socketcan_interface")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/socketcan_interface")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/socketcan_interface")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/socketcan_interface")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/socketcan_interface")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/socketcan_interface")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/socketcan_interface")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/socketcan_interface")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/socketcan_interface")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/socketcan_interface")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/socketcan_interface")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/socketcan_interface")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/socketcan_interface")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/socketcan_interface")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/socketcan_interface")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/packages/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/packages/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/packages/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_index/share/ament_index/resource_index/packages/socketcan_interface" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/socketcan_interface/cmake")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig.cmake" "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig-version.cmake" "DESTINATION" "share/socketcan_interface/cmake")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig.cmake" "/home/ryuzot/ros2_ws/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig-version.cmake" "DESTINATION" "share/socketcan_interface/cmake")
+# install(FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig.cmake" "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig-version.cmake" "DESTINATION" "share/socketcan_interface/cmake")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig.cmake" "/home/ryuzot/ros2_main/build/socketcan_interface/ament_cmake_core/socketcan_interfaceConfig-version.cmake" "DESTINATION" "share/socketcan_interface/cmake")
 
-# install(FILES "/home/ryuzot/ros2_ws/src/socketcan_interface/package.xml" "DESTINATION" "share/socketcan_interface")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/socketcan_interface" FILES "/home/ryuzot/ros2_ws/src/socketcan_interface/package.xml" "DESTINATION" "share/socketcan_interface")
+# install(FILES "/home/ryuzot/ros2_main/src/socketcan_interface/package.xml" "DESTINATION" "share/socketcan_interface")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/socketcan_interface" FILES "/home/ryuzot/ros2_main/src/socketcan_interface/package.xml" "DESTINATION" "share/socketcan_interface")

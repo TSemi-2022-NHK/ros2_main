@@ -1,1 +1,1 @@
-/home/ryuzot/ros2_ws/build/socketcan_interface_msg/ament_cmake_core/socketcan_interface_msgConfig.cmake
+/home/ryuzot/ros2_main/build/socketcan_interface_msg/ament_cmake_core/socketcan_interface_msgConfig.cmake

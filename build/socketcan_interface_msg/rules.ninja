@@ -232,7 +232,7 @@ rule C_SHARED_LIBRARY_LINKER__socketcan_interface_msg__python
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake -S/home/ryuzot/ros2_ws/src/socketcan_interface_msg -B/home/ryuzot/ros2_ws/build/socketcan_interface_msg
+  command = /usr/bin/cmake -S/home/ryuzot/ros2_main/src/socketcan_interface_msg -B/home/ryuzot/ros2_main/build/socketcan_interface_msg
   description = Re-running CMake...
   generator = 1
 

@@ -1,1 +1,1 @@
-/home/ryuzot/ros2_ws/build/socketcan_interface_msg/ament_cmake_environment_hooks/local_setup.zsh
+/home/ryuzot/ros2_main/build/socketcan_interface_msg/ament_cmake_environment_hooks/local_setup.zsh

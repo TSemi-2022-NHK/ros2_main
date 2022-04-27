@@ -1,8 +1,8 @@
-# Install script for directory: /home/ryuzot/ros2_ws/build/socketcan_interface_msg/socketcan_interface_msg__py
+# Install script for directory: /home/ryuzot/ros2_main/build/socketcan_interface_msg/socketcan_interface_msg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ryuzot/ros2_ws/install/socketcan_interface_msg")
+  set(CMAKE_INSTALL_PREFIX "/home/ryuzot/ros2_main/install/socketcan_interface_msg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

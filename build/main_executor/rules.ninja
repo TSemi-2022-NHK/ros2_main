@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__main_exec
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake -S/home/ryuzot/ros2_ws/src/main_executor -B/home/ryuzot/ros2_ws/build/main_executor
+  command = /usr/bin/cmake -S/home/ryuzot/ros2_main/src/main_executor -B/home/ryuzot/ros2_main/build/main_executor
   description = Re-running CMake...
   generator = 1
 

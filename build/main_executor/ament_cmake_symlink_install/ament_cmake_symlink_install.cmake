@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ryuzot/ros2_ws/install/main_executor/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ryuzot/ros2_main/install/main_executor/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ryuzot/ros2_ws/install/main_executor/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ryuzot/ros2_main/install/main_executor/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ryuzot/ros2_ws/install/main_executor/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ryuzot/ros2_main/install/main_executor/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/ryuzot/ros2_ws/install/main_executor/${destination}")
+      set(destination "/home/ryuzot/ros2_main/install/main_executor/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,46 +311,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "main_exec" "DESTINATION" "lib/main_executor")
-include("/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/ryuzot/ros2_main/build/main_executor/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/main_executor" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/main_executor" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/main_executor" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/main_executor" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/main_executor" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/main_executor" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/main_executor" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/main_executor" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/main_executor/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/main_executor/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/main_executor/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/main_executor/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/main_executor/environment")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/main_executor/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/main_executor/environment")
 
 # install(FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/main_executor/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/main_executor/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/opt/ros/galactic/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/main_executor/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/main_executor/environment")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/main_executor/environment")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/main_executor/environment")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/main_executor/environment")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/main_executor")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/main_executor")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/main_executor")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/main_executor")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/main_executor")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/main_executor")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/main_executor")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/main_executor")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/main_executor")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/main_executor")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/main_executor")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/main_executor")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/main_executor")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/main_executor")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/main_executor")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/main_executor")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/main_executor")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/main_executor")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/main_executor")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/main_executor")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_index/share/ament_index/resource_index/packages/main_executor" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_index/share/ament_index/resource_index/packages/main_executor" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_index/share/ament_index/resource_index/packages/main_executor" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_index/share/ament_index/resource_index/packages/main_executor" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_core/main_executorConfig.cmake" "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_core/main_executorConfig-version.cmake" "DESTINATION" "share/main_executor/cmake")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_core/main_executorConfig.cmake" "/home/ryuzot/ros2_ws/build/main_executor/ament_cmake_core/main_executorConfig-version.cmake" "DESTINATION" "share/main_executor/cmake")
+# install(FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_core/main_executorConfig.cmake" "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_core/main_executorConfig-version.cmake" "DESTINATION" "share/main_executor/cmake")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_core/main_executorConfig.cmake" "/home/ryuzot/ros2_main/build/main_executor/ament_cmake_core/main_executorConfig-version.cmake" "DESTINATION" "share/main_executor/cmake")
 
-# install(FILES "/home/ryuzot/ros2_ws/src/main_executor/package.xml" "DESTINATION" "share/main_executor")
-ament_cmake_symlink_install_files("/home/ryuzot/ros2_ws/src/main_executor" FILES "/home/ryuzot/ros2_ws/src/main_executor/package.xml" "DESTINATION" "share/main_executor")
+# install(FILES "/home/ryuzot/ros2_main/src/main_executor/package.xml" "DESTINATION" "share/main_executor")
+ament_cmake_symlink_install_files("/home/ryuzot/ros2_main/src/main_executor" FILES "/home/ryuzot/ros2_main/src/main_executor/package.xml" "DESTINATION" "share/main_executor")

@@ -45,7 +45,7 @@ ament_export_dependencies(
 )
 
 install(
-        DIRECTORY include
+        DIRECTORY include/
         DESTINATION include
 )
 
