@@ -1,6 +1,0 @@
-{
-  "package_name": "socketcan_interface_msg",
-  "non_idl_tuples": [
-    "/home/ryuzot/ros2_main/src/socketcan_interface_msg:msg/SocketcanIF.msg"
-  ]
-}

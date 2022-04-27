@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/ryuzot/ros2_main/build/bno055_io",
-  "command": "/usr/bin/c++  -DBNO055_IO_BUILDING_LIBRARY -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\\\"bno055_io\\\" -Dbno055_io_node_EXPORTS -I/home/ryuzot/ros2_main/src/bno055_io/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface/include -isystem /opt/ros/galactic/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface_msg/include  -fPIC   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/bno055_io_node.dir/src/bno055_io_node.cpp.o -c /home/ryuzot/ros2_main/src/bno055_io/src/bno055_io_node.cpp",
-  "file": "/home/ryuzot/ros2_main/src/bno055_io/src/bno055_io_node.cpp"
-}
-]

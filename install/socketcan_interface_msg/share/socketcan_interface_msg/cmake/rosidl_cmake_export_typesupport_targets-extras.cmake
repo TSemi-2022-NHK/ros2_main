@@ -1,1 +1,0 @@
-/home/ryuzot/ros2_main/build/socketcan_interface_msg/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

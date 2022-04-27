@@ -1,1 +1,0 @@
-/home/ryuzot/ros2_main/src/socketcan_interface/include/socketcan_interface/visibility.h

@@ -1,3 +1,0 @@
-/home/ryuzot/ros2_main/install/bno055_io/lib/libbno055_io_node.so
-/home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/export_bno055_ioExport.cmake
-/home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/export_bno055_ioExport-noconfig.cmake

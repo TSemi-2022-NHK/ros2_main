@@ -1,3 +1,0 @@
-/home/ryuzot/ros2_main/install/socketcan_interface/lib/libsocketcan_interface_node.a
-/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake
-/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/export_socketcan_interfaceExport-noconfig.cmake

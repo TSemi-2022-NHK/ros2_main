@@ -1,1 +1,0 @@
-/home/ryuzot/ros2_main/src/bno055_io/include/bno055_io/bno055_io_node.hpp

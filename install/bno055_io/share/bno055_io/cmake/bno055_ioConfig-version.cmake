@@ -1,1 +1,0 @@
-/home/ryuzot/ros2_main/build/bno055_io/ament_cmake_core/bno055_ioConfig-version.cmake
