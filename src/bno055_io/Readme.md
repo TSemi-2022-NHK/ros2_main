@@ -12,3 +12,4 @@ bno055 -> stm32 -> can -> sokcetcan_interface_node -> this
 | 0x0332 | quat x(double) |
 | 0x0333 | quat y(double) |
 | 0x0334 | quat z(double) |
+| 0x0335 | quat w(double) |
