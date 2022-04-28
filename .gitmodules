@@ -1,6 +1,6 @@
-[submodule "csm"]
-	path = csm
+[submodule "src/csm"]
+	path = src/csm
 	url = https://github.com/AlexKaravaev/csm
-[submodule "slam_toolbox"]
-	path = slam_toolbox
+[submodule "src/slam_toolbox"]
+	path = src/slam_toolbox
 	url = https://github.com/SteveMacenski/slam_toolbox
