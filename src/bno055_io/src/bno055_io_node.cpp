@@ -21,7 +21,7 @@ namespace bno055_io {
 
         // init imu msg type.
         // disable cov
-        Axinit = AyInit = AzInit = GxInit = GyInit = GzInit = QxInit = QyInit = QzInit = false;
+        Ainit = GInit = QInit = false;
 
         imu_msg = std::make_shared<sensor_msgs::msg::Imu>();
         for(int i=0; i < 9; ++i){
@@ -35,52 +35,24 @@ namespace bno055_io {
                 [this] { _publisher_callback(); }
         );
         
-        _subscriber_AccelX = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(AccelX_CanId)),
+        _subscriber_Accel = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
+                std::string("can_rx_" + std::to_string(Accel_CanId)),
                 _qos,
-                std::bind(&Bno055Io::_subscriber_callback_AccelX, this, std::placeholders::_1));
-        _subscriber_AccelY = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(AccelY_CanId)),
-                _qos,
-                std::bind(&Bno055Io::_subscriber_callback_AccelY, this, std::placeholders::_1));
-        _subscriber_AccelZ = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(AccelZ_CanId)),
-                _qos,
-                std::bind(&Bno055Io::_subscriber_callback_AccelZ, this, std::placeholders::_1));
+                std::bind(&Bno055Io::_subscriber_callback_Accel, this, std::placeholders::_1));
 
-        _subscriber_GyroX = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(GyroX_CanId)),
+        _subscriber_Gyro = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
+                std::string("can_rx_" + std::to_string(Gyro_CanId)),
                 _qos,
-                std::bind(&Bno055Io::_subscriber_callback_GyroX, this, std::placeholders::_1));
-        _subscriber_GyroY = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(GyroY_CanId)),
-                _qos,
-                std::bind(&Bno055Io::_subscriber_callback_GyroY, this, std::placeholders::_1));
-        _subscriber_GyroZ = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(GyroZ_CanId)),
-                _qos,
-                std::bind(&Bno055Io::_subscriber_callback_GyroZ, this, std::placeholders::_1));
+                std::bind(&Bno055Io::_subscriber_callback_Gyro, this, std::placeholders::_1));
 
-        _subscriber_QuatX = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(QuatX_CanId)),
+        _subscriber_Quat = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
+                std::string("can_rx_" + std::to_string(Quat_CanId)),
                 _qos,
-                std::bind(&Bno055Io::_subscriber_callback_QuatX, this, std::placeholders::_1));
-        _subscriber_QuatY = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(QuatY_CanId)),
-                _qos,
-                std::bind(&Bno055Io::_subscriber_callback_QuatY, this, std::placeholders::_1));
-        _subscriber_QuatZ = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(QuatZ_CanId)),
-                _qos,
-                std::bind(&Bno055Io::_subscriber_callback_QuatZ, this, std::placeholders::_1));
-        _subscriber_QuatW = this->create_subscription<socketcan_interface_msg::msg::SocketcanIF>(
-                std::string("can_rx_" + std::to_string(QuatW_CanId)),
-                _qos,
-                std::bind(&Bno055Io::_subscriber_callback_QuatW, this, std::placeholders::_1));
+                std::bind(&Bno055Io::_subscriber_callback_Quat, this, std::placeholders::_1));
     }
 
     void Bno055Io::_publisher_callback() {
-        if (Axinit and AyInit and AzInit and GxInit and GyInit and GzInit and QxInit and QyInit and QzInit and QwInit){
+        if (Ainit and GInit and QInit){
             //if all data is read at least once, publish imu_msg
             bno055_imu_publisher->publish(*imu_msg);
         }else{
@@ -89,108 +61,71 @@ namespace bno055_io {
         }
     }
 
-    void Bno055Io::_subscriber_callback_AccelX(socketcan_interface_msg::msg::SocketcanIF msg) {
-        Axinit = true;
-        uint8_t linX_as_bytes[8];
+    void Bno055Io::_subscriber_callback_Accel(socketcan_interface_msg::msg::SocketcanIF msg) {
+        Ainit = true;
+        uint8_t lin_as_bytes[8];
         for (int i = 0; i < 8; ++i) {
-            linX_as_bytes[i] = msg.candata[i];
+            lin_as_bytes[i] = msg.candata[i];
         }
-        double linX_as_double = can_utils::convert_byte_to_double(linX_as_bytes);
-        imu_msg->linear_acceleration.set__x(linX_as_double);
+        uint8_t tmp_arr[2];
+
+        tmp_arr[0] = lin_as_bytes[0];
+        tmp_arr[1] = lin_as_bytes[1];
+        imu_msg->linear_acceleration.set__x( can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+
+        tmp_arr[0] = lin_as_bytes[2];
+        tmp_arr[1] = lin_as_bytes[3];
+        imu_msg->linear_acceleration.set__y(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+
+        tmp_arr[0] = lin_as_bytes[0];
+        tmp_arr[1] = lin_as_bytes[1];
+        imu_msg->linear_acceleration.set__z(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
     }
 
-    void Bno055Io::_subscriber_callback_AccelY(socketcan_interface_msg::msg::SocketcanIF msg) {
-        AyInit = true;
-        uint8_t linY_as_bytes[8];
+    void Bno055Io::_subscriber_callback_Gyro(socketcan_interface_msg::msg::SocketcanIF msg) {
+        GInit = true;
+        uint8_t Gyro_as_bytes[8];
         for (int i = 0; i < 8; ++i) {
-            linY_as_bytes[i] = msg.candata[i];
+            Gyro_as_bytes[i] = msg.candata[i];
         }
-        double linY_as_double = can_utils::convert_byte_to_double(linY_as_bytes);
-        imu_msg->linear_acceleration.set__y(linY_as_double);
+        uint8_t tmp_arr[2];
+
+        tmp_arr[0] = Gyro_as_bytes[0];
+        tmp_arr[1] = Gyro_as_bytes[1];
+        imu_msg->angular_velocity.set__x(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+
+        tmp_arr[0] = Gyro_as_bytes[2];
+        tmp_arr[1] = Gyro_as_bytes[3];
+        imu_msg->angular_velocity.set__y(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+
+        tmp_arr[0] = Gyro_as_bytes[4];
+        tmp_arr[1] = Gyro_as_bytes[5];
+        imu_msg->angular_velocity.set__z(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
     }
 
-    void Bno055Io::_subscriber_callback_AccelZ(socketcan_interface_msg::msg::SocketcanIF msg) {
-        AzInit = true;
-        uint8_t linZ_as_bytes[8];
+    void Bno055Io::_subscriber_callback_Quat(socketcan_interface_msg::msg::SocketcanIF msg) {
+        QInit = true;
+        uint8_t Quat_as_bytes[8];
         for (int i = 0; i < 8; ++i) {
-            linZ_as_bytes[i] = msg.candata[i];
+            Quat_as_bytes[i] = msg.candata[i];
         }
-        double linZ_as_double = can_utils::convert_byte_to_double(linZ_as_bytes);
-        imu_msg->linear_acceleration.set__z(linZ_as_double);
-    }
+        uint8_t tmp_arr[2];
 
-    void Bno055Io::_subscriber_callback_GyroX(socketcan_interface_msg::msg::SocketcanIF msg) {
-        GxInit = true;
-        uint8_t GyroX_as_bytes[8];
-        for (int i = 0; i < 8; ++i) {
-            GyroX_as_bytes[i] = msg.candata[i];
-        }
-        double GyroX_as_double = can_utils::convert_byte_to_double(GyroX_as_bytes);
-        imu_msg->angular_velocity.set__x(GyroX_as_double);
-    }
+        tmp_arr[0] = Quat_as_bytes[0];
+        tmp_arr[1] = Quat_as_bytes[1];
+        imu_msg->orientation.set__x(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
 
-    void Bno055Io::_subscriber_callback_GyroY(socketcan_interface_msg::msg::SocketcanIF msg) {
-        GyInit = true;
-        uint8_t GyroY_as_bytes[8];
-        for (int i = 0; i < 8; ++i) {
-            GyroY_as_bytes[i] = msg.candata[i];
-        }
-        double GyroY_as_double = can_utils::convert_byte_to_double(GyroY_as_bytes);
-        imu_msg->angular_velocity.set__x(GyroY_as_double);
+        tmp_arr[0] = Quat_as_bytes[2];
+        tmp_arr[1] = Quat_as_bytes[3];
+        imu_msg->orientation.set__y(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
 
-    }
+        tmp_arr[0] = Quat_as_bytes[4];
+        tmp_arr[1] = Quat_as_bytes[5];
+        imu_msg->orientation.set__z(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
 
-    void Bno055Io::_subscriber_callback_GyroZ(socketcan_interface_msg::msg::SocketcanIF msg) {
-        GzInit = true;
-        uint8_t GyroZ_as_bytes[8];
-        for (int i = 0; i < 8; ++i) {
-            GyroZ_as_bytes[i] = msg.candata[i];
-        }
-        double GyroZ_as_double = can_utils::convert_byte_to_double(GyroZ_as_bytes);
-        imu_msg->angular_velocity.set__z(GyroZ_as_double);
-
-    }
-
-    void Bno055Io::_subscriber_callback_QuatX(socketcan_interface_msg::msg::SocketcanIF msg) {
-        QxInit = true;
-        uint8_t QuatX_as_bytes[8];
-        for (int i = 0; i < 8; ++i) {
-            QuatX_as_bytes[i] = msg.candata[i];
-        }
-        double QuatX_as_double = can_utils::convert_byte_to_double(QuatX_as_bytes);
-        imu_msg->orientation.set__x(QuatX_as_double);
-    }
-
-    void Bno055Io::_subscriber_callback_QuatY(socketcan_interface_msg::msg::SocketcanIF msg) {
-        QyInit = true;
-        uint8_t QuatY_as_bytes[8];
-        for (int i = 0; i < 8; ++i) {
-            QuatY_as_bytes[i] = msg.candata[i];
-        }
-        double QuatY_as_double = can_utils::convert_byte_to_double(QuatY_as_bytes);
-        imu_msg->orientation.set__y(QuatY_as_double);
-
-    }
-
-    void Bno055Io::_subscriber_callback_QuatZ(socketcan_interface_msg::msg::SocketcanIF msg) {
-        QzInit = true;
-        uint8_t QuatZ_as_bytes[8];
-        for (int i = 0; i < 8; ++i) {
-            QuatZ_as_bytes[i] = msg.candata[i];
-        }
-        double QuatZ_as_double = can_utils::convert_byte_to_double(QuatZ_as_bytes);
-        imu_msg->orientation.set__z(QuatZ_as_double);
-
-    }
-
-    void Bno055Io::_subscriber_callback_QuatW(socketcan_interface_msg::msg::SocketcanIF msg) {
-        QwInit = true;
-        uint8_t QuatW_as_bytes[8];
-        for (int i = 0; i < 8; ++i) {
-            QuatW_as_bytes[i] = msg.candata[i];
-        }
-        double QuatW_as_double = can_utils::convert_byte_to_double(QuatW_as_bytes);
-        imu_msg->orientation.set__z(QuatW_as_double);
+        tmp_arr[0] = Quat_as_bytes[6];
+        tmp_arr[1] = Quat_as_bytes[7];
+        imu_msg->orientation.set__w(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
     }
 
 
