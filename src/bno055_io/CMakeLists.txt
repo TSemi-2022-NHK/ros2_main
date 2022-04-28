@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_ros REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(socketcan_interface REQUIRED)
 
 add_library(bno055_io_node src/bno055_io_node.cpp)
@@ -19,12 +20,20 @@ target_include_directories(bno055_io_node PUBLIC
 ament_target_dependencies(
   bno055_io_node
   "rclcpp"
+  "sensor_msgs"
   "socketcan_interface"
 )
 
 # Causes the visibility macros to use dllexport rather than dllimport,
 # which is appropriate when building the dll but not consuming it.
 target_compile_definitions(bno055_io_node PRIVATE "BNO055_IO_BUILDING_LIBRARY")
+
+ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
+ament_export_dependencies(
+        rclcpp
+        sensor_msgs
+        socketcan_interface
+)
 
 install(
   DIRECTORY include/

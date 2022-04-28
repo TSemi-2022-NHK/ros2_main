@@ -30,6 +30,8 @@ namespace bno055_io {
             imu_msg->linear_acceleration_covariance[i] = 0.0;
         }
 
+        bno055_imu_publisher = this->create_publisher<sensor_msgs::msg::Imu>("bno055", _qos);
+
         _pub_timer = this->create_wall_timer(
                 std::chrono::milliseconds(interval_ms),
                 [this] { _publisher_callback(); }

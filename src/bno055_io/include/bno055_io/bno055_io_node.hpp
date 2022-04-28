@@ -2,15 +2,15 @@
 #define BNO055_IO__BNO055_IO_NODE_HPP_
 
 #include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/imu.hpp>
 
+#include "sensor_msgs/msg/imu.hpp"
 #include "bno055_io/visibility_control.h"
 #include "socketcan_interface_msg/msg/socketcan_if.hpp"
 #include "visibility_control.h"
 
 #define Accel_CanId 0x0312
 
-#define Gyro_CanId 0x0312
+#define Gyro_CanId 0x0313
 
 #define Quat_CanId 0x0314
 
@@ -31,7 +31,7 @@ namespace bno055_io {
         rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr bno055_imu_publisher;
 
         std::shared_ptr<sensor_msgs::msg::Imu> imu_msg;
-        rclcpp::QoS _qos = rclcpp::QoS(1).best_effort();
+        rclcpp::QoS _qos = rclcpp::SensorDataQoS();
 
         void _publisher_callback();
 
