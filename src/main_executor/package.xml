@@ -12,6 +12,7 @@
   <test_depend>rclcpp</test_depend>
 
   <depend>socketcan_interface</depend>
+  <depend>bno055_io</depend>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

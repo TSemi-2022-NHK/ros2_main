@@ -1,1 +1,0 @@
-/home/ryuzot/ros2_ws/src/socketcan_interface/include/socketcan_interface/socketcan_interface_node.hpp
