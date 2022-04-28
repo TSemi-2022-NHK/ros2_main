@@ -1,0 +1,12 @@
+[0.290s] Invoking command in '/home/ryuzot/ros2_main/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/main_executor -- -j24 -l24
+[0.297s] 
+[0.387s] [0/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[0.387s] [1/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[0.387s] [31mFAILED: [0mCMakeFiles/main_exec.dir/src/main.cpp.o 
+[0.387s] /usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/ryuzot/ros2_main/src/main_executor/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface/include -isystem /opt/ros/galactic/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface_msg/include -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/main_exec.dir/src/main.cpp.o -MF CMakeFiles/main_exec.dir/src/main.cpp.o.d -o CMakeFiles/main_exec.dir/src/main.cpp.o -c /home/ryuzot/ros2_main/src/main_executor/src/main.cpp
+[0.387s] /home/ryuzot/ros2_main/src/main_executor/src/main.cpp:7:10: fatal error: socketcan_interface/socketcan_interface_node.hpp: No such file or directory
+[0.387s]     7 | #include "socketcan_interface/socketcan_interface_node.hpp"
+[0.388s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.388s] compilation terminated.
+[0.388s] ninja: build stopped: subcommand failed.
+[0.389s] Invoked command in '/home/ryuzot/ros2_main/build/main_executor' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/main_executor -- -j24 -l24

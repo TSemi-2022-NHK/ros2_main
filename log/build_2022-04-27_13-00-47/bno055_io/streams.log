@@ -1,0 +1,91 @@
+[0.370s] Invoking command in '/home/ryuzot/ros2_main/build/bno055_io': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/bno055_io -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/bno055_io
+[0.700s] -- The C compiler identification is GNU 9.4.0
+[1.188s] -- The CXX compiler identification is GNU 9.4.0
+[1.421s] -- Check for working C compiler: /usr/bin/cc
+[1.601s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.602s] -- Detecting C compiler ABI info
+[1.806s] -- Detecting C compiler ABI info - done
+[1.817s] -- Detecting C compile features
+[1.817s] -- Detecting C compile features - done
+[1.820s] -- Check for working CXX compiler: /usr/bin/c++
+[2.030s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.031s] -- Detecting CXX compiler ABI info
+[2.249s] -- Detecting CXX compiler ABI info - done
+[2.258s] -- Detecting CXX compile features
+[2.259s] -- Detecting CXX compile features - done
+[2.261s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.282s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.282s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.334s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.357s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[2.364s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.646s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.653s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[4.390s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.399s] -- Found FastRTPS: /opt/ros/galactic/include  
+[9.947s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.014s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[10.016s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[10.032s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[10.033s] -- Looking for pthread.h
+[10.206s] -- Looking for pthread.h - found
+[10.206s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.403s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[10.403s] -- Looking for pthread_create in pthreads
+[10.571s] -- Looking for pthread_create in pthreads - not found
+[10.571s] -- Looking for pthread_create in pthread
+[10.750s] -- Looking for pthread_create in pthread - found
+[10.751s] -- Found Threads: TRUE  
+[10.896s] -- Found socketcan_interface: 0.0.0 (/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake)
+[10.911s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[10.978s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.979s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.979s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ryuzot/ros2_main/src/bno055_io/include>
+[10.979s] -- Configured cppcheck exclude dirs and/or files: 
+[10.980s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.980s] -- Configured cpplint exclude dirs and/or files: 
+[10.981s] -- Added test 'lint_cmake' to check CMake code style
+[10.982s] -- Added test 'uncrustify' to check C / C++ code style
+[10.982s] -- Configured uncrustify additional arguments: 
+[10.983s] -- Added test 'xmllint' to check XML markup files
+[10.989s] -- Configuring done
+[10.997s] -- Generating done
+[10.999s] -- Build files have been written to: /home/ryuzot/ros2_main/build/bno055_io
+[11.008s] Invoked command in '/home/ryuzot/ros2_main/build/bno055_io' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/bno055_io -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/bno055_io
+[11.010s] Invoking command in '/home/ryuzot/ros2_main/build/bno055_io': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/bno055_io -- -j24 -l24
+[11.018s] 
+[11.034s] [0/2] Building CXX object CMakeFiles/bno055_io_node.dir/src/bno055_io_node.cpp.o[K
+[11.034s] [1/2] Building CXX object CMakeFiles/bno055_io_node.dir/src/bno055_io_node.cpp.o[K
+[11.260s] [1/2] Linking CXX shared library libbno055_io_node.so[K
+[11.260s] [2/2] Linking CXX shared library libbno055_io_node.so[K
+[11.262s] Invoked command in '/home/ryuzot/ros2_main/build/bno055_io' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/bno055_io -- -j24 -l24
+[11.278s] Invoking command in '/home/ryuzot/ros2_main/build/bno055_io': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_main/build/bno055_io
+[11.283s] -- Install configuration: ""
+[11.283s] -- Execute custom install script
+[11.285s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/include/bno055_io/bno055_io_node.hpp
+[11.291s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/include/bno055_io/visibility_control.h
+[11.297s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/environment/library_path.sh
+[11.302s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/environment/library_path.dsv
+[11.311s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/ament_index/resource_index/package_run_dependencies/bno055_io
+[11.317s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/ament_index/resource_index/parent_prefix_path/bno055_io
+[11.322s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/environment/ament_prefix_path.sh
+[11.328s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/environment/ament_prefix_path.dsv
+[11.335s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/environment/path.sh
+[11.340s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/environment/path.dsv
+[11.348s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/local_setup.bash
+[11.354s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/local_setup.sh
+[11.359s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/local_setup.zsh
+[11.366s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/local_setup.dsv
+[11.372s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/package.dsv
+[11.378s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/ament_index/resource_index/packages/bno055_io
+[11.385s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.391s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/ament_cmake_export_libraries-extras.cmake
+[11.398s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/ament_cmake_export_targets-extras.cmake
+[11.403s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/bno055_ioConfig.cmake
+[11.409s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/bno055_ioConfig-version.cmake
+[11.414s] -- Symlinking: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/package.xml
+[11.420s] -- Installing: /home/ryuzot/ros2_main/install/bno055_io/lib/libbno055_io_node.so
+[11.421s] -- Set runtime path of "/home/ryuzot/ros2_main/install/bno055_io/lib/libbno055_io_node.so" to ""
+[11.421s] -- Installing: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/export_bno055_ioExport.cmake
+[11.421s] -- Installing: /home/ryuzot/ros2_main/install/bno055_io/share/bno055_io/cmake/export_bno055_ioExport-noconfig.cmake
+[11.423s] Invoked command in '/home/ryuzot/ros2_main/build/bno055_io' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_main/build/bno055_io

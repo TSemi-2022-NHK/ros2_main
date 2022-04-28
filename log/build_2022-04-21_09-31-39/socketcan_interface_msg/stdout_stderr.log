@@ -1,7 +1,0 @@
-
-[0/1] Re-running CMake...[K
-CMake Error: The source directory "/home/ryuzot/ros2_ws/src/socketcan_interface_msg" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
-[31mFAILED: [0mbuild.ninja 
-/usr/bin/cmake -S/home/ryuzot/ros2_ws/src/socketcan_interface_msg -B/home/ryuzot/ros2_ws/build/socketcan_interface_msg
-ninja: error: rebuilding 'build.ninja': subcommand failed

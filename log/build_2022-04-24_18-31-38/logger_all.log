@@ -1,0 +1,276 @@
+[0.488s] DEBUG:colcon:Command line arguments: ['/home/ryuzot/.local/bin/colcon', 'build', '--cmake-args', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja', '--allow-overriding', 'main_executor', 'socketcan_interface', 'socketcan_interface_msg', '--log-level', 'debug', 'build', '--symlink-install']
+[0.488s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=['main_executor', 'socketcan_interface', 'socketcan_interface_msg', '--log-level', 'debug', 'build'], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja'], cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff5071705b0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=24, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff5071705b0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff506ec7df0>)
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.498s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ryuzot/ros2_main'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extension 'ignore_ament_install'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extensions ['colcon_pkg']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extension 'colcon_pkg'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extensions ['colcon_meta']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extension 'colcon_meta'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extensions ['ros']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_executor) by extension 'ros'
+[0.509s] DEBUG:colcon.colcon_core.package_identification:Package 'src/main_executor' with type 'ros.ament_cmake' and name 'main_executor'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extension 'ignore_ament_install'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extensions ['colcon_pkg']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extension 'colcon_pkg'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extensions ['colcon_meta']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extension 'colcon_meta'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extensions ['ros']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface) by extension 'ros'
+[0.510s] DEBUG:colcon.colcon_core.package_identification:Package 'src/socketcan_interface' with type 'ros.ament_cmake' and name 'socketcan_interface'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extension 'colcon_meta'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extensions ['ros']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/socketcan_interface_msg) by extension 'ros'
+[0.510s] DEBUG:colcon.colcon_core.package_identification:Package 'src/socketcan_interface_msg' with type 'ros.ament_cmake' and name 'socketcan_interface_msg'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extensions ['ignore', 'ignore_ament_install']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'ignore'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'ignore_ament_install'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extensions ['colcon_pkg']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'colcon_pkg'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extensions ['colcon_meta']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'colcon_meta'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extensions ['ros']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'ros'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extensions ['cmake', 'python']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'cmake'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'python'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extensions ['python_setup_py']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(tools) by extension 'python_setup_py'
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja']'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'cmake_target' from command line to 'None'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.535s] DEBUG:colcon.colcon_core.verb:Building package 'socketcan_interface_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ryuzot/ros2_main/build/socketcan_interface_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ryuzot/ros2_main/install/socketcan_interface_msg', 'merge_install': False, 'path': '/home/ryuzot/ros2_main/src/socketcan_interface_msg', 'symlink_install': True, 'test_result_base': None}
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja']'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'cmake_target' from command line to 'None'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'socketcan_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.539s] DEBUG:colcon.colcon_core.verb:Building package 'socketcan_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ryuzot/ros2_main/build/socketcan_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ryuzot/ros2_main/install/socketcan_interface', 'merge_install': False, 'path': '/home/ryuzot/ros2_main/src/socketcan_interface', 'symlink_install': True, 'test_result_base': None}
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja']'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'cmake_target' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'cmake_clean_first' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'cmake_force_configure' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'ament_cmake_args' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'main_executor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.544s] DEBUG:colcon.colcon_core.verb:Building package 'main_executor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ryuzot/ros2_main/build/main_executor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-G', 'Ninja'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ryuzot/ros2_main/install/main_executor', 'merge_install': False, 'path': '/home/ryuzot/ros2_main/src/main_executor', 'symlink_install': True, 'test_result_base': None}
+[0.547s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ryuzot/ros2_main/install/socketcan_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.547s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ryuzot/ros2_main/install/socketcan_interface_msg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.547s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ryuzot/ros2_main/install/socketcan_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.547s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ryuzot/ros2_main/install/socketcan_interface_msg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.553s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.561s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.561s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ryuzot/ros2_main/src/socketcan_interface_msg' with build type 'ament_cmake'
+[0.561s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ryuzot/ros2_main/src/socketcan_interface_msg'
+[0.567s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/ryuzot/ros2_main/src/socketcan_interface_msg -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/socketcan_interface_msg
+[15.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/ryuzot/ros2_main/src/socketcan_interface_msg -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/socketcan_interface_msg
+[15.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/ryuzot/ros2_main/build/socketcan_interface_msg -- -j24 -l24
+[17.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/ryuzot/ros2_main/build/socketcan_interface_msg -- -j24 -l24
+[17.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/ryuzot/ros2_main/build/socketcan_interface_msg
+[17.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(socketcan_interface_msg)
+[17.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/ryuzot/ros2_main/build/socketcan_interface_msg
+[17.853s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg' for CMake module files
+[17.854s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg' for CMake config files
+[17.854s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface_msg', 'cmake_prefix_path')
+[17.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/cmake_prefix_path.ps1'
+[17.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/cmake_prefix_path.dsv'
+[17.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/cmake_prefix_path.sh'
+[17.860s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib'
+[17.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface_msg', 'ld_library_path_lib')
+[17.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/ld_library_path_lib.ps1'
+[17.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/ld_library_path_lib.dsv'
+[17.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/ld_library_path_lib.sh'
+[17.864s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/bin'
+[17.864s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/pkgconfig/socketcan_interface_msg.pc'
+[17.864s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages'
+[17.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface_msg', 'pythonpath')
+[17.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/pythonpath.ps1'
+[17.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/pythonpath.dsv'
+[17.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/pythonpath.sh'
+[17.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.ps1'
+[17.871s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.dsv'
+[17.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.sh'
+[17.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.bash'
+[17.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.zsh'
+[17.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/colcon-core/packages/socketcan_interface_msg)
+[17.889s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(socketcan_interface_msg)
+[17.893s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg' for CMake module files
+[17.893s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg' for CMake config files
+[17.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface_msg', 'cmake_prefix_path')
+[17.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/cmake_prefix_path.ps1'
+[17.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/cmake_prefix_path.dsv'
+[17.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/cmake_prefix_path.sh'
+[17.898s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib'
+[17.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface_msg', 'ld_library_path_lib')
+[17.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/ld_library_path_lib.ps1'
+[17.901s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/ld_library_path_lib.dsv'
+[17.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/ld_library_path_lib.sh'
+[17.901s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/bin'
+[17.901s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/pkgconfig/socketcan_interface_msg.pc'
+[17.901s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages'
+[17.901s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface_msg', 'pythonpath')
+[17.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/pythonpath.ps1'
+[17.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/pythonpath.dsv'
+[17.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/hook/pythonpath.sh'
+[17.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.ps1'
+[17.908s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.dsv'
+[17.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.sh'
+[17.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.bash'
+[17.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/package.zsh'
+[17.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/colcon-core/packages/socketcan_interface_msg)
+[17.910s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ryuzot/ros2_main/src/socketcan_interface' with build type 'ament_cmake'
+[17.910s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ryuzot/ros2_main/src/socketcan_interface'
+[17.914s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.914s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/home/ryuzot/ros2_main/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/socketcan_interface -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/socketcan_interface
+[27.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface' returned '0': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/home/ryuzot/ros2_main/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/socketcan_interface -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/socketcan_interface
+[27.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/home/ryuzot/ros2_main/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/socketcan_interface -- -j24 -l24
+[32.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface' returned '0': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/home/ryuzot/ros2_main/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/socketcan_interface -- -j24 -l24
+[32.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/home/ryuzot/ros2_main/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_main/build/socketcan_interface
+[33.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(socketcan_interface)
+[33.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface' returned '0': CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/home/ryuzot/ros2_main/install/socketcan_interface:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --install /home/ryuzot/ros2_main/build/socketcan_interface
+[33.141s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface' for CMake module files
+[33.143s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface' for CMake config files
+[33.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface', 'cmake_prefix_path')
+[33.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/hook/cmake_prefix_path.ps1'
+[33.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/hook/cmake_prefix_path.dsv'
+[33.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/hook/cmake_prefix_path.sh'
+[33.149s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/lib'
+[33.149s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/bin'
+[33.149s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/lib/pkgconfig/socketcan_interface.pc'
+[33.149s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/lib/python3.8/site-packages'
+[33.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.ps1'
+[33.154s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.dsv'
+[33.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.sh'
+[33.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.bash'
+[33.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.zsh'
+[33.155s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ryuzot/ros2_main/install/socketcan_interface/share/colcon-core/packages/socketcan_interface)
+[33.174s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(socketcan_interface)
+[33.177s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface' for CMake module files
+[33.178s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface' for CMake config files
+[33.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('socketcan_interface', 'cmake_prefix_path')
+[33.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/hook/cmake_prefix_path.ps1'
+[33.181s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/hook/cmake_prefix_path.dsv'
+[33.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/hook/cmake_prefix_path.sh'
+[33.181s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/lib'
+[33.182s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/bin'
+[33.182s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/lib/pkgconfig/socketcan_interface.pc'
+[33.182s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/socketcan_interface/lib/python3.8/site-packages'
+[33.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.ps1'
+[33.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.dsv'
+[33.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.sh'
+[33.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.bash'
+[33.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.zsh'
+[33.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ryuzot/ros2_main/install/socketcan_interface/share/colcon-core/packages/socketcan_interface)
+[33.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ryuzot/ros2_main/src/main_executor' with build type 'ament_cmake'
+[33.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ryuzot/ros2_main/src/main_executor'
+[33.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[33.189s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/main_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/main_executor
+[43.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/main_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/main_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/main_executor
+[43.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ryuzot/ros2_main/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/main_executor -- -j24 -l24
+[44.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ryuzot/ros2_main/build/main_executor' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/main_executor -- -j24 -l24
+[44.082s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(main_executor)
+[44.085s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/main_executor' for CMake module files
+[44.086s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/main_executor' for CMake config files
+[44.086s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/main_executor/bin'
+[44.086s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/main_executor/lib/pkgconfig/main_executor.pc'
+[44.086s] Level 1:colcon.colcon_core.environment:checking '/home/ryuzot/ros2_main/install/main_executor/lib/python3.8/site-packages'
+[44.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/main_executor/share/main_executor/package.ps1'
+[44.090s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ryuzot/ros2_main/install/main_executor/share/main_executor/package.dsv'
+[44.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/main_executor/share/main_executor/package.sh'
+[44.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/main_executor/share/main_executor/package.bash'
+[44.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/ryuzot/ros2_main/install/main_executor/share/main_executor/package.zsh'
+[44.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ryuzot/ros2_main/install/main_executor/share/colcon-core/packages/main_executor)
+[44.102s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[44.102s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[44.102s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[44.102s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[44.181s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[44.181s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[44.181s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[44.182s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[44.185s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[44.186s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[44.189s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ryuzot/ros2_main/install/local_setup.ps1'
+[44.190s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ryuzot/ros2_main/install/_local_setup_util_ps1.py'
+[44.190s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ryuzot/ros2_main/install/setup.ps1'
+[44.194s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ryuzot/ros2_main/install/local_setup.sh'
+[44.194s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ryuzot/ros2_main/install/_local_setup_util_sh.py'
+[44.195s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ryuzot/ros2_main/install/setup.sh'
+[44.198s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ryuzot/ros2_main/install/local_setup.bash'
+[44.198s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ryuzot/ros2_main/install/setup.bash'
+[44.201s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ryuzot/ros2_main/install/local_setup.zsh'
+[44.202s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ryuzot/ros2_main/install/setup.zsh'

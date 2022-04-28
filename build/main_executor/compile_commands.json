@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/ryuzot/ros2_ws/build/main_executor",
-  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/ryuzot/ros2_ws/src/main_executor/include -isystem /home/ryuzot/ros2_ws/install/socketcan_interface/include -isystem /opt/ros/galactic/include -isystem /home/ryuzot/ros2_ws/install/socketcan_interface_msg/include    -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/main_exec.dir/src/main.cpp.o -c /home/ryuzot/ros2_ws/src/main_executor/src/main.cpp",
-  "file": "/home/ryuzot/ros2_ws/src/main_executor/src/main.cpp"
-}
-]

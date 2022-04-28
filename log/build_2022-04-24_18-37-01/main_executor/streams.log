@@ -1,0 +1,64 @@
+[0.310s] Invoking command in '/home/ryuzot/ros2_main/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/main_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/main_executor
+[0.561s] -- The C compiler identification is GNU 9.4.0
+[0.949s] -- The CXX compiler identification is GNU 9.4.0
+[1.160s] -- Check for working C compiler: /usr/bin/cc
+[1.328s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.329s] -- Detecting C compiler ABI info
+[1.471s] -- Detecting C compiler ABI info - done
+[1.482s] -- Detecting C compile features
+[1.482s] -- Detecting C compile features - done
+[1.484s] -- Check for working CXX compiler: /usr/bin/c++
+[1.660s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.661s] -- Detecting CXX compiler ABI info
+[1.836s] -- Detecting CXX compiler ABI info - done
+[1.845s] -- Detecting CXX compile features
+[1.845s] -- Detecting CXX compile features - done
+[1.847s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.864s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.864s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.904s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.174s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.179s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[4.032s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.828s] -- Found FastRTPS: /opt/ros/galactic/include  
+[8.879s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.927s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[8.929s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[8.945s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.946s] -- Looking for pthread.h
+[9.122s] -- Looking for pthread.h - found
+[9.122s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.294s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.294s] -- Looking for pthread_create in pthreads
+[9.465s] -- Looking for pthread_create in pthreads - not found
+[9.465s] -- Looking for pthread_create in pthread
+[9.603s] -- Looking for pthread_create in pthread - found
+[9.604s] -- Found Threads: TRUE  
+[9.730s] -- Found socketcan_interface: 0.0.0 (/home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake)
+[9.742s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[9.797s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.797s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.797s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ryuzot/ros2_main/src/main_executor/include>
+[9.797s] -- Configured cppcheck exclude dirs and/or files: 
+[9.798s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.798s] -- Configured cpplint exclude dirs and/or files: 
+[9.798s] -- Added test 'lint_cmake' to check CMake code style
+[9.799s] -- Added test 'uncrustify' to check C / C++ code style
+[9.799s] -- Configured uncrustify additional arguments: 
+[9.800s] -- Added test 'xmllint' to check XML markup files
+[9.802s] -- Configuring done
+[9.806s] -- Generating done
+[9.808s] -- Build files have been written to: /home/ryuzot/ros2_main/build/main_executor
+[9.815s] Invoked command in '/home/ryuzot/ros2_main/build/main_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake /home/ryuzot/ros2_main/src/main_executor -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/main_executor
+[9.817s] Invoking command in '/home/ryuzot/ros2_main/build/main_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/main_executor -- -j24 -l24
+[9.824s] 
+[9.915s] [0/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[9.915s] [1/2] Building CXX object CMakeFiles/main_exec.dir/src/main.cpp.o[K
+[9.915s] [31mFAILED: [0mCMakeFiles/main_exec.dir/src/main.cpp.o 
+[9.915s] /usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/ryuzot/ros2_main/src/main_executor/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface/include -isystem /opt/ros/galactic/include -isystem /home/ryuzot/ros2_main/install/socketcan_interface_msg/include -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/main_exec.dir/src/main.cpp.o -MF CMakeFiles/main_exec.dir/src/main.cpp.o.d -o CMakeFiles/main_exec.dir/src/main.cpp.o -c /home/ryuzot/ros2_main/src/main_executor/src/main.cpp
+[9.915s] /home/ryuzot/ros2_main/src/main_executor/src/main.cpp:7:10: fatal error: socketcan_interface/socketcan_interface_node.hpp: No such file or directory
+[9.916s]     7 | #include "socketcan_interface/socketcan_interface_node.hpp"
+[9.916s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[9.916s] compilation terminated.
+[9.916s] ninja: build stopped: subcommand failed.
+[9.917s] Invoked command in '/home/ryuzot/ros2_main/build/main_executor' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:/home/ryuzot/ros2_main/install/socketcan_interface/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib /usr/bin/cmake --build /home/ryuzot/ros2_main/build/main_executor -- -j24 -l24

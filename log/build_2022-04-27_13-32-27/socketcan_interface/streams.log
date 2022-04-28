@@ -1,0 +1,97 @@
+[0.226s] Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface': AMENT_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ryuzot/ros2_main/src/socketcan_interface -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/socketcan_interface
+[0.465s] -- The C compiler identification is GNU 9.4.0
+[0.851s] -- The CXX compiler identification is GNU 9.4.0
+[1.055s] -- Check for working C compiler: /usr/bin/cc
+[1.217s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.217s] -- Detecting C compiler ABI info
+[1.348s] -- Detecting C compiler ABI info - done
+[1.357s] -- Detecting C compile features
+[1.357s] -- Detecting C compile features - done
+[1.359s] -- Check for working CXX compiler: /usr/bin/c++
+[1.529s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.529s] -- Detecting CXX compiler ABI info
+[1.670s] -- Detecting CXX compiler ABI info - done
+[1.679s] -- Detecting CXX compile features
+[1.680s] -- Detecting CXX compile features - done
+[1.681s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.699s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.699s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.745s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.763s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.026s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.032s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.810s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.382s] -- Found FastRTPS: /opt/ros/galactic/include  
+[8.336s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.403s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[8.408s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[8.429s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.431s] -- Looking for pthread.h
+[8.596s] -- Looking for pthread.h - found
+[8.596s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.746s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[8.746s] -- Looking for pthread_create in pthreads
+[8.909s] -- Looking for pthread_create in pthreads - not found
+[8.909s] -- Looking for pthread_create in pthread
+[9.072s] -- Looking for pthread_create in pthread - found
+[9.073s] -- Found Threads: TRUE  
+[9.226s] -- Found socketcan_interface_msg: 0.0.0 (/home/ryuzot/ros2_main/install/socketcan_interface_msg/share/socketcan_interface_msg/cmake)
+[9.238s] -- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[9.295s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.301s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.301s] -- Configured cppcheck include dirs: /home/ryuzot/ros2_main/src/socketcan_interface/include;$<BUILD_INTERFACE:/home/ryuzot/ros2_main/src/socketcan_interface/include>
+[9.301s] -- Configured cppcheck exclude dirs and/or files: 
+[9.306s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.306s] -- Configured cpplint exclude dirs and/or files: 
+[9.308s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.310s] -- Added test 'lint_cmake' to check CMake code style
+[9.311s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[9.316s] -- Added test 'uncrustify' to check C / C++ code style
+[9.316s] -- Configured uncrustify additional arguments: 
+[9.318s] -- Added test 'xmllint' to check XML markup files
+[9.321s] -- Configuring done
+[9.326s] -- Generating done
+[9.328s] -- Build files have been written to: /home/ryuzot/ros2_main/build/socketcan_interface
+[9.336s] Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface' returned '0': AMENT_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ryuzot/ros2_main/src/socketcan_interface -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ryuzot/ros2_main/install/socketcan_interface
+[9.338s] Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface': AMENT_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ryuzot/ros2_main/build/socketcan_interface -- -j24 -l24
+[9.346s] 
+[15.978s] [0/2] Building CXX object CMakeFiles/socketcan_interface_node.dir/src/socketcan_interface_node.cpp.o[K
+[15.978s] [1/2] Building CXX object CMakeFiles/socketcan_interface_node.dir/src/socketcan_interface_node.cpp.o[K
+[15.978s] /home/ryuzot/ros2_main/src/socketcan_interface/src/socketcan_interface_node.cpp: In constructor ‘socketcan_interface::SocketcanInterface::SocketcanInterface(const string&, const rclcpp::NodeOptions&)’:
+[15.978s] /home/ryuzot/ros2_main/src/socketcan_interface/src/socketcan_interface_node.cpp:21:63: warning: unused parameter ‘name_space’ [-Wunused-parameter]
+[15.978s]    21 |     SocketcanInterface::SocketcanInterface(const std::string &name_space, const rclcpp::NodeOptions &options)
+[15.978s]       |                                            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+[15.978s] 
+[16.041s] [1/2] Linking CXX static library libsocketcan_interface_node.a[K
+[16.041s] [2/2] Linking CXX static library libsocketcan_interface_node.a[K
+[16.042s] Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface' returned '0': AMENT_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ryuzot/ros2_main/build/socketcan_interface -- -j24 -l24
+[16.059s] Invoking command in '/home/ryuzot/ros2_main/build/socketcan_interface': AMENT_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ryuzot/ros2_main/build/socketcan_interface
+[16.064s] -- Install configuration: ""
+[16.064s] -- Execute custom install script
+[16.065s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/library_path.sh
+[16.072s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/library_path.dsv
+[16.079s] -- Up-to-date symlink: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/library_path.sh
+[16.079s] -- Up-to-date symlink: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/library_path.dsv
+[16.080s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/include/include/socketcan_interface/socketcan_interface_node.hpp
+[16.088s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/include/include/socketcan_interface/visibility.h
+[16.096s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/ament_index/resource_index/package_run_dependencies/socketcan_interface
+[16.103s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/ament_index/resource_index/parent_prefix_path/socketcan_interface
+[16.110s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/ament_prefix_path.sh
+[16.117s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/ament_prefix_path.dsv
+[16.123s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/path.sh
+[16.131s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/environment/path.dsv
+[16.138s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/local_setup.bash
+[16.147s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/local_setup.sh
+[16.157s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/local_setup.zsh
+[16.165s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/local_setup.dsv
+[16.172s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.dsv
+[16.181s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/ament_index/resource_index/packages/socketcan_interface
+[16.189s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/ament_cmake_export_targets-extras.cmake
+[16.198s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.207s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/socketcan_interfaceConfig.cmake
+[16.214s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/socketcan_interfaceConfig-version.cmake
+[16.221s] -- Symlinking: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/package.xml
+[16.228s] -- Installing: /home/ryuzot/ros2_main/install/socketcan_interface/lib/libsocketcan_interface_node.a
+[16.233s] -- Installing: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/export_socketcan_interfaceExport.cmake
+[16.233s] -- Installing: /home/ryuzot/ros2_main/install/socketcan_interface/share/socketcan_interface/cmake/export_socketcan_interfaceExport-noconfig.cmake
+[16.240s] Invoked command in '/home/ryuzot/ros2_main/build/socketcan_interface' returned '0': AMENT_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg:/opt/ros/galactic LD_LIBRARY_PATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryuzot/ros2_main/install/socketcan_interface_msg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ryuzot/ros2_main/build/socketcan_interface

@@ -1,1 +1,0 @@
-/home/ryuzot/ros2_ws/build/socketcan_interface_msg/rosidl_typesupport_introspection_cpp/socketcan_interface_msg/msg/detail/socketcan_if__rosidl_typesupport_introspection_cpp.hpp
