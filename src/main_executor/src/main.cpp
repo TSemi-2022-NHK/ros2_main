@@ -6,6 +6,7 @@
 #include <rcl/rcl.h>
 #include "socketcan_interface/socketcan_interface_node.hpp"
 #include "bno055_io/bno055_io_node.hpp"
+#include "tcp_joystick_handler/tcp_joystick_handler_node.hpp"
 #include <iostream>
 
 int main(int argc, char * argv[]){
@@ -16,6 +17,8 @@ int main(int argc, char * argv[]){
     exec.add_node(socketcan_node);
     auto bno055_node = std::make_shared<bno055_io::Bno055Io>();
     exec.add_node(bno055_node);
+    auto joystick_node = std::make_shared<tcp_joystick_handler::TcpJoystickHandlerNode>();
+    exec.add_node(joystick_node);
 
     exec.spin();
     rclcpp::shutdown();
