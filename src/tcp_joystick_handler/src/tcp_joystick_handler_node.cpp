@@ -13,7 +13,7 @@ namespace tcp_joystick_handler {
         _is_connected = false;
         _tcp.receive_setup();
 
-        declare_parameter("interval_ms", 50);
+        declare_parameter("interval_ms", 1);
         auto interval_ms = this->get_parameter("interval_ms").as_int();
         _msg = std::make_shared<std_msgs::msg::String>();
 
