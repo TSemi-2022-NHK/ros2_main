@@ -7,6 +7,7 @@ endif()
 find_package(rclcpp REQUIRED)
 find_package(bno055_io REQUIRED)
 find_package(socketcan_interface REQUIRED)
+find_package(tcp_joystick_handler REQUIRED)
 add_executable(main_exec
         src/main.cpp
         )
@@ -15,6 +16,7 @@ ament_target_dependencies(main_exec
         rclcpp
         socketcan_interface
         bno055_io
+        tcp_joystick_handler
         )
 
 target_include_directories(main_exec

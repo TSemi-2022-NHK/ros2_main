@@ -9,9 +9,9 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_ros REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(socketcan_interface REQUIRED)
+find_package(std_msgs REQUIRED)
 
-add_library(tcp_joystick_handler_node src/tcp_joystick_handler_node.cpp)
+add_library(tcp_joystick_handler_node src/tcp_joystick_handler_node.cpp src/tcp_nonblocking.cpp)
 target_compile_features(tcp_joystick_handler_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 target_include_directories(tcp_joystick_handler_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -19,7 +19,7 @@ target_include_directories(tcp_joystick_handler_node PUBLIC
 ament_target_dependencies(
   tcp_joystick_handler_node
   "rclcpp"
-  "socketcan_interface"
+  "std_msgs"
 )
 
 # Causes the visibility macros to use dllexport rather than dllimport,

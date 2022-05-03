@@ -13,6 +13,7 @@
 
   <depend>socketcan_interface</depend>
   <depend>bno055_io</depend>
+  <depend>tcp_joystick_handler</depend>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
