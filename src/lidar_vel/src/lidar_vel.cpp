@@ -1,49 +1,11 @@
-/*
- * Copyright (c) 2011, Ivan Dryanovski, William Morris
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- *     * Redistributions of source code must retain the above copyright
- *       notice, this list of conditions and the following disclaimer.
- *     * Redistributions in binary form must reproduce the above copyright
- *       notice, this list of conditions and the following disclaimer in the
- *       documentation and/or other materials provided with the distribution.
- *     * Neither the name of the CCNY Robotics Lab nor the names of its
- *       contributors may be used to endorse or promote products derived from
- *       this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- */
-
-/*  This package uses Canonical Scan Matcher [1], written by
- *  Andrea Censi
- *
- *  [1] A. Censi, "An ICP variant using a point-to-line metric"
- *  Proceedings of the IEEE International Conference
- *  on Robotics and Automation (ICRA), 2008
- */
-
-#include "ros2_laser_scan_matcher/laser_scan_matcher.h"
+#include "lidar_vel/lidar_vel.h"
  
 #undef min
 #undef max
 
-namespace scan_tools
+namespace lidar_vel
 {
-
-void LaserScanMatcher::add_parameter(
+void LidarVel::add_parameter(
     const std::string & name, const rclcpp::ParameterValue & default_value,
     const std::string & description, const std::string & additional_constraints,
     bool read_only)
@@ -59,14 +21,12 @@ void LaserScanMatcher::add_parameter(
   }
 
 
-LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(false)
+LidarVel::LidarVel() : Node("lidar_vel"), initialized_(false)
 {
   tf_buffer_ = std::make_shared<tf2_ros::Buffer>(get_clock());
   // Initiate parameters
 
-   RCLCPP_INFO(get_logger(), "Creating laser_scan_matcher");
-  add_parameter("publish_odom", rclcpp::ParameterValue(std::string("publish_odom")),
-    "If publish odometry from laser_scan. Empty if not, otherwise name of the topic");
+   RCLCPP_INFO(get_logger(), "Creating lidar_vel");
   add_parameter("publish_tf",   rclcpp::ParameterValue(false),
     " If publish tf odom->base_link");
   
@@ -83,7 +43,6 @@ LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(
   add_parameter("kf_dist_angular", rclcpp::ParameterValue(10.0* (M_PI/180.0)),
     "When to generate keyframe scan.");
   
-
 
   // CSM parameters - comments copied from algos.h (by Andrea Censi)
   add_parameter("max_angular_correction_deg", rclcpp::ParameterValue(45.0),
@@ -190,10 +149,8 @@ LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(
   laser_frame_ = this->get_parameter("laser_frame").as_string();
   kf_dist_linear_  = this->get_parameter("kf_dist_linear").as_double();
   kf_dist_angular_ = this->get_parameter("kf_dist_angular").as_double();
-  odom_topic_   = this->get_parameter("publish_odom").as_string();
   publish_tf_   = this->get_parameter("publish_tf").as_bool(); 
 
-  publish_odom_ = (odom_topic_ != "");
   kf_dist_linear_sq_ = kf_dist_linear_ * kf_dist_linear_;
 
   input_.max_angular_correction_deg = this->get_parameter("max_angular_correction_deg").as_double();
@@ -226,8 +183,6 @@ LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(
 
   double transform_publish_period;
   double tmp;
-  
-  // State variables
 
   f2b_.setIdentity();
   prev_f2b_.setIdentity();
@@ -243,23 +198,22 @@ LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(
 
 
   // Subscribers
-  this->scan_filter_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>("scan", rclcpp::SensorDataQoS(), std::bind(&LaserScanMatcher::scanCallback, this, std::placeholders::_1));
+  this->scan_filter_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>("scan", rclcpp::SensorDataQoS(), std::bind(&LidarVel::scanCallback, this, std::placeholders::_1));
   tf_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
   if (publish_tf_)
     tfB_ = std::make_shared<tf2_ros::TransformBroadcaster>(*this);
-  if(publish_odom_){
-    odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>(odom_topic_, rclcpp::SystemDefaultsQoS());
-  }
-}
 
-LaserScanMatcher::~LaserScanMatcher()
+  vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(lidar_vel, rclcpp::SystemDefaultsQoS());
+  }
+
+}  
+
+LidarVel::~LidarVel()
 {
 
 }
 
-
-
-void LaserScanMatcher::createCache (const sensor_msgs::msg::LaserScan::SharedPtr& scan_msg)
+void LidarVel::createCache (const sensor_msgs::msg::LaserScan::SharedPtr& scan_msg)
 {
   a_cos_.clear();
   a_sin_.clear();
@@ -276,7 +230,7 @@ void LaserScanMatcher::createCache (const sensor_msgs::msg::LaserScan::SharedPtr
 }
 
 
-void LaserScanMatcher::scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg)
+void LidarVel::scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg)
 
 {
 
@@ -301,7 +255,7 @@ void LaserScanMatcher::scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr
   processScan(curr_ldp_scan, scan_msg->header.stamp);
 }
 
-bool LaserScanMatcher::getBaseToLaserTf (const std::string& frame_id)
+bool LidarVel::getBaseToLaserTf (const std::string& frame_id)
 {
   rclcpp::Time t = now();
 
@@ -333,7 +287,7 @@ bool LaserScanMatcher::getBaseToLaserTf (const std::string& frame_id)
 }
 
 
-bool LaserScanMatcher::processScan(LDP& curr_ldp_scan, const rclcpp::Time& time)
+bool LidarVel::processScan(LDP& curr_ldp_scan, const rclcpp::Time& time)
 {
 
 
@@ -430,32 +384,18 @@ bool LaserScanMatcher::processScan(LDP& curr_ldp_scan, const rclcpp::Time& time)
   }
 
 
-  if (publish_odom_)
-  {
-    // stamped Pose message
-    nav_msgs::msg::Odometry odom_msg;
+  // stamped Pose message
+  geometry_msgs::msg::Twist lidar_vel;
 
-    odom_msg.header.stamp    = time;
-    odom_msg.header.frame_id = odom_frame_;
-    odom_msg.child_frame_id = base_frame_;
-    odom_msg.pose.pose.position.x = f2b_.getOrigin().x();
-    odom_msg.pose.pose.position.y = f2b_.getOrigin().y();
-    odom_msg.pose.pose.position.z = f2b_.getOrigin().z();
+  // Get pose difference in base frame and calculate velocities
+  auto pose_difference = prev_f2b_.inverse() * f2b_;
+  lidar_vel.linear.x = pose_difference.getOrigin().getX()/dt;
+  lidar_vel.linear.y = pose_difference.getOrigin().getY()/dt;
+  lidar_vel.angular.z = tf2::getYaw(pose_difference.getRotation())/dt;
 
-    odom_msg.pose.pose.orientation.x = f2b_.getRotation().x();
-    odom_msg.pose.pose.orientation.y = f2b_.getRotation().y();
-    odom_msg.pose.pose.orientation.z = f2b_.getRotation().z();
-    odom_msg.pose.pose.orientation.w = f2b_.getRotation().w();
+  prev_f2b_ = f2b_;
 
-    // Get pose difference in base frame and calculate velocities
-    auto pose_difference = prev_f2b_.inverse() * f2b_;
-    odom_msg.twist.twist.linear.x = pose_difference.getOrigin().getX()/dt;
-    odom_msg.twist.twist.linear.y = pose_difference.getOrigin().getY()/dt;
-    odom_msg.twist.twist.angular.z = tf2::getYaw(pose_difference.getRotation())/dt;
-
-    prev_f2b_ = f2b_;
-
-    odom_publisher_->publish(odom_msg);
+  vel_publisher_->publish(lidar_vel);
   }
 
   
@@ -495,7 +435,7 @@ bool LaserScanMatcher::processScan(LDP& curr_ldp_scan, const rclcpp::Time& time)
   return true;
 }
 
-bool LaserScanMatcher::newKeyframeNeeded(const tf2::Transform& d)
+bool LidarVel::newKeyframeNeeded(const tf2::Transform& d)
 {
   if (fabs(tf2::getYaw(d.getRotation())) > kf_dist_angular_)
     return true;
@@ -508,7 +448,7 @@ bool LaserScanMatcher::newKeyframeNeeded(const tf2::Transform& d)
   return false;
 }
 
-void LaserScanMatcher::laserScanToLDP(const sensor_msgs::msg::LaserScan::SharedPtr& scan, LDP& ldp)
+void LidarVel::laserScanToLDP(const sensor_msgs::msg::LaserScan::SharedPtr& scan, LDP& ldp)
 {
   unsigned int n = scan->ranges.size();
   ldp = ld_alloc_new(n);
@@ -544,8 +484,7 @@ void LaserScanMatcher::laserScanToLDP(const sensor_msgs::msg::LaserScan::SharedP
   ldp->true_pose[2] = 0.0;
 }
 
-
-void LaserScanMatcher::createTfFromXYTheta(double x, double y, double theta, tf2::Transform& t)
+void LidarVel::createTfFromXYTheta(double x, double y, double theta, tf2::Transform& t)
 {
   t.setOrigin(tf2::Vector3(x, y, 0.0));
   tf2::Quaternion q;
@@ -553,5 +492,4 @@ void LaserScanMatcher::createTfFromXYTheta(double x, double y, double theta, tf2
   t.setRotation(q);
 }
 
-
-}  // namespace scan_tools
+}  // namespace lidar_vel
