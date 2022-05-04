@@ -1,0 +1,42 @@
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:403:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  403 |   [01;31m[Kif[m[K (publish_tf_)
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:422:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  422 |   [01;31m[Kif[m[K (newKeyframeNeeded(corr_ch))
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:430:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+  430 |   [01;31m[Kelse[m[K
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:435:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_icp_time_[m[K’ does not name a type
+  435 |   [01;31m[Klast_icp_time_[m[K = now();
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:436:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  436 |   [01;31m[Kreturn[m[K true;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:439:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+  439 | bool [01;31m[KLidarVel[m[K::newKeyframeNeeded(const tf2::Transform& d)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kbool newKeyframeNeeded(const tf2::Transform&)[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:441:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kkf_dist_angular_[m[K’ was not declared in this scope
+  441 |   if (fabs(tf2::getYaw(d.getRotation())) > [01;31m[Kkf_dist_angular_[m[K)
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:446:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kkf_dist_linear_sq_[m[K’ was not declared in this scope
+  446 |   if (x * x + y * y > [01;31m[Kkf_dist_linear_sq_[m[K)
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:452:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+  452 | void [01;31m[KLidarVel[m[K::laserScanToLDP(const sensor_msgs::msg::LaserScan::SharedPtr& scan, LDP& ldp)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:488:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+  488 | void [01;31m[KLidarVel[m[K::createTfFromXYTheta(double x, double y, double theta, tf2::Transform& t)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:496:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  496 | [01;31m[K}[m[K  // namespace lidar_velocity
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In member function ‘[01m[Kbool lidar_velocity::LidarVel::processScan(laser_data*&, const rclcpp::Time&)[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:400:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  400 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/lidar_vel.dir/build.make:63: CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar_vel.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

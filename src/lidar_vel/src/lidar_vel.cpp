@@ -3,8 +3,9 @@
 #undef min
 #undef max
 
-namespace lidar_vel
+namespace lidar_velocity
 {
+
 void LidarVel::add_parameter(
     const std::string & name, const rclcpp::ParameterValue & default_value,
     const std::string & description, const std::string & additional_constraints,
@@ -203,8 +204,8 @@ LidarVel::LidarVel() : Node("lidar_vel"), initialized_(false)
   if (publish_tf_)
     tfB_ = std::make_shared<tf2_ros::TransformBroadcaster>(*this);
 
-  vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(lidar_vel, rclcpp::SystemDefaultsQoS());
-  }
+  vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(vel_topic_, rclcpp::SystemDefaultsQoS());
+  
 
 }  
 
@@ -396,7 +397,6 @@ bool LidarVel::processScan(LDP& curr_ldp_scan, const rclcpp::Time& time)
   prev_f2b_ = f2b_;
 
   vel_publisher_->publish(lidar_vel);
-  }
 
   
   if (publish_tf_)
@@ -492,4 +492,4 @@ void LidarVel::createTfFromXYTheta(double x, double y, double theta, tf2::Transf
   t.setRotation(q);
 }
 
-}  // namespace lidar_vel
+}  // namespace lidar_velocity

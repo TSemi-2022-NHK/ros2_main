@@ -1,0 +1,138 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 2.4.1 (/opt/ros/foxy/share/rclcpp_components/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+-- Found csm: 0.0.0 (/home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel
+[35m[1mScanning dependencies of target lidar_vel[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o[0m
+In file included from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:19:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kclass[m[K’
+   19 | [01;31m[Kclass[m[K LidarVel: public rclcpp::Node
+      | [01;31m[K^~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:41:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+   37 |   rclcpp::Publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>::SharedPtr vel_publisher_;
+      |                                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+  720 | class [01;36m[KTwist[m[K {
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:41:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+   37 |   rclcpp::Publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>::SharedPtr vel_publisher_;
+      |                                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+  720 | class [01;36m[KTwist[m[K {
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |   rclcpp::Publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr vel_publisher_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   37 |   rclcpp::Publisher<geometry_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K vel_publisher_;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+   37 |   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr [01;31m[Kvel_publisher_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                           [32m[Krcl_publisher_t[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:90:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   90 | [01;31m[K}[m[K  // namespace lidar_vel
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:11:19:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kvoid LidarVel::add_parameter(const string&, const rclcpp::ParameterValue&, const string&, const string&, bool)[m[K’ is not in namespace enclosing ‘[01m[KLidarVel[m[K’ [[01;31m[K-fpermissive[m[K]
+   11 |     bool read_only[01;31m[K)[m[K
+      |                   [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:24:20:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[KLidarVel::LidarVel()[m[K’ is not in namespace enclosing ‘[01m[KLidarVel[m[K’ [[01;31m[K-fpermissive[m[K]
+   24 | LidarVel::LidarVel([01;31m[K)[m[K : Node("lidar_vel"), initialized_(false)
+      |                    [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In constructor ‘[01m[KLidarVel::LidarVel()[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  206 |   [01;31m[Kvel_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>(lidar_vel, rclcpp::SystemDefaultsQoS());
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |   [32m[Krcl_publisher_t[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:63:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+  206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>(lidar_vel, rclcpp::SystemDefaultsQoS());
+      |                                                               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+  720 | class [01;36m[KTwist[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:63:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+  206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>(lidar_vel, rclcpp::SystemDefaultsQoS());
+      |                                                               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+  720 | class [01;36m[KTwist[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:70:[m[K [01;31m[Kerror: [m[K‘[01m[Klidar_vel[m[K’ was not declared in this scope; did you mean ‘[01m[KLidarVel[m[K’?
+  206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>([01;31m[Klidar_vel[m[K, rclcpp::SystemDefaultsQoS());
+      |                                                                      [01;31m[K^~~~~~~~~[m[K
+      |                                                                      [32m[KLidarVel[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In member function ‘[01m[Kbool LidarVel::processScan(laser_data*&, const rclcpp::Time&)[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:388:23:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+  388 |   geometry_msgs::msg::[01;31m[KTwist[m[K lidar_vel;
+      |                       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+                 from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+  720 | class [01;36m[KTwist[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:392:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klidar_vel[m[K’ was not declared in this scope; did you mean ‘[01m[KLidarVel[m[K’?
+  392 |   [01;31m[Klidar_vel[m[K.linear.x = pose_difference.getOrigin().getX()/dt;
+      |   [01;31m[K^~~~~~~~~[m[K
+      |   [32m[KLidarVel[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:398:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  398 |   [01;31m[Kvel_publisher_[m[K->publish(lidar_vel);
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |   [32m[Krcl_publisher_t[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:402:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  402 |   [01;31m[Kif[m[K (publish_tf_)
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:421:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  421 |   [01;31m[Kif[m[K (newKeyframeNeeded(corr_ch))
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:429:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+  429 |   [01;31m[Kelse[m[K
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:434:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_icp_time_[m[K’ does not name a type
+  434 |   [01;31m[Klast_icp_time_[m[K = now();
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:435:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  435 |   [01;31m[Kreturn[m[K true;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:436:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  436 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:495:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  495 | [01;31m[K}[m[K  // namespace lidar_vel
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In member function ‘[01m[Kbool LidarVel::processScan(laser_data*&, const rclcpp::Time&)[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:399:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  399 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/lidar_vel.dir/build.make:63: CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar_vel.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,10 +1,9 @@
-#ifndef LIDAR_VEL_H
-#define LIDAR_VEL_H
+#ifndef LIDAR_VEL_LIDAR_VEL_H
+#define LIDAR_VEL_LIDAR_VEL_H
 
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <geometry_msgs/msg/pose.hpp>
-#include <geomety_msgs/msg/twist.hpp>
-#include <nav_msgs/msg/odometry.hpp>
+#include <geometry_msgs/msg/twist.hpp>
 #include <tf2_ros/transform_broadcaster.h>
 #include <tf2_ros/transform_listener.h>
 #include <tf2_ros/message_filter.h>
@@ -17,12 +16,12 @@
 #include <boost/thread.hpp>
 
 
-namespace lidar_vel
+namespace lidar_velocity
 {
 class LidarVel: public rclcpp::Node
 {
 public:
-  LidarVel());
+  LidarVel();
   ~LidarVel();
 
   void scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg);
@@ -43,7 +42,7 @@ private:
   std::string base_frame_;
   std::string odom_frame_;
   std::string laser_frame_;
-  std::string odom_topic_;
+  std::string vel_topic_;
 
   // Keyframe parameters
   double kf_dist_linear_;
@@ -90,6 +89,6 @@ private:
 
 };  // LidarVel
 
-}  // namespace lidar_vel
+}  // namespace lidar_velocity
 
-#endif  // LIDAR_VEL_H
+#endif  // LIDAR_VEL_LIDAR_VEL_H

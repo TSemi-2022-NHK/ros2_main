@@ -1,0 +1,280 @@
+[0.000000] (-) TimerEvent: {}
+[0.001080] (-) JobUnselected: {'identifier': 'bno055_io'}
+[0.001213] (-) JobUnselected: {'identifier': 'csm'}
+[0.002470] (-) JobUnselected: {'identifier': 'main_executor'}
+[0.002607] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.002880] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.003659] (-) JobUnselected: {'identifier': 'socketcan_interface'}
+[0.003814] (-) JobUnselected: {'identifier': 'socketcan_interface_msg'}
+[0.003953] (-) JobUnselected: {'identifier': 'urdf_test'}
+[0.004095] (-) JobUnselected: {'identifier': 'urg'}
+[0.004311] (lidar_vel) JobQueued: {'identifier': 'lidar_vel', 'dependencies': OrderedDict([('csm', '/home/kazuma/ros2_ws_2/ros2_main/install/csm')])}
+[0.004421] (lidar_vel) JobStarted: {'identifier': 'lidar_vel'}
+[0.099237] (-) TimerEvent: {}
+[0.142962] (lidar_vel) JobProgress: {'identifier': 'lidar_vel', 'progress': 'cmake'}
+[0.144212] (lidar_vel) JobProgress: {'identifier': 'lidar_vel', 'progress': 'build'}
+[0.145519] (lidar_vel) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel', '--', '-j8', '-l8'], 'cwd': '/home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kazuma'), ('GIT_ASKPASS', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/kazuma/ros2_ws_2/ros2_main/install/csm/lib:/home/kazuma/ros2_ws/install/smac_planner/lib:/home/kazuma/ros2_ws/install/slam_toolbox/lib:/home/kazuma/ros2_ws/install/nav2_controller/lib:/home/kazuma/ros2_ws/install/dwb_plugins/lib:/home/kazuma/ros2_ws/install/dwb_critics/lib:/home/kazuma/ros2_ws/install/dwb_core/lib:/home/kazuma/ros2_ws/install/nav_2d_utils/lib:/home/kazuma/ros2_ws/install/dwb_msgs/lib:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws/install/nav2_recoveries/lib:/home/kazuma/ros2_ws/install/nav2_planner/lib:/home/kazuma/ros2_ws/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws/install/costmap_queue/lib:/home/kazuma/ros2_ws/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws/install/nav2_map_server/lib:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws/install/nav2_amcl/lib:/home/kazuma/ros2_ws/install/nav2_util/lib:/home/kazuma/ros2_ws/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib:/home/kazuma/ros2_ws_2/install/smac_planner/lib:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib:/home/kazuma/ros2_ws_2/install/nav2_controller/lib:/home/kazuma/ros2_ws_2/install/dwb_plugins/lib:/home/kazuma/ros2_ws_2/install/dwb_critics/lib:/home/kazuma/ros2_ws_2/install/dwb_core/lib:/home/kazuma/ros2_ws_2/install/nav_2d_utils/lib:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws_2/install/nav2_recoveries/lib:/home/kazuma/ros2_ws_2/install/nav2_planner/lib:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws_2/install/costmap_queue/lib:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws_2/install/nav2_map_server/lib:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws_2/install/nav2_amcl/lib:/home/kazuma/ros2_ws_2/install/nav2_util/lib:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kazuma'), ('OLDPWD', '/home/kazuma/ros2_ws_2/src'), ('TERM_PROGRAM_VERSION', '1.66.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-abbedab1-5936-4b94-a74d-a3eaf2c87293.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('COLCON_PREFIX_PATH', '/home/kazuma/ros2_ws_2/install:/home/kazuma/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kazuma'), ('NAME', 'LAPTOP-F8PTRVOF'), ('WSL_INTEROP', '/run/WSL/604_interop'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Apple/Apple Application Support:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Fujitsu/FJAgent/Core/bin:/mnt/c/pg/Python37/:/mnt/c/pg/Python37/Scripts/:/mnt/c/MinGW/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/ClionProjects/test:/mnt/c/Users/Kazuma Nagatsuka/Videos/Captures:/mnt/c/Program Files/MATLAB/R2021b:/mnt/c/Program Files/vscode_programs/webapi_test:/mnt/c/Program Files/gnuplot/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Scripts:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Library/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Kazuma Nagatsuka/AppData/Roaming/Python/Python38/Scripts:/mnt/c/texlive/2021/bin/win32:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/JetBrains/PyCharm 2021.3/bin:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('DISPLAY', '172.29.0.1:0'), ('LANG', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dbcbb19f74.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/kazuma/ros2_ws_2/ros2_main/install/csm:/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kazuma/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/build/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_example/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/kazuma/ros2_ws_2/ros2_main/install/csm:/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[0.182669] (lidar_vel) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.199325] (-) TimerEvent: {}
+[0.221348] (lidar_vel) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.299508] (-) TimerEvent: {}
+[0.399930] (-) TimerEvent: {}
+[0.443911] (lidar_vel) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.500104] (-) TimerEvent: {}
+[0.600564] (-) TimerEvent: {}
+[0.636490] (lidar_vel) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.640505] (lidar_vel) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.700783] (-) TimerEvent: {}
+[0.801299] (-) TimerEvent: {}
+[0.901950] (-) TimerEvent: {}
+[1.002458] (-) TimerEvent: {}
+[1.102894] (-) TimerEvent: {}
+[1.203347] (-) TimerEvent: {}
+[1.303805] (-) TimerEvent: {}
+[1.404270] (-) TimerEvent: {}
+[1.504688] (-) TimerEvent: {}
+[1.605109] (-) TimerEvent: {}
+[1.705607] (-) TimerEvent: {}
+[1.806045] (-) TimerEvent: {}
+[1.906443] (-) TimerEvent: {}
+[2.006831] (-) TimerEvent: {}
+[2.107288] (-) TimerEvent: {}
+[2.207667] (-) TimerEvent: {}
+[2.308179] (-) TimerEvent: {}
+[2.408680] (-) TimerEvent: {}
+[2.509186] (-) TimerEvent: {}
+[2.609692] (-) TimerEvent: {}
+[2.710240] (-) TimerEvent: {}
+[2.810763] (-) TimerEvent: {}
+[2.911211] (-) TimerEvent: {}
+[3.011809] (-) TimerEvent: {}
+[3.112362] (-) TimerEvent: {}
+[3.212792] (-) TimerEvent: {}
+[3.313215] (-) TimerEvent: {}
+[3.413668] (-) TimerEvent: {}
+[3.514120] (-) TimerEvent: {}
+[3.614609] (-) TimerEvent: {}
+[3.715098] (-) TimerEvent: {}
+[3.815558] (-) TimerEvent: {}
+[3.916063] (-) TimerEvent: {}
+[4.016499] (-) TimerEvent: {}
+[4.116945] (-) TimerEvent: {}
+[4.217451] (-) TimerEvent: {}
+[4.317977] (-) TimerEvent: {}
+[4.418449] (-) TimerEvent: {}
+[4.518896] (-) TimerEvent: {}
+[4.619388] (-) TimerEvent: {}
+[4.719825] (-) TimerEvent: {}
+[4.820205] (-) TimerEvent: {}
+[4.920588] (-) TimerEvent: {}
+[5.021059] (-) TimerEvent: {}
+[5.093342] (lidar_vel) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.121170] (-) TimerEvent: {}
+[5.221593] (-) TimerEvent: {}
+[5.270221] (lidar_vel) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[5.309649] (lidar_vel) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[5.315490] (lidar_vel) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.321736] (-) TimerEvent: {}
+[5.422222] (-) TimerEvent: {}
+[5.466330] (lidar_vel) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.1 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[5.522332] (-) TimerEvent: {}
+[5.526673] (lidar_vel) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[5.608380] (lidar_vel) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[5.622520] (-) TimerEvent: {}
+[5.723045] (-) TimerEvent: {}
+[5.823501] (-) TimerEvent: {}
+[5.919397] (lidar_vel) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[5.927297] (-) TimerEvent: {}
+[5.927708] (lidar_vel) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[5.963409] (lidar_vel) StdoutLine: {'line': b'-- Found csm: 0.0.0 (/home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake)\n'}
+[6.027459] (-) TimerEvent: {}
+[6.071001] (lidar_vel) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.087797] (lidar_vel) StdoutLine: {'line': b'-- Generating done\n'}
+[6.090283] (lidar_vel) StdoutLine: {'line': b'-- Build files have been written to: /home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel\n'}
+[6.127510] (lidar_vel) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lidar_vel\x1b[0m\n'}
+[6.127796] (-) TimerEvent: {}
+[6.176108] (lidar_vel) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o\x1b[0m\n'}
+[6.227948] (-) TimerEvent: {}
+[6.328451] (-) TimerEvent: {}
+[6.428856] (-) TimerEvent: {}
+[6.529364] (-) TimerEvent: {}
+[6.629901] (-) TimerEvent: {}
+[6.730376] (-) TimerEvent: {}
+[6.830749] (-) TimerEvent: {}
+[6.931257] (-) TimerEvent: {}
+[7.031765] (-) TimerEvent: {}
+[7.132315] (-) TimerEvent: {}
+[7.232775] (-) TimerEvent: {}
+[7.333180] (-) TimerEvent: {}
+[7.433585] (-) TimerEvent: {}
+[7.534129] (-) TimerEvent: {}
+[7.634639] (-) TimerEvent: {}
+[7.735231] (-) TimerEvent: {}
+[7.835659] (-) TimerEvent: {}
+[7.936119] (-) TimerEvent: {}
+[8.036586] (-) TimerEvent: {}
+[8.137024] (-) TimerEvent: {}
+[8.237552] (-) TimerEvent: {}
+[8.337990] (-) TimerEvent: {}
+[8.438410] (-) TimerEvent: {}
+[8.538877] (-) TimerEvent: {}
+[8.639400] (-) TimerEvent: {}
+[8.739881] (-) TimerEvent: {}
+[8.840375] (-) TimerEvent: {}
+[8.940991] (-) TimerEvent: {}
+[9.041433] (-) TimerEvent: {}
+[9.141864] (-) TimerEvent: {}
+[9.242398] (-) TimerEvent: {}
+[9.342946] (-) TimerEvent: {}
+[9.443576] (-) TimerEvent: {}
+[9.544071] (-) TimerEvent: {}
+[9.644547] (-) TimerEvent: {}
+[9.744939] (-) TimerEvent: {}
+[9.778089] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.778475] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:19:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kclass\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.778698] (lidar_vel) StderrLine: {'line': b'   19 | \x1b[01;31m\x1b[Kclass\x1b[m\x1b[K LidarVel: public rclcpp::Node\n'}
+[9.778930] (lidar_vel) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.803245] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTwist\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.803606] (lidar_vel) StderrLine: {'line': b'   37 |   rclcpp::Publisher<geometry_msgs::msg::\x1b[01;31m\x1b[KTwist\x1b[m\x1b[K>::SharedPtr vel_publisher_;\n'}
+[9.803802] (lidar_vel) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.803985] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47\x1b[m\x1b[K,\n'}
+[9.804175] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9\x1b[m\x1b[K,\n'}
+[9.804295] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.804435] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[9.804896] (lidar_vel) StderrLine: {'line': b'  720 | class \x1b[01;36m\x1b[KTwist\x1b[m\x1b[K {\n'}
+[9.805034] (lidar_vel) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.805157] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.805302] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTwist\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.805494] (lidar_vel) StderrLine: {'line': b'   37 |   rclcpp::Publisher<geometry_msgs::msg::\x1b[01;31m\x1b[KTwist\x1b[m\x1b[K>::SharedPtr vel_publisher_;\n'}
+[9.805609] (lidar_vel) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.805723] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47\x1b[m\x1b[K,\n'}
+[9.805809] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9\x1b[m\x1b[K,\n'}
+[9.805979] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.806099] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[9.806214] (lidar_vel) StderrLine: {'line': b'  720 | class \x1b[01;36m\x1b[KTwist\x1b[m\x1b[K {\n'}
+[9.806329] (lidar_vel) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.806467] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.806581] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.806688] (lidar_vel) StderrLine: {'line': b'   37 |   rclcpp::Publisher<geometry_msgs::msg::Twist\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr vel_publisher_;\n'}
+[9.806902] (lidar_vel) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.807222] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[9.807448] (lidar_vel) StderrLine: {'line': b'   37 |   rclcpp::Publisher<geometry_msgs::msg::Twist>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K vel_publisher_;\n'}
+[9.807615] (lidar_vel) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[9.807730] (lidar_vel) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[9.809659] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:37:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvel_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.809890] (lidar_vel) StderrLine: {'line': b'   37 |   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr \x1b[01;31m\x1b[Kvel_publisher_\x1b[m\x1b[K;\n'}
+[9.810051] (lidar_vel) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.810206] (lidar_vel) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[9.811914] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:90:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.812184] (lidar_vel) StderrLine: {'line': b'   90 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K  // namespace lidar_vel\n'}
+[9.812556] (lidar_vel) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.812934] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:11:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefinition of \xe2\x80\x98\x1b[01m\x1b[Kvoid LidarVel::add_parameter(const string&, const rclcpp::ParameterValue&, const string&, const string&, bool)\x1b[m\x1b[K\xe2\x80\x99 is not in namespace enclosing \xe2\x80\x98\x1b[01m\x1b[KLidarVel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[9.813212] (lidar_vel) StderrLine: {'line': b'   11 |     bool read_only\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.813433] (lidar_vel) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.813632] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:24:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefinition of \xe2\x80\x98\x1b[01m\x1b[KLidarVel::LidarVel()\x1b[m\x1b[K\xe2\x80\x99 is not in namespace enclosing \xe2\x80\x98\x1b[01m\x1b[KLidarVel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[9.813912] (lidar_vel) StderrLine: {'line': b'   24 | LidarVel::LidarVel(\x1b[01;31m\x1b[K)\x1b[m\x1b[K : Node("lidar_vel"), initialized_(false)\n'}
+[9.814212] (lidar_vel) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.835874] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLidarVel::LidarVel()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.836120] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvel_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.836234] (lidar_vel) StderrLine: {'line': b'  206 |   \x1b[01;31m\x1b[Kvel_publisher_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>(lidar_vel, rclcpp::SystemDefaultsQoS());\n'}
+[9.836320] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.836425] (lidar_vel) StderrLine: {'line': b'      |   \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[9.837015] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTwist\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.837259] (lidar_vel) StderrLine: {'line': b'  206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::\x1b[01;31m\x1b[KTwist\x1b[m\x1b[K>(lidar_vel, rclcpp::SystemDefaultsQoS());\n'}
+[9.837379] (lidar_vel) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.837469] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47\x1b[m\x1b[K,\n'}
+[9.837645] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9\x1b[m\x1b[K,\n'}
+[9.838002] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.838164] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[9.838360] (lidar_vel) StderrLine: {'line': b'  720 | class \x1b[01;36m\x1b[KTwist\x1b[m\x1b[K {\n'}
+[9.838474] (lidar_vel) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.838668] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTwist\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.838797] (lidar_vel) StderrLine: {'line': b'  206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::\x1b[01;31m\x1b[KTwist\x1b[m\x1b[K>(lidar_vel, rclcpp::SystemDefaultsQoS());\n'}
+[9.838941] (lidar_vel) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.839081] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47\x1b[m\x1b[K,\n'}
+[9.839193] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9\x1b[m\x1b[K,\n'}
+[9.839300] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.839414] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[9.839548] (lidar_vel) StderrLine: {'line': b'  720 | class \x1b[01;36m\x1b[KTwist\x1b[m\x1b[K {\n'}
+[9.839717] (lidar_vel) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.841631] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klidar_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KLidarVel\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.842027] (lidar_vel) StderrLine: {'line': b'  206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(\x1b[01;31m\x1b[Klidar_vel\x1b[m\x1b[K, rclcpp::SystemDefaultsQoS());\n'}
+[9.842200] (lidar_vel) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[9.842331] (lidar_vel) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[KLidarVel\x1b[m\x1b[K\n'}
+[9.845037] (-) TimerEvent: {}
+[9.855728] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool LidarVel::processScan(laser_data*&, const rclcpp::Time&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.856180] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:388:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTwist\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.856501] (lidar_vel) StderrLine: {'line': b'  388 |   geometry_msgs::msg::\x1b[01;31m\x1b[KTwist\x1b[m\x1b[K lidar_vel;\n'}
+[9.856725] (lidar_vel) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.857004] (lidar_vel) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47\x1b[m\x1b[K,\n'}
+[9.857275] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9\x1b[m\x1b[K,\n'}
+[9.857480] (lidar_vel) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1\x1b[m\x1b[K:\n'}
+[9.857725] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[9.857869] (lidar_vel) StderrLine: {'line': b'  720 | class \x1b[01;36m\x1b[KTwist\x1b[m\x1b[K {\n'}
+[9.858006] (lidar_vel) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.862389] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:392:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klidar_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KLidarVel\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.862836] (lidar_vel) StderrLine: {'line': b'  392 |   \x1b[01;31m\x1b[Klidar_vel\x1b[m\x1b[K.linear.x = pose_difference.getOrigin().getX()/dt;\n'}
+[9.863009] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[9.863177] (lidar_vel) StderrLine: {'line': b'      |   \x1b[32m\x1b[KLidarVel\x1b[m\x1b[K\n'}
+[9.867620] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:398:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvel_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.867980] (lidar_vel) StderrLine: {'line': b'  398 |   \x1b[01;31m\x1b[Kvel_publisher_\x1b[m\x1b[K->publish(lidar_vel);\n'}
+[9.868279] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.868657] (lidar_vel) StderrLine: {'line': b'      |   \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[9.868862] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:\x1b[m\x1b[K At global scope:\n'}
+[9.868990] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:402:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.869134] (lidar_vel) StderrLine: {'line': b'  402 |   \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (publish_tf_)\n'}
+[9.869247] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[9.869338] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:421:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.869480] (lidar_vel) StderrLine: {'line': b'  421 |   \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (newKeyframeNeeded(corr_ch))\n'}
+[9.869592] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[9.869680] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:429:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.869857] (lidar_vel) StderrLine: {'line': b'  429 |   \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K\n'}
+[9.870012] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.873943] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:434:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_icp_time_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[9.874280] (lidar_vel) StderrLine: {'line': b'  434 |   \x1b[01;31m\x1b[Klast_icp_time_\x1b[m\x1b[K = now();\n'}
+[9.874410] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.874583] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:435:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.874797] (lidar_vel) StderrLine: {'line': b'  435 |   \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K true;\n'}
+[9.874891] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[9.875111] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:436:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.875239] (lidar_vel) StderrLine: {'line': b'  436 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[9.875379] (lidar_vel) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.875800] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:495:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.875905] (lidar_vel) StderrLine: {'line': b'  495 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K  // namespace lidar_vel\n'}
+[9.876031] (lidar_vel) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.945205] (-) TimerEvent: {}
+[10.045680] (-) TimerEvent: {}
+[10.146137] (-) TimerEvent: {}
+[10.246638] (-) TimerEvent: {}
+[10.347169] (-) TimerEvent: {}
+[10.447655] (-) TimerEvent: {}
+[10.548024] (-) TimerEvent: {}
+[10.648526] (-) TimerEvent: {}
+[10.748978] (-) TimerEvent: {}
+[10.849544] (-) TimerEvent: {}
+[10.950031] (-) TimerEvent: {}
+[11.050560] (-) TimerEvent: {}
+[11.151068] (-) TimerEvent: {}
+[11.251508] (-) TimerEvent: {}
+[11.351915] (-) TimerEvent: {}
+[11.452423] (-) TimerEvent: {}
+[11.553012] (-) TimerEvent: {}
+[11.653438] (-) TimerEvent: {}
+[11.754032] (-) TimerEvent: {}
+[11.854515] (-) TimerEvent: {}
+[11.955001] (-) TimerEvent: {}
+[12.055404] (-) TimerEvent: {}
+[12.155841] (-) TimerEvent: {}
+[12.256335] (-) TimerEvent: {}
+[12.356998] (-) TimerEvent: {}
+[12.364918] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool LidarVel::processScan(laser_data*&, const rclcpp::Time&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.365250] (lidar_vel) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:399:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[12.365493] (lidar_vel) StderrLine: {'line': b'  399 |   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[12.365715] (lidar_vel) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.411995] (lidar_vel) StderrLine: {'line': b'make[2]: *** [CMakeFiles/lidar_vel.dir/build.make:63: CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o] Error 1\n'}
+[12.412418] (lidar_vel) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar_vel.dir/all] Error 2\n'}
+[12.412823] (lidar_vel) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[12.416756] (lidar_vel) CommandEnded: {'returncode': 2}
+[12.458014] (-) TimerEvent: {}
+[12.465363] (lidar_vel) JobEnded: {'identifier': 'lidar_vel', 'rc': 2}
+[12.476132] (-) EventReactorShutdown: {}

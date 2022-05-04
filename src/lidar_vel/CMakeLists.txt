@@ -25,7 +25,7 @@ include_directories(
 add_library(lidar_vel SHARED
   src/lidar_vel.cpp
 )
-rclcpp_components_register_nodes(lidar_vel "lidar_vel::LidarVel")
+rclcpp_components_register_nodes(lidar_vel "lidar_velocity::LidarVel")
 
 target_include_directories(lidar_vel
   PRIVATE

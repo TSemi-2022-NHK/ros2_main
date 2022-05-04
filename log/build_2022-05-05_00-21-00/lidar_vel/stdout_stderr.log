@@ -1,0 +1,23 @@
+[35m[1mScanning dependencies of target lidar_vel[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library liblidar_vel.so[0m
+[100%] Built target lidar_vel
+-- Install configuration: ""
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/lib/lidar_vel/liblidar_vel.so
+-- Set runtime path of "/home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/lib/lidar_vel/liblidar_vel.so" to ""
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/ament_index/resource_index/package_run_dependencies/lidar_vel
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/ament_index/resource_index/parent_prefix_path/lidar_vel
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/environment/ament_prefix_path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/environment/ament_prefix_path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/environment/path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/environment/path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/local_setup.bash
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/local_setup.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/local_setup.zsh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/local_setup.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/package.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/ament_index/resource_index/packages/lidar_vel
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/ament_index/resource_index/rclcpp_components/lidar_vel
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/cmake/lidar_velConfig.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/cmake/lidar_velConfig-version.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/lidar_vel/share/lidar_vel/package.xml

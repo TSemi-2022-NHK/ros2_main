@@ -1,0 +1,419 @@
+[0.137s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel': AMENT_PREFIX_PATH=/home/kazuma/ros2_ws_2/ros2_main/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazuma/ros2_ws_2/ros2_main/install/csm:/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy LD_LIBRARY_PATH=/home/kazuma/ros2_ws_2/ros2_main/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel -- -j8 -l8
+[0.204s] [35m[1mScanning dependencies of target lidar_vel[0m
+[0.252s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o[0m
+[3.828s] In file included from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.828s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:38:41:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+[3.828s]    38 |   rclcpp::Publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>::SharedPtr vel_publisher_;
+[3.828s]       |                                         [01;31m[K^~~~~[m[K
+[3.828s] In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+[3.829s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+[3.829s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.829s] [01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+[3.830s]   720 | class [01;36m[KTwist[m[K {
+[3.830s]       |       [01;36m[K^~~~~[m[K
+[3.830s] In file included from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.830s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:38:41:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+[3.830s]    38 |   rclcpp::Publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>::SharedPtr vel_publisher_;
+[3.830s]       |                                         [01;31m[K^~~~~[m[K
+[3.830s] In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+[3.830s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+[3.831s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.831s] [01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+[3.831s]   720 | class [01;36m[KTwist[m[K {
+[3.831s]       |       [01;36m[K^~~~~[m[K
+[3.831s] In file included from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.831s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:38:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.832s]    38 |   rclcpp::Publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr vel_publisher_;
+[3.832s]       |                                              [01;31m[K^[m[K
+[3.832s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:38:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.832s]    38 |   rclcpp::Publisher<geometry_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K vel_publisher_;
+[3.832s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[3.833s]       |                                                          [32m[K;[m[K
+[3.835s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:38:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[3.835s]    38 |   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr [01;31m[Kvel_publisher_[m[K;
+[3.836s]       |                                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.836s]       |                                                           [32m[Krcl_publisher_t[m[K
+[3.869s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In constructor ‘[01m[Klidar_vel::LidarVel::LidarVel()[m[K’:
+[3.869s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[3.869s]   206 |   [01;31m[Kvel_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>(lidar_vel, rclcpp::SystemDefaultsQoS());
+[3.869s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.869s]       |   [32m[Krcl_publisher_t[m[K
+[3.870s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:63:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+[3.870s]   206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>(lidar_vel, rclcpp::SystemDefaultsQoS());
+[3.870s]       |                                                               [01;31m[K^~~~~[m[K
+[3.871s] In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+[3.871s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+[3.871s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.871s] [01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+[3.872s]   720 | class [01;36m[KTwist[m[K {
+[3.872s]       |       [01;36m[K^~~~~[m[K
+[3.872s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:63:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+[3.872s]   206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::[01;31m[KTwist[m[K>(lidar_vel, rclcpp::SystemDefaultsQoS());
+[3.872s]       |                                                               [01;31m[K^~~~~[m[K
+[3.872s] In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+[3.872s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+[3.873s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.873s] [01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+[3.873s]   720 | class [01;36m[KTwist[m[K {
+[3.873s]       |       [01;36m[K^~~~~[m[K
+[3.873s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:79:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+[3.873s]   206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(lidar_vel[01;31m[K,[m[K rclcpp::SystemDefaultsQoS());
+[3.874s]       |                                                                               [01;31m[K^[m[K
+[3.879s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[3.879s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:211:1:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ does not name a type; did you mean ‘[01m[Klidar_vel[m[K’?
+[3.879s]   211 | [01;31m[KLidarVel[m[K::~LidarVel()
+[3.880s]       | [01;31m[K^~~~~~~~[m[K
+[3.880s]       | [32m[Klidar_vel[m[K
+[3.880s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:216:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+[3.880s]   216 | void [01;31m[KLidarVel[m[K::createCache (const sensor_msgs::msg::LaserScan::SharedPtr& scan_msg)
+[3.881s]       |      [01;31m[K^~~~~~~~[m[K
+[3.883s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kvoid createCache(const SharedPtr&)[m[K’:
+[3.883s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:218:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ka_cos_[m[K’ was not declared in this scope; did you mean ‘[01m[Kacosl[m[K’?
+[3.883s]   218 |   [01;31m[Ka_cos_[m[K.clear();
+[3.883s]       |   [01;31m[K^~~~~~[m[K
+[3.884s]       |   [32m[Kacosl[m[K
+[3.887s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:219:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ka_sin_[m[K’ was not declared in this scope; did you mean ‘[01m[Kasinl[m[K’?
+[3.887s]   219 |   [01;31m[Ka_sin_[m[K.clear();
+[3.887s]       |   [01;31m[K^~~~~~[m[K
+[3.888s]       |   [32m[Kasinl[m[K
+[3.896s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:228:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_[m[K’ was not declared in this scope
+[3.896s]   228 |   [01;31m[Kinput_[m[K.min_reading = scan_msg->range_min;
+[3.896s]       |   [01;31m[K^~~~~~[m[K
+[3.896s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[3.896s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:233:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+[3.897s]   233 | void [01;31m[KLidarVel[m[K::scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg)
+[3.897s]       |      [01;31m[K^~~~~~~~[m[K
+[3.902s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kvoid scanCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.902s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:237:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitialized_[m[K’ was not declared in this scope
+[3.903s]   237 |   if (![01;31m[Kinitialized_[m[K)
+[3.903s]       |        [01;31m[K^~~~~~~~~~~~[m[K
+[3.908s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:242:27:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_frame_[m[K’ was not declared in this scope
+[3.908s]   242 |     if (!getBaseToLaserTf([01;31m[Klaser_frame_[m[K))
+[3.909s]       |                           [01;31m[K^~~~~~~~~~~~[m[K
+[3.922s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:242:10:[m[K [01;31m[Kerror: [m[K‘[01m[KgetBaseToLaserTf[m[K’ was not declared in this scope
+[3.922s]   242 |     if (![01;31m[KgetBaseToLaserTf[m[K(laser_frame_))
+[3.922s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.924s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[3.925s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[3.925s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[3.926s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[3.926s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.926s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[3.926s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[3.927s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.927s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[3.927s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.927s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[3.928s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[3.928s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.928s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:244:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[3.928s]   244 |       RCLCPP_WARN([01;31m[Kget_logger[m[K(),"Skipping scan");
+[3.928s]       |                   [01;31m[K^~~~~~~~~~[m[K
+[3.929s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/logging.hpp:23[m[K,
+[3.929s]                  from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[3.929s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[3.929s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[3.929s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[3.929s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.930s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[3.930s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[3.930s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.930s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[3.930s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.931s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[3.931s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[3.931s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.931s] [01m[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[3.931s]    80 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[3.931s]       |                 [01;36m[K^~~~~~[m[K
+[3.932s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[3.932s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[3.932s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[3.932s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[3.933s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.933s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[3.933s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[3.933s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.934s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[3.934s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.934s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[3.934s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[3.935s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.935s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:244:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.935s]   244 |       [01;31m[KRCLCPP_WARN[m[K(get_logger(),"Skipping scan");
+[3.935s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[3.935s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:244:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.936s]   244 |       [01;31m[KRCLCPP_WARN[m[K(get_logger(),"Skipping scan");
+[3.936s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[3.937s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:244:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.938s]   244 |       [01;31m[KRCLCPP_WARN[m[K(get_logger(),"Skipping scan");
+[3.938s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[3.939s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:248:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_ldp_scan_[m[K’ was not declared in this scope
+[3.939s]   248 |     laserScanToLDP(scan_msg, [01;31m[Kprev_ldp_scan_[m[K);
+[3.939s]       |                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.950s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:248:5:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserScanToLDP[m[K’ was not declared in this scope
+[3.950s]   248 |     [01;31m[KlaserScanToLDP[m[K(scan_msg, prev_ldp_scan_);
+[3.951s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.962s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:249:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_icp_time_[m[K’ was not declared in this scope
+[3.962s]   249 |     [01;31m[Klast_icp_time_[m[K = scan_msg->header.stamp;
+[3.962s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.972s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:254:3:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserScanToLDP[m[K’ was not declared in this scope
+[3.972s]   254 |   [01;31m[KlaserScanToLDP[m[K(scan_msg, curr_ldp_scan);
+[3.972s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.980s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:255:3:[m[K [01;31m[Kerror: [m[K‘[01m[KprocessScan[m[K’ was not declared in this scope
+[3.981s]   255 |   [01;31m[KprocessScan[m[K(curr_ldp_scan, scan_msg->header.stamp);
+[3.981s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[3.981s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[3.981s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:258:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+[3.982s]   258 | bool [01;31m[KLidarVel[m[K::getBaseToLaserTf (const std::string& frame_id)
+[3.982s]       |      [01;31m[K^~~~~~~~[m[K
+[3.985s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kbool getBaseToLaserTf(const string&)[m[K’:
+[3.985s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:260:20:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+[3.985s]   260 |   rclcpp::Time t = [01;31m[Know[m[K();
+[3.986s]       |                    [01;31m[K^~~[m[K
+[3.986s]       |                    [32m[Kpow[m[K
+[3.990s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:266:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+[3.990s]   266 |       laser_pose_msg = [01;31m[Ktf_buffer_[m[K->lookupTransform(base_frame_, frame_id, t,rclcpp::Duration(10));
+[3.990s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[3.994s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:266:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_frame_[m[K’ was not declared in this scope; did you mean ‘[01m[Kbasename[m[K’?
+[3.994s]   266 |       laser_pose_msg = tf_buffer_->lookupTransform([01;31m[Kbase_frame_[m[K, frame_id, t,rclcpp::Duration(10));
+[3.994s]       |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[3.995s]       |                                                    [32m[Kbasename[m[K
+[3.996s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[3.996s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[3.997s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[3.997s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[3.997s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.997s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[3.997s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[3.998s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.998s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[3.998s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.998s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[3.998s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[3.998s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[3.999s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:279:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[3.999s]   279 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(),"Could not get initial transform from base to laser frame, %s", ex.what());
+[3.999s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[3.999s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/logging.hpp:23[m[K,
+[3.999s]                  from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[4.000s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[4.000s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.000s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.000s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.001s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.001s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.001s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.002s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.002s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.002s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[4.002s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[4.003s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[4.003s] [01m[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[4.003s]    80 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[4.004s]       |                 [01;36m[K^~~~~~[m[K
+[4.004s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[4.004s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[4.004s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.004s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.005s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.005s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.005s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.005s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.005s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.006s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.006s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[4.006s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[4.006s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[4.007s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:279:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.007s]   279 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(),"Could not get initial transform from base to laser frame, %s", ex.what());
+[4.007s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[4.007s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:279:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.008s]   279 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(),"Could not get initial transform from base to laser frame, %s", ex.what());
+[4.008s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[4.008s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:279:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.008s]   279 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(),"Could not get initial transform from base to laser frame, %s", ex.what());
+[4.009s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[4.009s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:283:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_to_laser_[m[K’ was not declared in this scope; did you mean ‘[01m[Kbase_to_laser_tf[m[K’?
+[4.009s]   283 |   [01;31m[Kbase_to_laser_[m[K = base_to_laser_tf;
+[4.009s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.010s]       |   [32m[Kbase_to_laser_tf[m[K
+[4.013s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:284:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_to_base_[m[K’ was not declared in this scope; did you mean ‘[01m[Kbase_to_laser_tf[m[K’?
+[4.014s]   284 |   [01;31m[Klaser_to_base_[m[K = base_to_laser_.inverse();
+[4.014s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.015s]       |   [32m[Kbase_to_laser_tf[m[K
+[4.015s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[4.015s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:290:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+[4.016s]   290 | bool [01;31m[KLidarVel[m[K::processScan(LDP& curr_ldp_scan, const rclcpp::Time& time)
+[4.016s]       |      [01;31m[K^~~~~~~~[m[K
+[4.022s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kbool processScan(laser_data*&, const rclcpp::Time&)[m[K’:
+[4.022s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:301:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_ldp_scan_[m[K’ was not declared in this scope
+[4.022s]   301 |   [01;31m[Kprev_ldp_scan_[m[K->odometry[0] = 0.0;
+[4.022s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.026s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:313:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_[m[K’ was not declared in this scope
+[4.026s]   313 |   [01;31m[Kinput_[m[K.laser_ref = prev_ldp_scan_;
+[4.026s]       |   [01;31m[K^~~~~~[m[K
+[4.029s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:321:16:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+[4.029s]   321 |   double dt = ([01;31m[Know[m[K() - last_icp_time_).nanoseconds()/1e+9;
+[4.029s]       |                [01;31m[K^~~[m[K
+[4.030s]       |                [32m[Kpow[m[K
+[4.037s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:321:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_icp_time_[m[K’ was not declared in this scope
+[4.038s]   321 |   double dt = (now() - [01;31m[Klast_icp_time_[m[K).nanoseconds()/1e+9;
+[4.038s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.049s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:328:3:[m[K [01;31m[Kerror: [m[K‘[01m[KcreateTfFromXYTheta[m[K’ was not declared in this scope
+[4.049s]   328 |   [01;31m[KcreateTfFromXYTheta[m[K(0.0,0.0,0.0, pr_ch);
+[4.050s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.052s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:332:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kf2b_[m[K’ was not declared in this scope
+[4.052s]   332 |   pr_ch = pr_ch * ([01;31m[Kf2b_[m[K * f2b_kf_.inverse());
+[4.053s]       |                    [01;31m[K^~~~[m[K
+[4.055s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:332:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kf2b_kf_[m[K’ was not declared in this scope
+[4.055s]   332 |   pr_ch = pr_ch * (f2b_ * [01;31m[Kf2b_kf_[m[K.inverse());
+[4.056s]       |                           [01;31m[K^~~~~~~[m[K
+[4.061s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:337:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_to_base_[m[K’ was not declared in this scope
+[4.062s]   337 |   pr_ch_l = [01;31m[Klaser_to_base_[m[K * f2b_.inverse() * pr_ch * f2b_ * base_to_laser_ ;
+[4.062s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.069s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:337:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_to_laser_[m[K’ was not declared in this scope
+[4.069s]   337 |   pr_ch_l = laser_to_base_ * f2b_.inverse() * pr_ch * f2b_ * [01;31m[Kbase_to_laser_[m[K ;
+[4.069s]       |                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.072s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:344:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_[m[K’ was not declared in this scope
+[4.072s]   344 |   if ([01;31m[Koutput_[m[K.cov_x_m)
+[4.073s]       |       [01;31m[K^~~~~~~[m[K
+[4.076s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:349:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_[m[K’ was not declared in this scope
+[4.076s]   349 |   if ([01;31m[Koutput_[m[K.dx_dy1_m)
+[4.076s]       |       [01;31m[K^~~~~~~[m[K
+[4.079s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:354:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_[m[K’ was not declared in this scope
+[4.079s]   354 |   if ([01;31m[Koutput_[m[K.dx_dy2_m)
+[4.079s]       |       [01;31m[K^~~~~~~[m[K
+[4.082s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:362:20:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_[m[K’ was not declared in this scope
+[4.082s]   362 |   sm_icp(&input_, &[01;31m[Koutput_[m[K);
+[4.082s]       |                    [01;31m[K^~~~~~~[m[K
+[4.083s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[4.083s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[4.083s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.083s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.084s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.084s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.084s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.084s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.084s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.084s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.084s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[4.085s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[4.085s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[4.085s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:382:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[4.085s]   382 |     RCLCPP_WARN([01;31m[Kget_logger[m[K(),"Error in scan matching");
+[4.085s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[4.085s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/logging.hpp:23[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.086s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.087s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[4.087s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[4.087s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[4.087s] [01m[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[4.087s]    80 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[4.087s]       |                 [01;36m[K^~~~~~[m[K
+[4.087s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[4.087s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[4.087s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.088s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.088s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.088s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.088s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.088s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.088s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.089s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.089s]                  from [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:36[m[K,
+[4.089s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:6[m[K,
+[4.089s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[4.089s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:382:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.089s]   382 |     [01;31m[KRCLCPP_WARN[m[K(get_logger(),"Error in scan matching");
+[4.089s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[4.090s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:382:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.090s]   382 |     [01;31m[KRCLCPP_WARN[m[K(get_logger(),"Error in scan matching");
+[4.090s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[4.090s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:382:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.090s]   382 |     [01;31m[KRCLCPP_WARN[m[K(get_logger(),"Error in scan matching");
+[4.090s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[4.090s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:388:23:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KKDL::Twist[m[K’?
+[4.091s]   388 |   geometry_msgs::msg::[01;31m[KTwist[m[K lidar_vel;
+[4.091s]       |                       [01;31m[K^~~~~[m[K
+[4.091s] In file included from [01m[K/opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+[4.091s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:9[m[K,
+[4.091s]                  from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[4.091s] [01m[K/opt/ros/foxy/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::Twist[m[K’ declared here
+[4.091s]   720 | class [01;36m[KTwist[m[K {
+[4.092s]       |       [01;36m[K^~~~~[m[K
+[4.092s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:391:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_f2b_[m[K’ was not declared in this scope
+[4.092s]   391 |   auto pose_difference = [01;31m[Kprev_f2b_[m[K.inverse() * f2b_;
+[4.092s]       |                          [01;31m[K^~~~~~~~~[m[K
+[4.092s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:392:12:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+[4.093s]   392 |   lidar_vel[01;31m[K.[m[Klinear.x = pose_difference.getOrigin().getX()/dt;
+[4.093s]       |            [01;31m[K^[m[K
+[4.093s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:393:12:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+[4.093s]   393 |   lidar_vel[01;31m[K.[m[Klinear.y = pose_difference.getOrigin().getY()/dt;
+[4.093s]       |            [01;31m[K^[m[K
+[4.093s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:394:12:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+[4.094s]   394 |   lidar_vel[01;31m[K.[m[Kangular.z = tf2::getYaw(pose_difference.getRotation())/dt;
+[4.094s]       |            [01;31m[K^[m[K
+[4.094s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:398:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[4.094s]   398 |   [01;31m[Kvel_publisher_[m[K->publish(lidar_vel);
+[4.094s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.094s]       |   [32m[Krcl_publisher_t[m[K
+[4.095s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:398:36:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[4.095s]   398 |   vel_publisher_->publish(lidar_vel[01;31m[K)[m[K;
+[4.095s]       |                                    [01;31m[K^[m[K
+[4.095s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[4.095s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:402:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[4.095s]   402 |   [01;31m[Kif[m[K (publish_tf_)
+[4.096s]       |   [01;31m[K^~[m[K
+[4.096s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:421:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[4.096s]   421 |   [01;31m[Kif[m[K (newKeyframeNeeded(corr_ch))
+[4.096s]       |   [01;31m[K^~[m[K
+[4.096s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:429:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[4.096s]   429 |   [01;31m[Kelse[m[K
+[4.097s]       |   [01;31m[K^~~~[m[K
+[4.098s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:434:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_icp_time_[m[K’ does not name a type
+[4.099s]   434 |   [01;31m[Klast_icp_time_[m[K = now();
+[4.099s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.099s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:435:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+[4.099s]   435 |   [01;31m[Kreturn[m[K true;
+[4.099s]       |   [01;31m[K^~~~~~[m[K
+[4.100s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:436:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[4.100s]   436 | [01;31m[K}[m[K
+[4.100s]       | [01;31m[K^[m[K
+[4.100s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:438:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+[4.100s]   438 | bool [01;31m[KLidarVel[m[K::newKeyframeNeeded(const tf2::Transform& d)
+[4.100s]       |      [01;31m[K^~~~~~~~[m[K
+[4.108s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kbool newKeyframeNeeded(const tf2::Transform&)[m[K’:
+[4.108s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:440:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kkf_dist_angular_[m[K’ was not declared in this scope
+[4.109s]   440 |   if (fabs(tf2::getYaw(d.getRotation())) > [01;31m[Kkf_dist_angular_[m[K)
+[4.109s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.121s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:445:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kkf_dist_linear_sq_[m[K’ was not declared in this scope
+[4.121s]   445 |   if (x * x + y * y > [01;31m[Kkf_dist_linear_sq_[m[K)
+[4.121s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.122s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[4.122s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:451:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+[4.122s]   451 | void [01;31m[KLidarVel[m[K::laserScanToLDP(const sensor_msgs::msg::LaserScan::SharedPtr& scan, LDP& ldp)
+[4.123s]       |      [01;31m[K^~~~~~~~[m[K
+[4.123s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:487:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+[4.123s]   487 | void [01;31m[KLidarVel[m[K::createTfFromXYTheta(double x, double y, double theta, tf2::Transform& t)
+[4.123s]       |      [01;31m[K^~~~~~~~[m[K
+[4.123s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:495:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[4.124s]   495 | [01;31m[K}[m[K  // namespace lidar_vel
+[4.124s]       | [01;31m[K^[m[K
+[6.617s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kbool processScan(laser_data*&, const rclcpp::Time&)[m[K’:
+[6.617s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:399:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+[6.617s]   399 |   [01;35m[K}[m[K
+[6.618s]       |   [01;35m[K^[m[K
+[6.660s] make[2]: *** [CMakeFiles/lidar_vel.dir/build.make:63: CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o] Error 1
+[6.660s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar_vel.dir/all] Error 2
+[6.661s] make: *** [Makefile:141: all] Error 2
+[6.666s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel' returned '2': AMENT_PREFIX_PATH=/home/kazuma/ros2_ws_2/ros2_main/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazuma/ros2_ws_2/ros2_main/install/csm:/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy LD_LIBRARY_PATH=/home/kazuma/ros2_ws_2/ros2_main/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel -- -j8 -l8

@@ -1,0 +1,391 @@
+[0.000000] (-) TimerEvent: {}
+[0.000390] (-) JobUnselected: {'identifier': 'bno055_io'}
+[0.001072] (-) JobUnselected: {'identifier': 'lidar_vel'}
+[0.001177] (-) JobUnselected: {'identifier': 'main_executor'}
+[0.001223] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.001273] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.001373] (-) JobUnselected: {'identifier': 'socketcan_interface'}
+[0.001447] (-) JobUnselected: {'identifier': 'socketcan_interface_msg'}
+[0.002154] (-) JobUnselected: {'identifier': 'urdf_test'}
+[0.002278] (-) JobUnselected: {'identifier': 'urg'}
+[0.002370] (csm) JobQueued: {'identifier': 'csm', 'dependencies': OrderedDict()}
+[0.002436] (csm) JobStarted: {'identifier': 'csm'}
+[0.033586] (csm) JobProgress: {'identifier': 'csm', 'progress': 'cmake'}
+[0.034566] (csm) Command: {'cmd': ['/usr/bin/cmake', '/home/kazuma/ros2_ws_2/ros2_main/src/csm', '-DCMAKE_INSTALL_PREFIX=/home/kazuma/ros2_ws_2/ros2_main/install/csm'], 'cwd': '/home/kazuma/ros2_ws_2/ros2_main/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kazuma'), ('GIT_ASKPASS', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/kazuma/ros2_ws/install/smac_planner/lib:/home/kazuma/ros2_ws/install/slam_toolbox/lib:/home/kazuma/ros2_ws/install/nav2_controller/lib:/home/kazuma/ros2_ws/install/dwb_plugins/lib:/home/kazuma/ros2_ws/install/dwb_critics/lib:/home/kazuma/ros2_ws/install/dwb_core/lib:/home/kazuma/ros2_ws/install/nav_2d_utils/lib:/home/kazuma/ros2_ws/install/dwb_msgs/lib:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws/install/nav2_recoveries/lib:/home/kazuma/ros2_ws/install/nav2_planner/lib:/home/kazuma/ros2_ws/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws/install/costmap_queue/lib:/home/kazuma/ros2_ws/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws/install/nav2_map_server/lib:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws/install/nav2_amcl/lib:/home/kazuma/ros2_ws/install/nav2_util/lib:/home/kazuma/ros2_ws/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib:/home/kazuma/ros2_ws_2/install/smac_planner/lib:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib:/home/kazuma/ros2_ws_2/install/nav2_controller/lib:/home/kazuma/ros2_ws_2/install/dwb_plugins/lib:/home/kazuma/ros2_ws_2/install/dwb_critics/lib:/home/kazuma/ros2_ws_2/install/dwb_core/lib:/home/kazuma/ros2_ws_2/install/nav_2d_utils/lib:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws_2/install/nav2_recoveries/lib:/home/kazuma/ros2_ws_2/install/nav2_planner/lib:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws_2/install/costmap_queue/lib:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws_2/install/nav2_map_server/lib:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws_2/install/nav2_amcl/lib:/home/kazuma/ros2_ws_2/install/nav2_util/lib:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kazuma'), ('OLDPWD', '/home/kazuma/ros2_ws_2/src'), ('TERM_PROGRAM_VERSION', '1.66.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-abbedab1-5936-4b94-a74d-a3eaf2c87293.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('COLCON_PREFIX_PATH', '/home/kazuma/ros2_ws_2/install:/home/kazuma/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kazuma'), ('NAME', 'LAPTOP-F8PTRVOF'), ('WSL_INTEROP', '/run/WSL/604_interop'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Apple/Apple Application Support:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Fujitsu/FJAgent/Core/bin:/mnt/c/pg/Python37/:/mnt/c/pg/Python37/Scripts/:/mnt/c/MinGW/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/ClionProjects/test:/mnt/c/Users/Kazuma Nagatsuka/Videos/Captures:/mnt/c/Program Files/MATLAB/R2021b:/mnt/c/Program Files/vscode_programs/webapi_test:/mnt/c/Program Files/gnuplot/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Scripts:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Library/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Kazuma Nagatsuka/AppData/Roaming/Python/Python38/Scripts:/mnt/c/texlive/2021/bin/win32:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/JetBrains/PyCharm 2021.3/bin:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('DISPLAY', '172.29.0.1:0'), ('LANG', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dbcbb19f74.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kazuma/ros2_ws_2/ros2_main/build/csm'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kazuma/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/build/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_example/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[0.098879] (-) TimerEvent: {}
+[0.199519] (-) TimerEvent: {}
+[0.300123] (-) TimerEvent: {}
+[0.400569] (-) TimerEvent: {}
+[0.501025] (-) TimerEvent: {}
+[0.601462] (-) TimerEvent: {}
+[0.660410] (csm) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.701705] (-) TimerEvent: {}
+[0.802191] (-) TimerEvent: {}
+[0.902823] (-) TimerEvent: {}
+[1.003369] (-) TimerEvent: {}
+[1.103832] (-) TimerEvent: {}
+[1.204226] (-) TimerEvent: {}
+[1.267325] (csm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[1.304389] (-) TimerEvent: {}
+[1.404803] (-) TimerEvent: {}
+[1.427930] (csm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.505010] (-) TimerEvent: {}
+[1.605512] (-) TimerEvent: {}
+[1.637542] (csm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.640347] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.705719] (-) TimerEvent: {}
+[1.806175] (-) TimerEvent: {}
+[1.832036] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.845864] (csm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.846894] (csm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.852389] (csm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.906329] (-) TimerEvent: {}
+[2.006772] (-) TimerEvent: {}
+[2.057355] (csm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.058464] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.106976] (-) TimerEvent: {}
+[2.207508] (-) TimerEvent: {}
+[2.272612] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.285467] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.286138] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.307696] (-) TimerEvent: {}
+[2.390648] (csm) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.407969] (-) TimerEvent: {}
+[2.464827] (csm) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.465080] (csm) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.508128] (-) TimerEvent: {}
+[2.608540] (-) TimerEvent: {}
+[2.709024] (-) TimerEvent: {}
+[2.809573] (-) TimerEvent: {}
+[2.890320] (csm) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.909752] (-) TimerEvent: {}
+[3.010185] (-) TimerEvent: {}
+[3.110686] (-) TimerEvent: {}
+[3.211147] (-) TimerEvent: {}
+[3.311612] (-) TimerEvent: {}
+[3.358365] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.405349] (csm) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.411704] (-) TimerEvent: {}
+[3.512145] (-) TimerEvent: {}
+[3.612604] (-) TimerEvent: {}
+[3.713096] (-) TimerEvent: {}
+[3.813573] (-) TimerEvent: {}
+[3.913965] (-) TimerEvent: {}
+[4.014368] (-) TimerEvent: {}
+[4.114868] (-) TimerEvent: {}
+[4.215387] (-) TimerEvent: {}
+[4.315812] (-) TimerEvent: {}
+[4.416297] (-) TimerEvent: {}
+[4.516732] (-) TimerEvent: {}
+[4.617421] (-) TimerEvent: {}
+[4.717832] (-) TimerEvent: {}
+[4.818416] (-) TimerEvent: {}
+[4.919032] (-) TimerEvent: {}
+[4.923415] (csm) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[5.019203] (-) TimerEvent: {}
+[5.119659] (-) TimerEvent: {}
+[5.220109] (-) TimerEvent: {}
+[5.320532] (-) TimerEvent: {}
+[5.420993] (-) TimerEvent: {}
+[5.521444] (-) TimerEvent: {}
+[5.621945] (-) TimerEvent: {}
+[5.722386] (-) TimerEvent: {}
+[5.822800] (-) TimerEvent: {}
+[5.923225] (-) TimerEvent: {}
+[6.023693] (-) TimerEvent: {}
+[6.124167] (-) TimerEvent: {}
+[6.176484] (csm) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[6.224312] (-) TimerEvent: {}
+[6.324698] (-) TimerEvent: {}
+[6.425189] (-) TimerEvent: {}
+[6.525662] (-) TimerEvent: {}
+[6.626097] (-) TimerEvent: {}
+[6.726614] (-) TimerEvent: {}
+[6.827042] (-) TimerEvent: {}
+[6.927456] (-) TimerEvent: {}
+[7.027876] (-) TimerEvent: {}
+[7.128301] (-) TimerEvent: {}
+[7.228736] (-) TimerEvent: {}
+[7.329279] (-) TimerEvent: {}
+[7.429805] (-) TimerEvent: {}
+[7.530283] (-) TimerEvent: {}
+[7.630747] (-) TimerEvent: {}
+[7.731345] (-) TimerEvent: {}
+[7.831829] (-) TimerEvent: {}
+[7.932321] (-) TimerEvent: {}
+[8.032822] (-) TimerEvent: {}
+[8.133357] (-) TimerEvent: {}
+[8.233828] (-) TimerEvent: {}
+[8.334283] (-) TimerEvent: {}
+[8.434817] (-) TimerEvent: {}
+[8.472031] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.535014] (-) TimerEvent: {}
+[8.635449] (-) TimerEvent: {}
+[8.642073] (csm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[8.654243] (csm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.657790] (csm) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.735616] (-) TimerEvent: {}
+[8.836075] (-) TimerEvent: {}
+[8.881418] (csm) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.881903] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.936259] (-) TimerEvent: {}
+[9.036738] (-) TimerEvent: {}
+[9.087494] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[9.088070] (csm) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[9.136898] (-) TimerEvent: {}
+[9.237307] (-) TimerEvent: {}
+[9.267270] (csm) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[9.267590] (csm) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[9.337455] (-) TimerEvent: {}
+[9.437877] (-) TimerEvent: {}
+[9.458713] (csm) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[9.459777] (csm) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.538078] (-) TimerEvent: {}
+[9.638564] (-) TimerEvent: {}
+[9.739020] (-) TimerEvent: {}
+[9.839449] (-) TimerEvent: {}
+[9.863047] (csm) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.879157] (csm) StdoutLine: {'line': b'-- Generating done\n'}
+[9.883863] (csm) StdoutLine: {'line': b'-- Build files have been written to: /home/kazuma/ros2_ws_2/ros2_main/build/csm\n'}
+[9.893206] (csm) CommandEnded: {'returncode': 0}
+[9.894249] (csm) JobProgress: {'identifier': 'csm', 'progress': 'build'}
+[9.899713] (csm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kazuma/ros2_ws_2/ros2_main/build/csm', '--', '-j8', '-l8'], 'cwd': '/home/kazuma/ros2_ws_2/ros2_main/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kazuma'), ('GIT_ASKPASS', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/kazuma/ros2_ws/install/smac_planner/lib:/home/kazuma/ros2_ws/install/slam_toolbox/lib:/home/kazuma/ros2_ws/install/nav2_controller/lib:/home/kazuma/ros2_ws/install/dwb_plugins/lib:/home/kazuma/ros2_ws/install/dwb_critics/lib:/home/kazuma/ros2_ws/install/dwb_core/lib:/home/kazuma/ros2_ws/install/nav_2d_utils/lib:/home/kazuma/ros2_ws/install/dwb_msgs/lib:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws/install/nav2_recoveries/lib:/home/kazuma/ros2_ws/install/nav2_planner/lib:/home/kazuma/ros2_ws/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws/install/costmap_queue/lib:/home/kazuma/ros2_ws/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws/install/nav2_map_server/lib:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws/install/nav2_amcl/lib:/home/kazuma/ros2_ws/install/nav2_util/lib:/home/kazuma/ros2_ws/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib:/home/kazuma/ros2_ws_2/install/smac_planner/lib:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib:/home/kazuma/ros2_ws_2/install/nav2_controller/lib:/home/kazuma/ros2_ws_2/install/dwb_plugins/lib:/home/kazuma/ros2_ws_2/install/dwb_critics/lib:/home/kazuma/ros2_ws_2/install/dwb_core/lib:/home/kazuma/ros2_ws_2/install/nav_2d_utils/lib:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws_2/install/nav2_recoveries/lib:/home/kazuma/ros2_ws_2/install/nav2_planner/lib:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws_2/install/costmap_queue/lib:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws_2/install/nav2_map_server/lib:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws_2/install/nav2_amcl/lib:/home/kazuma/ros2_ws_2/install/nav2_util/lib:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kazuma'), ('OLDPWD', '/home/kazuma/ros2_ws_2/src'), ('TERM_PROGRAM_VERSION', '1.66.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-abbedab1-5936-4b94-a74d-a3eaf2c87293.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('COLCON_PREFIX_PATH', '/home/kazuma/ros2_ws_2/install:/home/kazuma/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kazuma'), ('NAME', 'LAPTOP-F8PTRVOF'), ('WSL_INTEROP', '/run/WSL/604_interop'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Apple/Apple Application Support:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Fujitsu/FJAgent/Core/bin:/mnt/c/pg/Python37/:/mnt/c/pg/Python37/Scripts/:/mnt/c/MinGW/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/ClionProjects/test:/mnt/c/Users/Kazuma Nagatsuka/Videos/Captures:/mnt/c/Program Files/MATLAB/R2021b:/mnt/c/Program Files/vscode_programs/webapi_test:/mnt/c/Program Files/gnuplot/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Scripts:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Library/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Kazuma Nagatsuka/AppData/Roaming/Python/Python38/Scripts:/mnt/c/texlive/2021/bin/win32:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/JetBrains/PyCharm 2021.3/bin:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('DISPLAY', '172.29.0.1:0'), ('LANG', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dbcbb19f74.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kazuma/ros2_ws_2/ros2_main/build/csm'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kazuma/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/build/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_example/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[9.939668] (-) TimerEvent: {}
+[9.959501] (csm) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target csm\x1b[0m\n'}
+[10.039886] (-) TimerEvent: {}
+[10.140329] (-) TimerEvent: {}
+[10.234933] (csm) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o\x1b[0m\n'}
+[10.235211] (csm) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o\x1b[0m\n'}
+[10.235481] (csm) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o\x1b[0m\n'}
+[10.235957] (csm) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o\x1b[0m\n'}
+[10.236838] (csm) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o\x1b[0m\n'}
+[10.237317] (csm) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o\x1b[0m\n'}
+[10.239785] (csm) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o\x1b[0m\n'}
+[10.240428] (-) TimerEvent: {}
+[10.256574] (csm) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o\x1b[0m\n'}
+[10.340575] (-) TimerEvent: {}
+[10.441093] (-) TimerEvent: {}
+[10.541522] (-) TimerEvent: {}
+[10.641930] (-) TimerEvent: {}
+[10.742916] (-) TimerEvent: {}
+[10.843329] (-) TimerEvent: {}
+[10.947834] (-) TimerEvent: {}
+[11.048824] (-) TimerEvent: {}
+[11.149737] (-) TimerEvent: {}
+[11.250186] (-) TimerEvent: {}
+[11.350642] (-) TimerEvent: {}
+[11.451054] (-) TimerEvent: {}
+[11.557133] (-) TimerEvent: {}
+[11.657982] (-) TimerEvent: {}
+[11.758461] (-) TimerEvent: {}
+[11.858905] (-) TimerEvent: {}
+[11.959361] (-) TimerEvent: {}
+[12.059782] (-) TimerEvent: {}
+[12.160212] (-) TimerEvent: {}
+[12.260631] (-) TimerEvent: {}
+[12.361064] (-) TimerEvent: {}
+[12.449026] (csm) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o\x1b[0m\n'}
+[12.461372] (-) TimerEvent: {}
+[12.472955] (csm) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o\x1b[0m\n'}
+[12.501758] (csm) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o\x1b[0m\n'}
+[12.515992] (csm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o\x1b[0m\n'}
+[12.549686] (csm) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o\x1b[0m\n'}
+[12.561497] (-) TimerEvent: {}
+[12.570741] (csm) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o\x1b[0m\n'}
+[12.620955] (csm) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o\x1b[0m\n'}
+[12.630323] (csm) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o\x1b[0m\n'}
+[12.661630] (-) TimerEvent: {}
+[12.762060] (-) TimerEvent: {}
+[12.862455] (-) TimerEvent: {}
+[12.962855] (-) TimerEvent: {}
+[13.063270] (-) TimerEvent: {}
+[13.163735] (-) TimerEvent: {}
+[13.264172] (-) TimerEvent: {}
+[13.364592] (-) TimerEvent: {}
+[13.465341] (-) TimerEvent: {}
+[13.565759] (-) TimerEvent: {}
+[13.670711] (-) TimerEvent: {}
+[13.773463] (-) TimerEvent: {}
+[13.873925] (-) TimerEvent: {}
+[13.974376] (-) TimerEvent: {}
+[14.074822] (-) TimerEvent: {}
+[14.175251] (-) TimerEvent: {}
+[14.275695] (-) TimerEvent: {}
+[14.376344] (-) TimerEvent: {}
+[14.476779] (-) TimerEvent: {}
+[14.578218] (-) TimerEvent: {}
+[14.680389] (-) TimerEvent: {}
+[14.786587] (-) TimerEvent: {}
+[14.855433] (csm) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o\x1b[0m\n'}
+[14.870659] (csm) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o\x1b[0m\n'}
+[14.888051] (-) TimerEvent: {}
+[14.988492] (-) TimerEvent: {}
+[15.038651] (csm) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o\x1b[0m\n'}
+[15.088917] (-) TimerEvent: {}
+[15.140891] (csm) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o\x1b[0m\n'}
+[15.192646] (-) TimerEvent: {}
+[15.218836] (csm) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o\x1b[0m\n'}
+[15.295681] (-) TimerEvent: {}
+[15.316672] (csm) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o\x1b[0m\n'}
+[15.395824] (-) TimerEvent: {}
+[15.496284] (-) TimerEvent: {}
+[15.602439] (-) TimerEvent: {}
+[15.702859] (-) TimerEvent: {}
+[15.803254] (-) TimerEvent: {}
+[15.844552] (csm) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o\x1b[0m\n'}
+[15.903391] (-) TimerEvent: {}
+[16.004116] (-) TimerEvent: {}
+[16.104570] (-) TimerEvent: {}
+[16.205043] (-) TimerEvent: {}
+[16.305498] (-) TimerEvent: {}
+[16.405934] (-) TimerEvent: {}
+[16.506385] (-) TimerEvent: {}
+[16.606857] (-) TimerEvent: {}
+[16.707324] (-) TimerEvent: {}
+[16.807840] (-) TimerEvent: {}
+[16.908342] (-) TimerEvent: {}
+[17.008831] (-) TimerEvent: {}
+[17.109392] (-) TimerEvent: {}
+[17.209903] (-) TimerEvent: {}
+[17.310372] (-) TimerEvent: {}
+[17.410819] (-) TimerEvent: {}
+[17.511288] (-) TimerEvent: {}
+[17.611718] (-) TimerEvent: {}
+[17.712126] (-) TimerEvent: {}
+[17.812616] (-) TimerEvent: {}
+[17.913096] (-) TimerEvent: {}
+[18.013673] (-) TimerEvent: {}
+[18.114160] (-) TimerEvent: {}
+[18.214687] (-) TimerEvent: {}
+[18.315152] (-) TimerEvent: {}
+[18.415675] (-) TimerEvent: {}
+[18.516129] (-) TimerEvent: {}
+[18.616591] (-) TimerEvent: {}
+[18.717067] (-) TimerEvent: {}
+[18.817807] (-) TimerEvent: {}
+[18.918328] (-) TimerEvent: {}
+[19.018819] (-) TimerEvent: {}
+[19.119336] (-) TimerEvent: {}
+[19.219807] (-) TimerEvent: {}
+[19.320265] (-) TimerEvent: {}
+[19.420764] (-) TimerEvent: {}
+[19.521266] (-) TimerEvent: {}
+[19.621639] (-) TimerEvent: {}
+[19.722132] (-) TimerEvent: {}
+[19.822588] (-) TimerEvent: {}
+[19.923118] (-) TimerEvent: {}
+[20.023620] (-) TimerEvent: {}
+[20.124131] (-) TimerEvent: {}
+[20.224517] (-) TimerEvent: {}
+[20.324996] (-) TimerEvent: {}
+[20.425436] (-) TimerEvent: {}
+[20.525870] (-) TimerEvent: {}
+[20.626395] (-) TimerEvent: {}
+[20.726976] (-) TimerEvent: {}
+[20.827393] (-) TimerEvent: {}
+[20.927898] (-) TimerEvent: {}
+[21.028435] (-) TimerEvent: {}
+[21.128933] (-) TimerEvent: {}
+[21.229362] (-) TimerEvent: {}
+[21.329966] (-) TimerEvent: {}
+[21.430467] (-) TimerEvent: {}
+[21.530957] (-) TimerEvent: {}
+[21.631430] (-) TimerEvent: {}
+[21.731924] (-) TimerEvent: {}
+[21.832405] (-) TimerEvent: {}
+[21.932937] (-) TimerEvent: {}
+[22.033357] (-) TimerEvent: {}
+[22.133775] (-) TimerEvent: {}
+[22.234227] (-) TimerEvent: {}
+[22.334763] (-) TimerEvent: {}
+[22.435235] (-) TimerEvent: {}
+[22.535758] (-) TimerEvent: {}
+[22.636251] (-) TimerEvent: {}
+[22.736680] (-) TimerEvent: {}
+[22.837139] (-) TimerEvent: {}
+[22.937730] (-) TimerEvent: {}
+[23.038273] (-) TimerEvent: {}
+[23.138728] (-) TimerEvent: {}
+[23.239262] (-) TimerEvent: {}
+[23.339692] (-) TimerEvent: {}
+[23.440180] (-) TimerEvent: {}
+[23.540711] (-) TimerEvent: {}
+[23.641103] (-) TimerEvent: {}
+[23.741509] (-) TimerEvent: {}
+[23.841922] (-) TimerEvent: {}
+[23.942428] (-) TimerEvent: {}
+[24.042944] (-) TimerEvent: {}
+[24.143387] (-) TimerEvent: {}
+[24.243908] (-) TimerEvent: {}
+[24.344348] (-) TimerEvent: {}
+[24.444915] (-) TimerEvent: {}
+[24.545576] (-) TimerEvent: {}
+[24.646096] (-) TimerEvent: {}
+[24.746633] (-) TimerEvent: {}
+[24.847121] (-) TimerEvent: {}
+[24.947724] (-) TimerEvent: {}
+[25.048296] (-) TimerEvent: {}
+[25.148861] (-) TimerEvent: {}
+[25.249388] (-) TimerEvent: {}
+[25.349865] (-) TimerEvent: {}
+[25.450408] (-) TimerEvent: {}
+[25.550937] (-) TimerEvent: {}
+[25.651435] (-) TimerEvent: {}
+[25.751924] (-) TimerEvent: {}
+[25.852406] (-) TimerEvent: {}
+[25.952922] (-) TimerEvent: {}
+[26.053371] (-) TimerEvent: {}
+[26.153816] (-) TimerEvent: {}
+[26.254248] (-) TimerEvent: {}
+[26.320550] (csm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcsm.so\x1b[0m\n'}
+[26.354464] (-) TimerEvent: {}
+[26.454998] (-) TimerEvent: {}
+[26.555585] (-) TimerEvent: {}
+[26.655968] (-) TimerEvent: {}
+[26.756456] (-) TimerEvent: {}
+[26.823730] (csm) StdoutLine: {'line': b'[100%] Built target csm\n'}
+[26.842523] (csm) CommandEnded: {'returncode': 0}
+[26.856665] (-) TimerEvent: {}
+[26.957288] (-) TimerEvent: {}
+[26.985840] (csm) JobProgress: {'identifier': 'csm', 'progress': 'install'}
+[27.002919] (csm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kazuma/ros2_ws_2/ros2_main/build/csm'], 'cwd': '/home/kazuma/ros2_ws_2/ros2_main/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kazuma'), ('GIT_ASKPASS', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/kazuma/ros2_ws/install/smac_planner/lib:/home/kazuma/ros2_ws/install/slam_toolbox/lib:/home/kazuma/ros2_ws/install/nav2_controller/lib:/home/kazuma/ros2_ws/install/dwb_plugins/lib:/home/kazuma/ros2_ws/install/dwb_critics/lib:/home/kazuma/ros2_ws/install/dwb_core/lib:/home/kazuma/ros2_ws/install/nav_2d_utils/lib:/home/kazuma/ros2_ws/install/dwb_msgs/lib:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws/install/nav2_recoveries/lib:/home/kazuma/ros2_ws/install/nav2_planner/lib:/home/kazuma/ros2_ws/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws/install/costmap_queue/lib:/home/kazuma/ros2_ws/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws/install/nav2_map_server/lib:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws/install/nav2_amcl/lib:/home/kazuma/ros2_ws/install/nav2_util/lib:/home/kazuma/ros2_ws/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib:/home/kazuma/ros2_ws_2/install/smac_planner/lib:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib:/home/kazuma/ros2_ws_2/install/nav2_controller/lib:/home/kazuma/ros2_ws_2/install/dwb_plugins/lib:/home/kazuma/ros2_ws_2/install/dwb_critics/lib:/home/kazuma/ros2_ws_2/install/dwb_core/lib:/home/kazuma/ros2_ws_2/install/nav_2d_utils/lib:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower/lib:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller/lib:/home/kazuma/ros2_ws_2/install/nav2_recoveries/lib:/home/kazuma/ros2_ws_2/install/nav2_planner/lib:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner/lib:/home/kazuma/ros2_ws_2/install/costmap_queue/lib:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d/lib:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid/lib:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins/lib:/home/kazuma/ros2_ws_2/install/nav2_map_server/lib:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager/lib:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator/lib:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree/lib:/home/kazuma/ros2_ws_2/install/nav2_amcl/lib:/home/kazuma/ros2_ws_2/install/nav2_util/lib:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib:/home/kazuma/ros2_ws_2/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kazuma'), ('OLDPWD', '/home/kazuma/ros2_ws_2/src'), ('TERM_PROGRAM_VERSION', '1.66.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-abbedab1-5936-4b94-a74d-a3eaf2c87293.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('COLCON_PREFIX_PATH', '/home/kazuma/ros2_ws_2/install:/home/kazuma/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kazuma'), ('NAME', 'LAPTOP-F8PTRVOF'), ('WSL_INTEROP', '/run/WSL/604_interop'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kazuma/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kazuma/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python38/Scripts/:/mnt/c/Program Files/Python38/:/mnt/c/Program Files (x86)/Common Files/Apple/Apple Application Support:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Fujitsu/FJAgent/Core/bin:/mnt/c/pg/Python37/:/mnt/c/pg/Python37/Scripts/:/mnt/c/MinGW/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/ClionProjects/test:/mnt/c/Users/Kazuma Nagatsuka/Videos/Captures:/mnt/c/Program Files/MATLAB/R2021b:/mnt/c/Program Files/vscode_programs/webapi_test:/mnt/c/Program Files/gnuplot/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Scripts:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3/Library/bin:/mnt/c/Users/Kazuma Nagatsuka/Anaconda3:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Kazuma Nagatsuka/AppData/Roaming/Python/Python38/Scripts:/mnt/c/texlive/2021/bin/win32:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/JetBrains/PyCharm 2021.3/bin:/mnt/c/Users/Kazuma Nagatsuka/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('DISPLAY', '172.29.0.1:0'), ('LANG', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dbcbb19f74.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kazuma/ros2_ws_2/ros2_main/build/csm'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kazuma/ros2_ws/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws/build/nav2_gazebo_spawner:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_example/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/slam_toolbox/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dwb_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_msgs/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/nav2_common/lib/python3.8/site-packages:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/kazuma/ros2_ws/install/tutorial_topic:/home/kazuma/ros2_ws/install/tutorial_package:/home/kazuma/ros2_ws/install/turtlebot3_simulations:/home/kazuma/ros2_ws/install/turtlebot3_gazebo:/home/kazuma/ros2_ws/install/turtlebot3_fake_node:/home/kazuma/ros2_ws/install/nav2_system_tests:/home/kazuma/ros2_ws/install/nav2_bringup:/home/kazuma/ros2_ws/install/navigation2:/home/kazuma/ros2_ws/install/smac_planner:/home/kazuma/ros2_ws/install/slam_toolbox:/home/kazuma/ros2_ws/install/nav2_dwb_controller:/home/kazuma/ros2_ws/install/nav2_controller:/home/kazuma/ros2_ws/install/dwb_plugins:/home/kazuma/ros2_ws/install/dwb_critics:/home/kazuma/ros2_ws/install/dwb_core:/home/kazuma/ros2_ws/install/nav_2d_utils:/home/kazuma/ros2_ws/install/dwb_msgs:/home/kazuma/ros2_ws/install/nav_2d_msgs:/home/kazuma/ros2_ws/install/nav2_waypoint_follower:/home/kazuma/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws/install/nav2_recoveries:/home/kazuma/ros2_ws/install/nav2_planner:/home/kazuma/ros2_ws/install/nav2_navfn_planner:/home/kazuma/ros2_ws/install/nav2_core:/home/kazuma/ros2_ws/install/costmap_queue:/home/kazuma/ros2_ws/install/nav2_costmap_2d:/home/kazuma/ros2_ws/install/nav2_voxel_grid:/home/kazuma/ros2_ws/install/nav2_rviz_plugins:/home/kazuma/ros2_ws/install/nav2_map_server:/home/kazuma/ros2_ws/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws/install/nav2_bt_navigator:/home/kazuma/ros2_ws/install/nav2_behavior_tree:/home/kazuma/ros2_ws/install/nav2_amcl:/home/kazuma/ros2_ws/install/nav2_util:/home/kazuma/ros2_ws/install/nav2_common:/home/kazuma/ros2_ws_2/install/urg:/home/kazuma/ros2_ws_2/install/urdf_tutorial:/home/kazuma/ros2_ws_2/install/turtlebot3_msgs:/home/kazuma/ros2_ws_2/install/turtlebot3_gazebo:/home/kazuma/ros2_ws_2/install/turtlebot3_description:/home/kazuma/ros2_ws_2/install/turtlebot3_cartographer:/home/kazuma/ros2_ws_2/install/nav2_system_tests:/home/kazuma/ros2_ws_2/install/nav2_bringup:/home/kazuma/ros2_ws_2/install/navigation2:/home/kazuma/ros2_ws_2/install/smac_planner:/home/kazuma/ros2_ws_2/install/slam_toolbox:/home/kazuma/ros2_ws_2/install/send_goal_2:/home/kazuma/ros2_ws_2/install/send_goal:/home/kazuma/ros2_ws_2/install/nav2_dwb_controller:/home/kazuma/ros2_ws_2/install/nav2_controller:/home/kazuma/ros2_ws_2/install/dwb_plugins:/home/kazuma/ros2_ws_2/install/dwb_critics:/home/kazuma/ros2_ws_2/install/dwb_core:/home/kazuma/ros2_ws_2/install/nav_2d_utils:/home/kazuma/ros2_ws_2/install/dwb_msgs:/home/kazuma/ros2_ws_2/install/nav_2d_msgs:/home/kazuma/ros2_ws_2/install/nav2_waypoint_follower:/home/kazuma/ros2_ws_2/install/nav2_regulated_pure_pursuit_controller:/home/kazuma/ros2_ws_2/install/nav2_recoveries:/home/kazuma/ros2_ws_2/install/nav2_planner:/home/kazuma/ros2_ws_2/install/nav2_navfn_planner:/home/kazuma/ros2_ws_2/install/nav2_core:/home/kazuma/ros2_ws_2/install/costmap_queue:/home/kazuma/ros2_ws_2/install/nav2_costmap_2d:/home/kazuma/ros2_ws_2/install/nav2_voxel_grid:/home/kazuma/ros2_ws_2/install/nav2_rviz_plugins:/home/kazuma/ros2_ws_2/install/nav2_map_server:/home/kazuma/ros2_ws_2/install/nav2_lifecycle_manager:/home/kazuma/ros2_ws_2/install/nav2_bt_navigator:/home/kazuma/ros2_ws_2/install/nav2_behavior_tree:/home/kazuma/ros2_ws_2/install/nav2_amcl:/home/kazuma/ros2_ws_2/install/nav2_util:/home/kazuma/ros2_ws_2/install/nav2_msgs:/home/kazuma/ros2_ws_2/install/nav2_common:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_examples:/home/kazuma/ros2_ws_2/install/dynamixel_sdk_custom_interfaces:/home/kazuma/ros2_ws_2/install/dynamixel_sdk:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[27.016851] (csm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.017358] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/lib/libcsm.so\n'}
+[27.023485] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include\n'}
+[27.024106] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/gsl_eigen\n'}
+[27.024679] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/gsl_eigen/gsl_eigen.h\n'}
+[27.025257] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm\n'}
+[27.025580] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/restrict.h\n'}
+[27.026136] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/csm.h\n'}
+[27.026442] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/laser_data.h\n'}
+[27.026707] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/algos.h\n'}
+[27.026935] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/laser_data_inline.h\n'}
+[27.027217] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/resource\n'}
+[27.027531] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/resource/csm\n'}
+[27.027853] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/../gsl_eigen\n'}
+[27.028265] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/../gsl_eigen/gsl_eigen.h\n'}
+[27.028688] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/library_path.sh\n'}
+[27.029025] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/library_path.dsv\n'}
+[27.029252] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/package_run_dependencies/csm\n'}
+[27.029469] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/parent_prefix_path/csm\n'}
+[27.029837] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/ament_prefix_path.sh\n'}
+[27.030077] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/ament_prefix_path.dsv\n'}
+[27.030395] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/path.sh\n'}
+[27.030575] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/path.dsv\n'}
+[27.030845] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.bash\n'}
+[27.031078] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.sh\n'}
+[27.031446] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.zsh\n'}
+[27.031841] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.dsv\n'}
+[27.031965] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/package.dsv\n'}
+[27.032148] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/packages/csm\n'}
+[27.032297] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[27.032464] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[27.032732] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[27.032925] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/csmConfig.cmake\n'}
+[27.033125] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/csmConfig-version.cmake\n'}
+[27.034127] (csm) StdoutLine: {'line': b'-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/package.xml\n'}
+[27.035994] (csm) CommandEnded: {'returncode': 0}
+[27.057525] (-) TimerEvent: {}
+[27.160094] (-) TimerEvent: {}
+[27.230364] (csm) JobEnded: {'identifier': 'csm', 'rc': 0}
+[27.231649] (-) EventReactorShutdown: {}

@@ -1,0 +1,104 @@
+[0.036s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake /home/kazuma/ros2_ws_2/ros2_main/src/csm -DCMAKE_INSTALL_PREFIX=/home/kazuma/ros2_ws_2/ros2_main/install/csm
+[0.658s] -- The C compiler identification is GNU 9.3.0
+[1.265s] -- The CXX compiler identification is GNU 9.3.0
+[1.426s] -- Check for working C compiler: /usr/bin/cc
+[1.635s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.638s] -- Detecting C compiler ABI info
+[1.830s] -- Detecting C compiler ABI info - done
+[1.844s] -- Detecting C compile features
+[1.844s] -- Detecting C compile features - done
+[1.850s] -- Check for working CXX compiler: /usr/bin/c++
+[2.055s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.056s] -- Detecting CXX compiler ABI info
+[2.270s] -- Detecting CXX compiler ABI info - done
+[2.283s] -- Detecting CXX compile features
+[2.284s] -- Detecting CXX compile features - done
+[2.388s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.462s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.463s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.888s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.403s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.921s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.174s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.470s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.640s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[8.652s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.655s] -- Looking for pthread.h
+[8.879s] -- Looking for pthread.h - found
+[8.879s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.085s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.086s] -- Looking for pthread_create in pthreads
+[9.265s] -- Looking for pthread_create in pthreads - not found
+[9.265s] -- Looking for pthread_create in pthread
+[9.456s] -- Looking for pthread_create in pthread - found
+[9.457s] -- Found Threads: TRUE  
+[9.861s] -- Configuring done
+[9.877s] -- Generating done
+[9.882s] -- Build files have been written to: /home/kazuma/ros2_ws_2/ros2_main/build/csm
+[9.891s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake /home/kazuma/ros2_ws_2/ros2_main/src/csm -DCMAKE_INSTALL_PREFIX=/home/kazuma/ros2_ws_2/ros2_main/install/csm
+[9.898s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/build/csm -- -j8 -l8
+[9.957s] [35m[1mScanning dependencies of target csm[0m
+[10.233s] [  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o[0m
+[10.233s] [  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o[0m
+[10.233s] [ 12%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o[0m
+[10.234s] [ 16%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o[0m
+[10.234s] [ 20%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o[0m
+[10.235s] [ 25%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o[0m
+[10.237s] [ 29%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o[0m
+[10.254s] [ 33%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o[0m
+[12.447s] [ 37%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o[0m
+[12.471s] [ 41%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o[0m
+[12.499s] [ 45%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o[0m
+[12.514s] [ 50%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o[0m
+[12.547s] [ 54%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o[0m
+[12.569s] [ 58%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o[0m
+[12.619s] [ 62%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o[0m
+[12.628s] [ 66%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o[0m
+[14.853s] [ 70%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o[0m
+[14.868s] [ 75%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o[0m
+[15.036s] [ 79%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o[0m
+[15.139s] [ 83%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o[0m
+[15.217s] [ 87%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o[0m
+[15.314s] [ 91%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o[0m
+[15.842s] [ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o[0m
+[26.318s] [100%] [32m[1mLinking CXX shared library libcsm.so[0m
+[26.822s] [100%] Built target csm
+[26.841s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/build/csm -- -j8 -l8
+[27.001s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --install /home/kazuma/ros2_ws_2/ros2_main/build/csm
+[27.015s] -- Install configuration: ""
+[27.015s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/lib/libcsm.so
+[27.021s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include
+[27.022s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/gsl_eigen
+[27.023s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[27.023s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm
+[27.023s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/restrict.h
+[27.024s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/csm.h
+[27.024s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/laser_data.h
+[27.024s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/algos.h
+[27.025s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/laser_data_inline.h
+[27.025s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/resource
+[27.025s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/resource/csm
+[27.026s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/../gsl_eigen
+[27.026s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/../gsl_eigen/gsl_eigen.h
+[27.026s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/library_path.sh
+[27.027s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/library_path.dsv
+[27.027s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[27.027s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[27.027s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/ament_prefix_path.sh
+[27.028s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/ament_prefix_path.dsv
+[27.028s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/path.sh
+[27.028s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/path.dsv
+[27.028s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.bash
+[27.029s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.sh
+[27.029s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.zsh
+[27.029s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.dsv
+[27.030s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/package.dsv
+[27.030s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/packages/csm
+[27.030s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.030s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.030s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[27.031s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/csmConfig.cmake
+[27.031s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/csmConfig-version.cmake
+[27.032s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/package.xml
+[27.034s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --install /home/kazuma/ros2_ws_2/ros2_main/build/csm

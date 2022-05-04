@@ -1,0 +1,98 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kazuma/ros2_ws_2/ros2_main/build/csm
+[35m[1mScanning dependencies of target csm[0m
+[  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libcsm.so[0m
+[100%] Built target csm
+-- Install configuration: ""
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/lib/libcsm.so
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/gsl_eigen
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/restrict.h
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/csm.h
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/laser_data.h
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/algos.h
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/..//include/csm/laser_data_inline.h
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/resource
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/resource/csm
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/../gsl_eigen
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/include/../gsl_eigen/gsl_eigen.h
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/library_path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/library_path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/ament_prefix_path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/ament_prefix_path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/environment/path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.bash
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.zsh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/local_setup.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/package.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/ament_index/resource_index/packages/csm
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/csmConfig.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake/csmConfig-version.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/package.xml

@@ -1,0 +1,62 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 2.4.1 (/opt/ros/foxy/share/rclcpp_components/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+-- Found csm: 0.0.0 (/home/kazuma/ros2_ws_2/ros2_main/install/csm/share/csm/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kazuma/ros2_ws_2/ros2_main/build/lidar_vel
+[35m[1mScanning dependencies of target lidar_vel[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o[0m
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:403:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  403 |   [01;31m[Kif[m[K (publish_tf_)
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:422:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  422 |   [01;31m[Kif[m[K (newKeyframeNeeded(corr_ch))
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:430:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+  430 |   [01;31m[Kelse[m[K
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:435:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_icp_time_[m[K’ does not name a type
+  435 |   [01;31m[Klast_icp_time_[m[K = now();
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:436:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  436 |   [01;31m[Kreturn[m[K true;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:439:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+  439 | bool [01;31m[KLidarVel[m[K::newKeyframeNeeded(const tf2::Transform& d)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In function ‘[01m[Kbool newKeyframeNeeded(const tf2::Transform&)[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:441:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kkf_dist_angular_[m[K’ was not declared in this scope
+  441 |   if (fabs(tf2::getYaw(d.getRotation())) > [01;31m[Kkf_dist_angular_[m[K)
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:446:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kkf_dist_linear_sq_[m[K’ was not declared in this scope
+  446 |   if (x * x + y * y > [01;31m[Kkf_dist_linear_sq_[m[K)
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:452:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+  452 | void [01;31m[KLidarVel[m[K::laserScanToLDP(const sensor_msgs::msg::LaserScan::SharedPtr& scan, LDP& ldp)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:488:6:[m[K [01;31m[Kerror: [m[K‘[01m[KLidarVel[m[K’ has not been declared
+  488 | void [01;31m[KLidarVel[m[K::createTfFromXYTheta(double x, double y, double theta, tf2::Transform& t)
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:496:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  496 | [01;31m[K}[m[K  // namespace lidar_velocity
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In member function ‘[01m[Kbool lidar_velocity::LidarVel::processScan(laser_data*&, const rclcpp::Time&)[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:400:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  400 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/lidar_vel.dir/build.make:63: CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar_vel.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

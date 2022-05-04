@@ -1,0 +1,47 @@
+In file included from [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:1[m[K:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:20:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kclass[m[K’
+   20 | [01;31m[Kclass[m[K LidarVel: public rclcpp::Node
+      | [01;31m[K^~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/include/lidar_vel/lidar_vel.h:91:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   91 | [01;31m[K}[m[K  // namespace lidar_vel
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:11:19:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[Kvoid LidarVel::add_parameter(const string&, const rclcpp::ParameterValue&, const string&, const string&, bool)[m[K’ is not in namespace enclosing ‘[01m[KLidarVel[m[K’ [[01;31m[K-fpermissive[m[K]
+   11 |     bool read_only[01;31m[K)[m[K
+      |                   [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:24:20:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[KLidarVel::LidarVel()[m[K’ is not in namespace enclosing ‘[01m[KLidarVel[m[K’ [[01;31m[K-fpermissive[m[K]
+   24 | LidarVel::LidarVel([01;31m[K)[m[K : Node("lidar_vel"), initialized_(false)
+      |                    [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In constructor ‘[01m[KLidarVel::LidarVel()[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:206:70:[m[K [01;31m[Kerror: [m[K‘[01m[Klidar_vel[m[K’ was not declared in this scope; did you mean ‘[01m[KLidarVel[m[K’?
+  206 |   vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>([01;31m[Klidar_vel[m[K, rclcpp::SystemDefaultsQoS());
+      |                                                                      [01;31m[K^~~~~~~~~[m[K
+      |                                                                      [32m[KLidarVel[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K At global scope:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:402:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  402 |   [01;31m[Kif[m[K (publish_tf_)
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:421:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  421 |   [01;31m[Kif[m[K (newKeyframeNeeded(corr_ch))
+      |   [01;31m[K^~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:429:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+  429 |   [01;31m[Kelse[m[K
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:434:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_icp_time_[m[K’ does not name a type
+  434 |   [01;31m[Klast_icp_time_[m[K = now();
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:435:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  435 |   [01;31m[Kreturn[m[K true;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:436:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  436 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:495:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  495 | [01;31m[K}[m[K  // namespace lidar_vel
+      | [01;31m[K^[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:[m[K In member function ‘[01m[Kbool LidarVel::processScan(laser_data*&, const rclcpp::Time&)[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/lidar_vel/src/lidar_vel.cpp:399:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  399 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/lidar_vel.dir/build.make:63: CMakeFiles/lidar_vel.dir/src/lidar_vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lidar_vel.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
