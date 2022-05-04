@@ -11,6 +11,7 @@ find_package(ament_cmake_ros REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(socketcan_interface REQUIRED)
+find_package(utilities REQUIRED)
 
 add_library(bno055_io_node src/bno055_io_node.cpp)
 target_compile_features(bno055_io_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
@@ -22,6 +23,7 @@ ament_target_dependencies(
   "rclcpp"
   "sensor_msgs"
   "socketcan_interface"
+        "utilities"
 )
 
 # Causes the visibility macros to use dllexport rather than dllimport,
@@ -33,6 +35,7 @@ ament_export_dependencies(
         rclcpp
         sensor_msgs
         socketcan_interface
+        utilities
 )
 
 install(

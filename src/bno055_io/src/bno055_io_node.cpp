@@ -7,6 +7,7 @@
 #include "socketcan_interface_msg/msg/socketcan_if.hpp"
 #include "socketcan_interface/socketcan_interface_node.hpp"
 #include "bno055_io/bno055_io_node.hpp"
+#include "utilities/can_utils.hpp"
 
 namespace bno055_io {
 
@@ -73,15 +74,15 @@ namespace bno055_io {
 
         tmp_arr[0] = lin_as_bytes[0];
         tmp_arr[1] = lin_as_bytes[1];
-        imu_msg->linear_acceleration.set__x( can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->linear_acceleration.set__x( f16tof32(convert_byte_to_f16(tmp_arr)));
 
         tmp_arr[0] = lin_as_bytes[2];
         tmp_arr[1] = lin_as_bytes[3];
-        imu_msg->linear_acceleration.set__y(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->linear_acceleration.set__y(f16tof32(convert_byte_to_f16(tmp_arr)));
 
         tmp_arr[0] = lin_as_bytes[0];
         tmp_arr[1] = lin_as_bytes[1];
-        imu_msg->linear_acceleration.set__z(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->linear_acceleration.set__z(f16tof32(convert_byte_to_f16(tmp_arr)));
     }
 
     void Bno055Io::_subscriber_callback_Gyro(socketcan_interface_msg::msg::SocketcanIF msg) {
@@ -94,15 +95,15 @@ namespace bno055_io {
 
         tmp_arr[0] = Gyro_as_bytes[0];
         tmp_arr[1] = Gyro_as_bytes[1];
-        imu_msg->angular_velocity.set__x(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->angular_velocity.set__x(f16tof32(convert_byte_to_f16(tmp_arr)));
 
         tmp_arr[0] = Gyro_as_bytes[2];
         tmp_arr[1] = Gyro_as_bytes[3];
-        imu_msg->angular_velocity.set__y(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->angular_velocity.set__y(f16tof32(convert_byte_to_f16(tmp_arr)));
 
         tmp_arr[0] = Gyro_as_bytes[4];
         tmp_arr[1] = Gyro_as_bytes[5];
-        imu_msg->angular_velocity.set__z(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->angular_velocity.set__z(f16tof32(convert_byte_to_f16(tmp_arr)));
     }
 
     void Bno055Io::_subscriber_callback_Quat(socketcan_interface_msg::msg::SocketcanIF msg) {
@@ -115,19 +116,19 @@ namespace bno055_io {
 
         tmp_arr[0] = Quat_as_bytes[0];
         tmp_arr[1] = Quat_as_bytes[1];
-        imu_msg->orientation.set__x(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->orientation.set__x(f16tof32(convert_byte_to_f16(tmp_arr)));
 
         tmp_arr[0] = Quat_as_bytes[2];
         tmp_arr[1] = Quat_as_bytes[3];
-        imu_msg->orientation.set__y(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->orientation.set__y(f16tof32(convert_byte_to_f16(tmp_arr)));
 
         tmp_arr[0] = Quat_as_bytes[4];
         tmp_arr[1] = Quat_as_bytes[5];
-        imu_msg->orientation.set__z(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->orientation.set__z(f16tof32(convert_byte_to_f16(tmp_arr)));
 
         tmp_arr[0] = Quat_as_bytes[6];
         tmp_arr[1] = Quat_as_bytes[7];
-        imu_msg->orientation.set__w(can_utils::f16tof32(can_utils::convert_byte_to_f16(tmp_arr)));
+        imu_msg->orientation.set__w(f16tof32(convert_byte_to_f16(tmp_arr)));
     }
 
 
