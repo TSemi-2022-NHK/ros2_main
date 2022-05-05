@@ -22,7 +22,7 @@ namespace tcp_joystick_handler {
         rclcpp::Publisher<std_msgs::msg::String>::SharedPtr _joystick_publisher;
 
         std::shared_ptr<std_msgs::msg::String> _msg;
-        rclcpp::QoS _qos = rclcpp::SensorDataQoS();
+        rclcpp::QoS _qos = rclcpp::ServicesQoS();
 
         void _publisher_callback();
 
