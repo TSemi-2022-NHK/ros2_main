@@ -7,7 +7,7 @@ namespace r2_omni {
     }
 
     R2OmniNode::R2OmniNode(const std::string &name_space, const rclcpp::NodeOptions &options) : Node(
-            "tcp_joystick_node", options) {
+            "R2_omni_node", options) {
         using namespace std::chrono_literals;
 
         declare_parameter("interval_ms", 50);
