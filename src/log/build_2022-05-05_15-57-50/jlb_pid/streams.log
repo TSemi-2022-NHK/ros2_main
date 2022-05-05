@@ -1,0 +1,39 @@
+[0.024s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid -- -j8 -l8
+[0.108s] [ 66%] Built target jlb_pid_core
+[0.126s] [35m[1mScanning dependencies of target controller_node[0m
+[0.158s] [ 83%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller_node.cpp.o[0m
+[8.010s] [100%] [32m[1mLinking CXX executable controller_node[0m
+[8.522s] [100%] Built target controller_node
+[8.539s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid -- -j8 -l8
+[8.616s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --install /home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid
+[8.629s] -- Install configuration: ""
+[8.630s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include
+[8.630s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid
+[8.630s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/config.hpp
+[8.630s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/controller_node.hpp
+[8.631s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/pid.hpp
+[8.631s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/controller.hpp
+[8.631s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/lib/libjlb_pid_core.a
+[8.631s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/lib/jlb_pid/controller_node
+[8.634s] -- Set runtime path of "/home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/lib/jlb_pid/controller_node" to ""
+[8.635s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/library_path.sh
+[8.635s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/library_path.dsv
+[8.638s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/ament_index/resource_index/package_run_dependencies/jlb_pid
+[8.638s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/ament_index/resource_index/parent_prefix_path/jlb_pid
+[8.639s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/ament_prefix_path.sh
+[8.639s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/ament_prefix_path.dsv
+[8.640s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/path.sh
+[8.640s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/path.dsv
+[8.640s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.bash
+[8.640s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.sh
+[8.641s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.zsh
+[8.641s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.dsv
+[8.641s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/package.dsv
+[8.641s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/ament_index/resource_index/packages/jlb_pid
+[8.642s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.643s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.643s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/ament_cmake_export_libraries-extras.cmake
+[8.643s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/jlb_pidConfig.cmake
+[8.643s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/jlb_pidConfig-version.cmake
+[8.644s] -- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/package.xml
+[8.646s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --install /home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid

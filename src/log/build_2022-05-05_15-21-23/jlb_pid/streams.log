@@ -1,0 +1,78 @@
+[0.038s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake /home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid -DCMAKE_INSTALL_PREFIX=/home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid
+[0.251s] -- The C compiler identification is GNU 9.3.0
+[0.616s] -- The CXX compiler identification is GNU 9.3.0
+[0.821s] -- Check for working C compiler: /usr/bin/cc
+[1.024s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.025s] -- Detecting C compiler ABI info
+[1.220s] -- Detecting C compiler ABI info - done
+[1.235s] -- Detecting C compile features
+[1.235s] -- Detecting C compile features - done
+[1.237s] -- Check for working CXX compiler: /usr/bin/c++
+[1.502s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.503s] -- Detecting CXX compiler ABI info
+[1.725s] -- Detecting CXX compiler ABI info - done
+[1.739s] -- Detecting CXX compile features
+[1.739s] -- Detecting CXX compile features - done
+[1.748s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.800s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.801s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.099s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.365s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.384s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.672s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.860s] -- Found FastRTPS: /opt/ros/foxy/include  
+[7.036s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.128s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.136s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.137s] -- Looking for pthread.h
+[7.326s] -- Looking for pthread.h - found
+[7.326s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.517s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.518s] -- Looking for pthread_create in pthreads
+[7.701s] -- Looking for pthread_create in pthreads - not found
+[7.701s] -- Looking for pthread_create in pthread
+[7.882s] -- Looking for pthread_create in pthread - found
+[7.883s] -- Found Threads: TRUE  
+[8.095s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[8.144s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[8.286s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.289s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.290s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/include>
+[8.290s] -- Configured cppcheck exclude dirs and/or files: 
+[8.294s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.294s] -- Configured cpplint exclude dirs and/or files: 
+[8.296s] -- Added test 'lint_cmake' to check CMake code style
+[8.300s] -- Added test 'uncrustify' to check C / C++ code style
+[8.300s] -- Configured uncrustify additional arguments: 
+[8.301s] -- Added test 'xmllint' to check XML markup files
+[8.306s] -- Configuring done
+[8.331s] -- Generating done
+[8.336s] -- Build files have been written to: /home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid
+[8.350s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake /home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid -DCMAKE_INSTALL_PREFIX=/home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid
+[8.353s] Invoking command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid -- -j8 -l8
+[8.418s] [35m[1mScanning dependencies of target jlb_pid_core[0m
+[8.463s] [ 33%] [32mBuilding CXX object CMakeFiles/jlb_pid_core.dir/src/config.cpp.o[0m
+[8.463s] [ 33%] [32mBuilding CXX object CMakeFiles/jlb_pid_core.dir/src/pid.cpp.o[0m
+[8.465s] [ 50%] [32mBuilding CXX object CMakeFiles/jlb_pid_core.dir/src/controller.cpp.o[0m
+[10.531s] [ 66%] [32m[1mLinking CXX static library libjlb_pid_core.a[0m
+[10.580s] [ 66%] Built target jlb_pid_core
+[10.595s] [35m[1mScanning dependencies of target controller_node[0m
+[10.643s] [ 83%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller_node.cpp.o[0m
+[12.292s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:[m[K In member function ‘[01m[Kvoid jlbpid::ControllerNode::declare_parameters()[m[K’:
+[12.292s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:77:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kplant_topic[m[K’ was not declared in this scope
+[12.293s]    77 |     this->declare_parameter("plant_topic",[01;31m[Kplant_topic[m[K);
+[12.293s]       |                                           [01;31m[K^~~~~~~~~~~[m[K
+[12.296s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:78:46:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint_topic[m[K’ was not declared in this scope
+[12.296s]    78 |     this->declare_parameter("setpoint_topic",[01;31m[Ksetpoint_topic[m[K);
+[12.296s]       |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.298s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:79:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kenable_topic[m[K’ was not declared in this scope
+[12.298s]    79 |     this->declare_parameter("enable_topic",[01;31m[Kenable_topic[m[K);
+[12.298s]       |                                            [01;31m[K^~~~~~~~~~~~[m[K
+[12.301s] [01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:82:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_topic[m[K’ was not declared in this scope; did you mean ‘[01m[Kcontroller_[m[K’?
+[12.301s]    82 |     this->declare_parameter("controller_topic",[01;31m[Kcontroller_topic[m[K);
+[12.301s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[12.301s]       |                                                [32m[Kcontroller_[m[K
+[14.504s] make[2]: *** [CMakeFiles/controller_node.dir/build.make:63: CMakeFiles/controller_node.dir/src/controller_node.cpp.o] Error 1
+[14.504s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/controller_node.dir/all] Error 2
+[14.504s] make: *** [Makefile:141: all] Error 2
+[14.506s] Invoked command in '/home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kazuma/ros2_ws/install/nav2_msgs:/home/kazuma/ros2_ws/install/nav2_gazebo_spawner:/home/kazuma/ros2_ws_2/install/turtlebot3_teleop:/home/kazuma/ros2_ws_2/install/turtlebot3_example:/home/kazuma/ros2_ws_2/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/kazuma/ros2_ws_2/ros2_main/src/build/jlb_pid -- -j8 -l8

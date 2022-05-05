@@ -1,0 +1,2 @@
+/usr/bin/ar qc libjlb_pid_core.a  CMakeFiles/jlb_pid_core.dir/src/config.cpp.o CMakeFiles/jlb_pid_core.dir/src/pid.cpp.o CMakeFiles/jlb_pid_core.dir/src/controller.cpp.o
+/usr/bin/ranlib libjlb_pid_core.a

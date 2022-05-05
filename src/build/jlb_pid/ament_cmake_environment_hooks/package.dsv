@@ -1,0 +1,4 @@
+source;share/jlb_pid/local_setup.bash
+source;share/jlb_pid/local_setup.dsv
+source;share/jlb_pid/local_setup.sh
+source;share/jlb_pid/local_setup.zsh

@@ -1,0 +1,8 @@
+source;share/jlb_pid/hook/cmake_prefix_path.ps1
+source;share/jlb_pid/hook/cmake_prefix_path.dsv
+source;share/jlb_pid/hook/cmake_prefix_path.sh
+source;share/jlb_pid/local_setup.bash
+source;share/jlb_pid/local_setup.dsv
+source;share/jlb_pid/local_setup.ps1
+source;share/jlb_pid/local_setup.sh
+source;share/jlb_pid/local_setup.zsh

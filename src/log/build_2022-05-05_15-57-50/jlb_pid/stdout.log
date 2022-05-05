@@ -1,0 +1,35 @@
+[ 66%] Built target jlb_pid_core
+[35m[1mScanning dependencies of target controller_node[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable controller_node[0m
+[100%] Built target controller_node
+-- Install configuration: ""
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/config.hpp
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/controller_node.hpp
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/pid.hpp
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/include/jlb_pid/controller.hpp
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/lib/libjlb_pid_core.a
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/lib/jlb_pid/controller_node
+-- Set runtime path of "/home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/lib/jlb_pid/controller_node" to ""
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/library_path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/library_path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/ament_index/resource_index/package_run_dependencies/jlb_pid
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/ament_index/resource_index/parent_prefix_path/jlb_pid
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/ament_prefix_path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/ament_prefix_path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/path.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/environment/path.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.bash
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.sh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.zsh
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/local_setup.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/package.dsv
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/ament_index/resource_index/packages/jlb_pid
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/jlb_pidConfig.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/cmake/jlb_pidConfig-version.cmake
+-- Installing: /home/kazuma/ros2_ws_2/ros2_main/src/install/jlb_pid/share/jlb_pid/package.xml

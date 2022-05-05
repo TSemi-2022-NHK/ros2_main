@@ -1,0 +1,3 @@
+source;share/jlb_pid/environment/ament_prefix_path.sh
+source;share/jlb_pid/environment/library_path.sh
+source;share/jlb_pid/environment/path.sh

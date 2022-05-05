@@ -1,0 +1,17 @@
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:[m[K In member function ‘[01m[Kvoid jlbpid::ControllerNode::declare_parameters()[m[K’:
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:77:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kplant_topic[m[K’ was not declared in this scope
+   77 |     this->declare_parameter("plant_topic",[01;31m[Kplant_topic[m[K);
+      |                                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:78:46:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint_topic[m[K’ was not declared in this scope
+   78 |     this->declare_parameter("setpoint_topic",[01;31m[Ksetpoint_topic[m[K);
+      |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:79:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kenable_topic[m[K’ was not declared in this scope
+   79 |     this->declare_parameter("enable_topic",[01;31m[Kenable_topic[m[K);
+      |                                            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/kazuma/ros2_ws_2/ros2_main/src/jlb_pid/src/controller_node.cpp:82:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_topic[m[K’ was not declared in this scope; did you mean ‘[01m[Kcontroller_[m[K’?
+   82 |     this->declare_parameter("controller_topic",[01;31m[Kcontroller_topic[m[K);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Kcontroller_[m[K
+make[2]: *** [CMakeFiles/controller_node.dir/build.make:63: CMakeFiles/controller_node.dir/src/controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/controller_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
