@@ -75,11 +75,11 @@ namespace r2_arm
         msg->candata[0] = arm_up_down_movement;
         _publisher->publish(*msg);
 
-        msg->canid = 0x612;
+        /*msg->canid = 0x613;
         msg->candlc = 2;
         msg->candata[0] = arm_front_or_back;
         msg->candata[1] = arm_rotating_movement;
         _publisher->publish(*msg);
-
+        */
     }
 }  // namespace r2_arm
