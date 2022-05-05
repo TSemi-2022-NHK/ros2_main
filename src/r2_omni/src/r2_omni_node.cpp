@@ -44,35 +44,35 @@ namespace r2_omni {
 
     void R2OmniNode::_publisher_callback() {
         auto msg = std::make_shared<socketcan_interface_msg::msg::SocketcanIF>();
-        uint8_t _tmp_bytes[4];
+        uint8_t _tmp_bytes[8];
 
         msg->canid = 0x100;
-        convert_float_to_byte(omni_moter[0], _tmp_bytes);
-        for (int i = 0; i < 4; ++i) {
+        convert_double_to_byte(omni_moter[0], _tmp_bytes);
+        for (int i = 0; i < 8; ++i) {
             msg->candata[i] = _tmp_bytes[i];
         }
         msg->candlc = 8;
         _publisher->publish(*msg);
 
         msg->canid = 0x101;
-        convert_float_to_byte(omni_moter[1], _tmp_bytes);
-        for (int i = 0; i < 4; ++i) {
+        convert_double_to_byte(omni_moter[1], _tmp_bytes);
+        for (int i = 0; i < 8; ++i) {
             msg->candata[i] = _tmp_bytes[i];
         }
         msg->candlc = 8;
         _publisher->publish(*msg);
 
         msg->canid = 0x102;
-        convert_float_to_byte(omni_moter[2], _tmp_bytes);
-        for (int i = 0; i < 4; ++i) {
+        convert_double_to_byte(omni_moter[2], _tmp_bytes);
+        for (int i = 0; i < 8; ++i) {
             msg->candata[i] = _tmp_bytes[i];
         }
         msg->candlc = 8;
         _publisher->publish(*msg);
 
         msg->canid = 0x103;
-        convert_float_to_byte(omni_moter[3], _tmp_bytes);
-        for (int i = 0; i < 4; ++i) {
+        convert_double_to_byte(omni_moter[3], _tmp_bytes);
+        for (int i = 0; i < 8; ++i) {
             msg->candata[i] = _tmp_bytes[i];
         }
         msg->candlc = 8;
