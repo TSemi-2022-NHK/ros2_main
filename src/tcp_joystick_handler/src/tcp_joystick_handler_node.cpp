@@ -42,13 +42,16 @@ namespace tcp_joystick_handler {
             }
         }
         // after connected
-        std::basic_string<char> recieved_data = _tcp.recieveLines();
-        if (recieved_data == ""){   // nothing have been received. refer that this is non-blocking mode.
-            return;
-        } else{
-            _msg->data = recieved_data;
-            RCLCPP_INFO(this->get_logger(), "PUBLISHING FROM TCP:'%s'", _msg->data.c_str());
-            _joystick_publisher->publish(*_msg);
+        while(true){    // receive data until everything has been read
+            std::basic_string<char> recieved_data = _tcp.recieveLines();
+            if (recieved_data == ""){   // nothing have been received. refer that this is non-blocking mode.
+                break;
+            } else{
+                _msg->data = recieved_data;
+                RCLCPP_INFO(this->get_logger(), "PUBLISHING FROM TCP:'%s'", _msg->data.c_str());
+                _joystick_publisher->publish(*_msg);
+            }
         }
+
     }
 }  // namespace tcp_joystick_handler
